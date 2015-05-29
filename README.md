@@ -35,7 +35,7 @@ Alternatively, you can download the [latest Button framework](https://github.com
 <br />
 ## Getting Started
 
-1. Get an Application ID by signing up here: http://dashboard.usebutton.com
+1. Get an Application ID by signing up here: [app.usebutton.com](http://app.usebutton.com)
 
 2. Follow the <a href="http://www.usebutton.com/sdk/deep-link-commerce/integration-guide" target="_blank">DeepLink Commerce Integration Guide</a> to get DLC in your app!
 
