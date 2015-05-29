@@ -1,0 +1,19 @@
+#import "ViewController.h"
+#import <Button/Button.h>
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    BTNVenue *venue = [BTNVenue venueWithId:@"abc123"
+                                  venueName:@"Parm"
+                                   latitude:40.723027
+                                  longitude:-73.9956459];
+    
+    [self.dropinButton prepareForDisplayWithVenue:venue completion:^(BOOL isDisplayable) {
+        NSLog(@"Displayable: %@", @(isDisplayable));
+    }];
+}
+
+@end

@@ -1,0 +1,7 @@
+platform :ios, '7.0'
+
+target 'CocoaPodsExample' do
+  pod 'Button', :path => '../../'
+  pod 'AFNetworking', '~> 2'
+end
+
