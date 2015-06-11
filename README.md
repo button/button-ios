@@ -26,7 +26,7 @@ The best way to get the Button DeepLink Commerce SDK is to use CocoaPods. If you
 Add Button to your target by adding the following line to your `Podfile`.
 
 ```
-pod "Button", "~> 3.1.4"
+pod "Button", "~> 3"
 ```
 
 Alternatively, you can download the [latest Button framework](https://github.com/usebutton/button-ios/releases/latest).
