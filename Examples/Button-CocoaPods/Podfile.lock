@@ -20,7 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - Button (3.1.4):
+  - Button (3.1.6):
     - AFNetworking (~> 2)
 
 DEPENDENCIES:
@@ -33,6 +33,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
-  Button: bb621097799bafebb12dd88732c833affaac6877
+  Button: 898a3790fb78a664dc34fa0a6d5020beba95087d
 
 COCOAPODS: 0.37.1
