@@ -11,7 +11,7 @@
     [[Button sharedButton] configureWithApplicationId:@"app-0000000000000000" completion:^(NSError *error) {
         NSLog(@"Error: %@", error.localizedDescription);
     }];
-    
+
     return YES;
 }
 
