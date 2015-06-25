@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name    = "Button"
-  s.version = "3.1.7"
+  s.version = "3.2.0"
   s.summary = "Button iOS SDK."
 
   s.description = <<-DESC
@@ -25,8 +25,6 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Button.framework/Versions/A/Headers/*.h'
   s.vendored_frameworks = 'Button.framework'
   s.resource            = 'Button.bundle'
-
-  s.dependency "AFNetworking", "~> 2"
 
   s.framework = "CoreLocation"
   s.framework = "AdSupport"

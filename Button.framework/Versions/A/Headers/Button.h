@@ -61,6 +61,17 @@ typedef void(^BTNConfigurationCompletionBlock)(NSError *error);
 - (void)setThirdPartyId:(NSString *)thirdPartyId;
 
 
+/**
+ Reports an order to Button.
+ @param orderValue The value of the order in pennies.
+ @param orderId An order identifier (required).
+ @param currencyCode The ISO 4217 currency code. (default is USD).
+ */
+- (void)reportOrderWithValue:(NSInteger)orderValue
+                     orderId:(NSString *)orderId
+                currencyCode:(NSString *)currencyCode;
+
+
 ///----------------------------
 /// @name Notification Handling
 ///----------------------------
