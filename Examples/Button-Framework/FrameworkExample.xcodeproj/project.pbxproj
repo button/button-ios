@@ -17,7 +17,6 @@
 		DEC2AABA1AD8A2E300ED8393 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC2AAB61AD8A2A600ED8393 /* MobileCoreServices.framework */; };
 		DEC2AABC1AD8A2F900ED8393 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC2AABB1AD8A2F900ED8393 /* SystemConfiguration.framework */; };
 		DEC2AABE1AD8A30800ED8393 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC2AABD1AD8A30800ED8393 /* Security.framework */; };
-		DEC2AAFE1ADC2B1F00ED8393 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC2AAFC1ADC2B1F00ED8393 /* AFNetworking.framework */; };
 		DEC2AB051ADC354200ED8393 /* Button.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC2AB041ADC354200ED8393 /* Button.framework */; };
 		DEC2AB081ADC3E4F00ED8393 /* Button.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DEC2AAAB1AD85B7800ED8393 /* Button.bundle */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		DEC2AAB81AD8A2B600ED8393 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DEC2AABB1AD8A2F900ED8393 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DEC2AABD1AD8A30800ED8393 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		DEC2AAFC1ADC2B1F00ED8393 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Vendor/AFNetworking.framework; sourceTree = "<group>"; };
 		DEC2AB041ADC354200ED8393 /* Button.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Button.framework; path = ../../../Button.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +48,6 @@
 			files = (
 				DEC2AB051ADC354200ED8393 /* Button.framework in Frameworks */,
 				DEC2AABE1AD8A30800ED8393 /* Security.framework in Frameworks */,
-				DEC2AAFE1ADC2B1F00ED8393 /* AFNetworking.framework in Frameworks */,
 				DEC2AABC1AD8A2F900ED8393 /* SystemConfiguration.framework in Frameworks */,
 				DEC2AABA1AD8A2E300ED8393 /* MobileCoreServices.framework in Frameworks */,
 				DEC2AAB51AD8A29500ED8393 /* AdSupport.framework in Frameworks */,
@@ -106,7 +103,6 @@
 		DEC2AAAA1AD85B5D00ED8393 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				DEC2AAFC1ADC2B1F00ED8393 /* AFNetworking.framework */,
 				DEC2AAAF1AD85B9900ED8393 /* Button */,
 			);
 			name = Vendor;
@@ -316,7 +312,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../../",
-					"$(PROJECT_DIR)/Button-Framework/Vendor",
 					"$(PROJECT_DIR)/Button-Framework",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Button-Framework/Info.plist";
@@ -335,7 +330,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../../",
-					"$(PROJECT_DIR)/Button-Framework/Vendor",
 					"$(PROJECT_DIR)/Button-Framework",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Button-Framework/Info.plist";
