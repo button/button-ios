@@ -1,11 +1,11 @@
-#import "ViewController.h"
+#import "SimpleButtonExampleViewController.h"
 #import <Button/Button.h>
 
-@implementation ViewController
+@implementation SimpleButtonExampleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
+    
     BTNVenue *venue = [BTNVenue venueWithId:@"abc123"
                                   venueName:@"Parm"
                                    latitude:40.723027

@@ -2,7 +2,7 @@
 
 @class BTNDropinButton;
 
-@interface ViewController : UIViewController
+@interface SimpleButtonExampleViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet BTNDropinButton *dropinButton;
 

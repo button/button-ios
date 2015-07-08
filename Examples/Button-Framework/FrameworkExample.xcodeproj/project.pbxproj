@@ -9,36 +9,42 @@
 /* Begin PBXBuildFile section */
 		DE2B66251AD6CA4900C7C25B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2B66241AD6CA4900C7C25B /* main.m */; };
 		DE2B66281AD6CA4900C7C25B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2B66271AD6CA4900C7C25B /* AppDelegate.m */; };
-		DE2B662B1AD6CA4900C7C25B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2B662A1AD6CA4900C7C25B /* ViewController.m */; };
-		DE2B662E1AD6CA4900C7C25B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2B662C1AD6CA4900C7C25B /* Main.storyboard */; };
 		DE2B66301AD6CA4900C7C25B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2B662F1AD6CA4900C7C25B /* Images.xcassets */; };
-		DE2B66331AD6CA4900C7C25B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2B66311AD6CA4900C7C25B /* LaunchScreen.xib */; };
 		DEC2AAB51AD8A29500ED8393 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC2AAB41AD8A29500ED8393 /* AdSupport.framework */; };
 		DEC2AABA1AD8A2E300ED8393 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC2AAB61AD8A2A600ED8393 /* MobileCoreServices.framework */; };
 		DEC2AABC1AD8A2F900ED8393 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC2AABB1AD8A2F900ED8393 /* SystemConfiguration.framework */; };
 		DEC2AABE1AD8A30800ED8393 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC2AABD1AD8A30800ED8393 /* Security.framework */; };
-		DEC2AB051ADC354200ED8393 /* Button.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC2AB041ADC354200ED8393 /* Button.framework */; };
 		DEC2AB081ADC3E4F00ED8393 /* Button.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DEC2AAAB1AD85B7800ED8393 /* Button.bundle */; };
+		DEEA2F941B4DB46E0009380F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2B662C1AD6CA4900C7C25B /* Main.storyboard */; };
+		DEEA2F981B4DB7B40009380F /* Button.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEA2F961B4DB72B0009380F /* Button.framework */; };
+		DEEA2F9A1B4DB8220009380F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEEA2F991B4DB8220009380F /* LaunchScreen.xib */; };
+		DEEA2FA21B4DBDC20009380F /* TableCellButtonExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEA2FA11B4DBDC20009380F /* TableCellButtonExampleViewController.m */; };
+		DEEA2FA61B4DBDFA0009380F /* SimpleButtonExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEA2FA51B4DBDFA0009380F /* SimpleButtonExampleViewController.m */; };
+		DEEA2FA91B4DBE280009380F /* ReminderButtonExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEA2FA81B4DBE280009380F /* ReminderButtonExampleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE2B661F1AD6CA4900C7C25B /* FrameworkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE2B66231AD6CA4900C7C25B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE2B66241AD6CA4900C7C25B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DE2B66261AD6CA4900C7C25B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DE2B66271AD6CA4900C7C25B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DE2B66291AD6CA4900C7C25B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DE2B662A1AD6CA4900C7C25B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE2B66231AD6CA4900C7C25B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Example-Source/Info.plist"; sourceTree = SOURCE_ROOT; };
+		DE2B66241AD6CA4900C7C25B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "../Example-Source/main.m"; sourceTree = SOURCE_ROOT; };
+		DE2B66261AD6CA4900C7C25B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../Example-Source/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		DE2B66271AD6CA4900C7C25B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "../Example-Source/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
 		DE2B662D1AD6CA4900C7C25B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DE2B662F1AD6CA4900C7C25B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DE2B66321AD6CA4900C7C25B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		DEC2AAAB1AD85B7800ED8393 /* Button.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Button.bundle; path = ../../../Button.bundle; sourceTree = "<group>"; };
+		DE2B662F1AD6CA4900C7C25B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../Example-Source/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		DEC2AAAB1AD85B7800ED8393 /* Button.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Button.bundle; path = ../../Button.bundle; sourceTree = SOURCE_ROOT; };
 		DEC2AAB41AD8A29500ED8393 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		DEC2AAB61AD8A2A600ED8393 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		DEC2AAB81AD8A2B600ED8393 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DEC2AABB1AD8A2F900ED8393 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DEC2AABD1AD8A30800ED8393 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		DEC2AB041ADC354200ED8393 /* Button.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Button.framework; path = ../../../Button.framework; sourceTree = "<group>"; };
+		DEEA2F961B4DB72B0009380F /* Button.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Button.framework; path = ../../Button.framework; sourceTree = SOURCE_ROOT; };
+		DEEA2F991B4DB8220009380F /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		DEEA2FA01B4DBDC20009380F /* TableCellButtonExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableCellButtonExampleViewController.h; path = "../Example-Source/Table Cell Button/TableCellButtonExampleViewController.h"; sourceTree = SOURCE_ROOT; };
+		DEEA2FA11B4DBDC20009380F /* TableCellButtonExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableCellButtonExampleViewController.m; path = "../Example-Source/Table Cell Button/TableCellButtonExampleViewController.m"; sourceTree = SOURCE_ROOT; };
+		DEEA2FA41B4DBDFA0009380F /* SimpleButtonExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleButtonExampleViewController.h; path = "../Example-Source/Simple Button/SimpleButtonExampleViewController.h"; sourceTree = SOURCE_ROOT; };
+		DEEA2FA51B4DBDFA0009380F /* SimpleButtonExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleButtonExampleViewController.m; path = "../Example-Source/Simple Button/SimpleButtonExampleViewController.m"; sourceTree = SOURCE_ROOT; };
+		DEEA2FA71B4DBE280009380F /* ReminderButtonExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReminderButtonExampleViewController.h; path = "../Example-Source/Reminder Button/ReminderButtonExampleViewController.h"; sourceTree = SOURCE_ROOT; };
+		DEEA2FA81B4DBE280009380F /* ReminderButtonExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReminderButtonExampleViewController.m; path = "../Example-Source/Reminder Button/ReminderButtonExampleViewController.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC2AB051ADC354200ED8393 /* Button.framework in Frameworks */,
 				DEC2AABE1AD8A30800ED8393 /* Security.framework in Frameworks */,
 				DEC2AABC1AD8A2F900ED8393 /* SystemConfiguration.framework in Frameworks */,
+				DEEA2F981B4DB7B40009380F /* Button.framework in Frameworks */,
 				DEC2AABA1AD8A2E300ED8393 /* MobileCoreServices.framework in Frameworks */,
 				DEC2AAB51AD8A29500ED8393 /* AdSupport.framework in Frameworks */,
 			);
@@ -76,13 +82,13 @@
 		DE2B66211AD6CA4900C7C25B /* Button Framework Example */ = {
 			isa = PBXGroup;
 			children = (
+				DEEA2FA31B4DBDFA0009380F /* Simple Button */,
+				DEEA2F9E1B4DBCE60009380F /* Table Cell Button */,
+				DEEA2F9F1B4DBCFA0009380F /* Reminder Button */,
 				DE2B66261AD6CA4900C7C25B /* AppDelegate.h */,
 				DE2B66271AD6CA4900C7C25B /* AppDelegate.m */,
-				DE2B66291AD6CA4900C7C25B /* ViewController.h */,
-				DE2B662A1AD6CA4900C7C25B /* ViewController.m */,
 				DE2B662C1AD6CA4900C7C25B /* Main.storyboard */,
 				DE2B662F1AD6CA4900C7C25B /* Images.xcassets */,
-				DE2B66311AD6CA4900C7C25B /* LaunchScreen.xib */,
 				DE2B66221AD6CA4900C7C25B /* Supporting Files */,
 				DEC2AAAA1AD85B5D00ED8393 /* Vendor */,
 				DEC2AABF1AD8A37C00ED8393 /* Frameworks */,
@@ -94,10 +100,12 @@
 		DE2B66221AD6CA4900C7C25B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DEEA2F991B4DB8220009380F /* LaunchScreen.xib */,
 				DE2B66231AD6CA4900C7C25B /* Info.plist */,
 				DE2B66241AD6CA4900C7C25B /* main.m */,
 			);
 			name = "Supporting Files";
+			path = "../Example-Source/Supporting Files";
 			sourceTree = "<group>";
 		};
 		DEC2AAAA1AD85B5D00ED8393 /* Vendor */ = {
@@ -111,7 +119,7 @@
 		DEC2AAAF1AD85B9900ED8393 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				DEC2AB041ADC354200ED8393 /* Button.framework */,
+				DEEA2F961B4DB72B0009380F /* Button.framework */,
 				DEC2AAAB1AD85B7800ED8393 /* Button.bundle */,
 			);
 			name = Button;
@@ -127,6 +135,34 @@
 				DEC2AAB41AD8A29500ED8393 /* AdSupport.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEEA2F9E1B4DBCE60009380F /* Table Cell Button */ = {
+			isa = PBXGroup;
+			children = (
+				DEEA2FA01B4DBDC20009380F /* TableCellButtonExampleViewController.h */,
+				DEEA2FA11B4DBDC20009380F /* TableCellButtonExampleViewController.m */,
+			);
+			name = "Table Cell Button";
+			sourceTree = "<group>";
+		};
+		DEEA2F9F1B4DBCFA0009380F /* Reminder Button */ = {
+			isa = PBXGroup;
+			children = (
+				DEEA2FA71B4DBE280009380F /* ReminderButtonExampleViewController.h */,
+				DEEA2FA81B4DBE280009380F /* ReminderButtonExampleViewController.m */,
+			);
+			name = "Reminder Button";
+			sourceTree = "<group>";
+		};
+		DEEA2FA31B4DBDFA0009380F /* Simple Button */ = {
+			isa = PBXGroup;
+			children = (
+				DEEA2FA41B4DBDFA0009380F /* SimpleButtonExampleViewController.h */,
+				DEEA2FA51B4DBDFA0009380F /* SimpleButtonExampleViewController.m */,
+			);
+			name = "Simple Button";
+			path = "../../Example-Source/Simple Button";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,9 +222,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEA2F9A1B4DB8220009380F /* LaunchScreen.xib in Resources */,
 				DEC2AB081ADC3E4F00ED8393 /* Button.bundle in Resources */,
-				DE2B662E1AD6CA4900C7C25B /* Main.storyboard in Resources */,
-				DE2B66331AD6CA4900C7C25B /* LaunchScreen.xib in Resources */,
+				DEEA2F941B4DB46E0009380F /* Main.storyboard in Resources */,
 				DE2B66301AD6CA4900C7C25B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,9 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE2B662B1AD6CA4900C7C25B /* ViewController.m in Sources */,
+				DEEA2FA91B4DBE280009380F /* ReminderButtonExampleViewController.m in Sources */,
+				DEEA2FA21B4DBDC20009380F /* TableCellButtonExampleViewController.m in Sources */,
 				DE2B66281AD6CA4900C7C25B /* AppDelegate.m in Sources */,
 				DE2B66251AD6CA4900C7C25B /* main.m in Sources */,
+				DEEA2FA61B4DBDFA0009380F /* SimpleButtonExampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,15 +253,8 @@
 				DE2B662D1AD6CA4900C7C25B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DE2B66311AD6CA4900C7C25B /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE2B66321AD6CA4900C7C25B /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
+			path = "../Example-Source";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -312,9 +343,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../../",
-					"$(PROJECT_DIR)/Button-Framework",
+					"/Users/wes/Projects/button-ios-private/.release",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Button-Framework/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/../Example-Source/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC ";
@@ -330,9 +361,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../../",
-					"$(PROJECT_DIR)/Button-Framework",
+					"/Users/wes/Projects/button-ios-private/.release",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Button-Framework/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/../Example-Source/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC ";
