@@ -1,4 +1,4 @@
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 typedef NS_ENUM(NSInteger, BTNRideAvailability) {
     BTNRideAvailabilityUnknown,
