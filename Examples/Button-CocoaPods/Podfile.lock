@@ -1,5 +1,5 @@
 PODS:
-  - Button (3.4.0)
+  - Button (3.4.1)
 
 DEPENDENCIES:
   - Button (from `../../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../../
 
 SPEC CHECKSUMS:
-  Button: bbbf8d4851ddfa16354afe9e6dbef0499309e192
+  Button: 737d57d9b7deeb67a471ebc56d264c228bc3d296
 
 COCOAPODS: 0.37.2
