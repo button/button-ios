@@ -45,7 +45,6 @@ extern NSString * const BTNContextReminderMessageKey;
  */
 extern NSString * const BTNContextReminderUseDebugIntervalKey;
 
-
 @interface BTNReminder : NSObject
 
 /**

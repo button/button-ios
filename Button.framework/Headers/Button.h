@@ -53,12 +53,20 @@ typedef void(^BTNConfigurationCompletionBlock)(NSError *error);
 /**
  Associate your ID for the current user with the Button session
  @param thirdPartyId your identifier for the user
- @note This is required for DLC attribution.
+ @note This is required for attribution.
  @warning This will fail silently if there is no session. Run only
  when you know Button is configured (e.g. in the completion block of 
  configureWithApplicationId:completion:)
  **/
 - (void)setThirdPartyId:(NSString *)thirdPartyId;
+
+
+/**
+ Returns the current referrerToken fror the last inbound link from
+ the Button marketplace or nil if none is present.
+ @return String value of the last inbound referrerToken
+ **/
+- (NSString *)referrerToken;
 
 
 /**

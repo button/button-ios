@@ -11,7 +11,7 @@
                                    latitude:40.723027
                                   longitude:-73.9956459];
     
-    [self.dropinButton prepareForDisplayWithVenue:venue completion:^(BOOL isDisplayable) {
+    [self.dropinButton prepareForDisplayWithContext:@{ BTNContextEndLocationKey: venue.location } completion:^(BOOL isDisplayable) {
         NSLog(@"Displayable: %@", @(isDisplayable));
     }];
 }
