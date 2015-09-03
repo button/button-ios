@@ -62,14 +62,6 @@ typedef void(^BTNConfigurationCompletionBlock)(NSError *error);
 
 
 /**
- Returns the current referrerToken fror the last inbound link from
- the Button marketplace or nil if none is present.
- @return String value of the last inbound referrerToken
- **/
-- (NSString *)referrerToken;
-
-
-/**
  Reports an order to Button.
  @param orderValue The value of the order in pennies.
  @param orderId An order identifier (required).
@@ -94,6 +86,21 @@ typedef void(^BTNConfigurationCompletionBlock)(NSError *error);
 
 
 ///------------------
+/// @name Debugging
+///------------------
+
+
+/**
+ Sets whether the Button SDK will output debug log messages to the console.
+ @discussion You should ship to the App Store with this disabled.
+ 
+ @param enabled Pass YES to enable debug log messages to the console.
+ @note The default value is NO.
+ */
+- (void)setDebugLoggingEnabled:(BOOL)enabled;
+
+
+///------------------
 /// @name Permissions
 ///------------------
 
@@ -106,5 +113,6 @@ typedef void(^BTNConfigurationCompletionBlock)(NSError *error);
  @note The default value is NO.
  */
 + (void)allowButtonToRequestLocationPermission:(BOOL)isAllowed;
+
 
 @end
