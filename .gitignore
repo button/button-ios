@@ -1,7 +1,9 @@
 .DS_Store
 .localized
 *.xccheckout
+*.xcscmblueprint
 build/
 xcuserdata
+*.xcworkspacedata
 *.pbxuser
 Pods/

@@ -3,8 +3,7 @@
  Copyright Button, Inc. 2015
  */
 @import Foundation;
-#import "ButtonServices.h"
-#import "BTNSession.h"
+#import "Button_Public.h"
 
 @class BTNSession;
 
