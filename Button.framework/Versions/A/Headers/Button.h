@@ -50,6 +50,12 @@ typedef void(^BTNConfigurationCompletionBlock)(NSError *error);
 
 
 /**
+ The Button referrer token `btn_ref` indicating the last referrer.
+ */
+- (NSString *)referrerToken;
+
+
+/**
  Associate your ID for the current user with the Button session
  @param thirdPartyId your identifier for the user
  @note This is required for attribution.

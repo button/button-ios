@@ -22,9 +22,15 @@ class ReminderButtonExampleViewController: UIViewController {
             BTNContextReminderUseDebugIntervalKey: true
         ]
         
-        self.dropinButton?.prepareForDisplayWithContext(context, completion: { (isDisplayable: Bool) -> Void in
-            print("Displayable: \(isDisplayable)")
-        })
+        if let button = self.dropinButton {
+            
+            // ERROR: Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
+            button.buttonId = "YOUR_BUTTON_ID"
+            
+            self.dropinButton?.prepareForDisplayWithContext(context, completion: { (isDisplayable: Bool) -> Void in
+                print("Displayable: \(isDisplayable)")
+            })
+        }
     }
     
     

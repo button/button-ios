@@ -53,6 +53,10 @@
     
     if ([cell isKindOfClass:[BTNDropinButtonCell class]]) {
         BTNDropinButtonCell *buttonCell = (BTNDropinButtonCell *)cell;
+        
+#error Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
+        buttonCell.buttonId = @"YOUR_BUTTON_ID";
+        
         [buttonCell prepareForDisplayWithVenue:self.venue completion:^(BOOL isDisplayable) {
             NSLog(@"Displayable: %@", @(isDisplayable));
             // You might remove the backing data item and reload your table view if the button cell is not displayable.

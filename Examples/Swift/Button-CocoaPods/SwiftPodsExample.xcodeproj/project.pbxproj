@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F8D1C6FFBE038FD1E5781BB /* Pods_SwiftPodsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6334C567B523A7252AC2B7E8 /* Pods_SwiftPodsExample.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F8D1C6FFBE038FD1E5781BB /* Pods_SwiftPodsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6334C567B523A7252AC2B7E8 /* Pods_SwiftPodsExample.framework */; };
 		DEDD25FF1BAA8D7500D957A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEDD25FE1BAA8D7500D957A1 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		DEDD26011BAA8DA900D957A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED082121BAA82840093F867 /* AppDelegate.swift */; };
 		DEDD26021BAA8DB700D957A1 /* SimpleButtonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1DC181BAA2B2B003252D2 /* SimpleButtonExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -138,6 +138,7 @@
 				DEF1DBF21BAA28F6003252D2 /* Resources */,
 				650A476D6432AC4004BFFCCC /* Copy Pods Resources */,
 				4B1B1FDA61A2F7B5A59BD053 /* Embed Pods Frameworks */,
+				DEFF92B11BDAD0D5000B9EE8 /* Button ID Check */,
 			);
 			buildRules = (
 			);
@@ -237,6 +238,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		DEFF92B11BDAD0D5000B9EE8 /* Button ID Check */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Button ID Check";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"ERROR:\"\nfind \"${SRCROOT}/../Example-Source\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ error: \\$1/\"\n\nMATCHES=${PIPESTATUS[1]}\nif [ $MATCHES == 0 ]; then\n    exit 1\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -32,11 +32,16 @@ class TableCellButtonExampleViewController: UITableViewController {
         let rowInfo = items[indexPath.row]
 
         let cell = tableView.dequeueReusableCellWithIdentifier(rowInfo["cell-id"]!, forIndexPath: indexPath)
+        
         cell.textLabel?.text = rowInfo["text"]
         cell.detailTextLabel?.text = rowInfo["details"]
 
         if let buttonCell = cell as? BTNDropinButtonCell {
             buttonCell.dropinButton.borderWidth = 0.0
+            
+            // ERROR: Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
+            buttonCell.buttonId = "YOUR_BUTTON_ID"
+            
             buttonCell.prepareForDisplayWithVenue(venue, completion: { (isDisplayable: Bool) -> Void in
                 print("Displayable: \(isDisplayable)")
             })

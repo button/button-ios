@@ -9,7 +9,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         Button.allowButtonToRequestLocationPermission(true)
-        Button.sharedButton().configureWithApplicationId("app-0000000000000000") { (configError: NSError?) -> Void in
+
+        //ERROR: Replace YOUR_BUTTON_APP_ID with your App ID from the Button Dashboard https://app.usebutton.com
+        Button.sharedButton().configureWithApplicationId("YOUR_BUTTON_APP_ID") { (configError: NSError?) -> Void in
             if let error = configError {
                 print("Error: \(error.localizedDescription)")
             }

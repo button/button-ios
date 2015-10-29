@@ -21,6 +21,9 @@
                                BTNContextReminderIdentifierKey: venue.venueId,
                                BTNContextReminderUseDebugIntervalKey: @YES };
     
+#error Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
+    self.dropinButton.buttonId = @"YOUR_BUTTON_ID";
+    
     [self.dropinButton prepareForDisplayWithContext:context completion:^(BOOL isDisplayable) {
         NSLog(@"Displayable: %@", @(isDisplayable));
     }];

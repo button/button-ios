@@ -1,8 +1,10 @@
 @import UIKit;
+#import "BTNDropinButtonAppearanceProtocol.h"
+
 
 @class BTNDropinButton, BTNVenue;
 
-@interface BTNDropinButtonCell : UITableViewCell
+@interface BTNDropinButtonCell : UITableViewCell <BTNDropinButtonAppearance>
 
 /// The ID of the button this cell represents.
 @property (nonatomic, copy) IBInspectable NSString *buttonId;
@@ -38,5 +40,15 @@
  */
 - (void)prepareForDisplayWithVenue:(BTNVenue *)venue
                         completion:(void(^)(BOOL isDisplayable))completionHandler;
+
+
+///-----------------
+/// @name Appearance
+///-----------------
+
+/**
+ BTNDropinButtonCell conforms to BTNDropinButtonAppearance.
+ For appearance properties @see BTNDropinButtonAppearance
+ */
 
 @end

@@ -134,6 +134,7 @@
 				DEF1DBF01BAA28F6003252D2 /* Sources */,
 				DEF1DBF11BAA28F6003252D2 /* Frameworks */,
 				DEF1DBF21BAA28F6003252D2 /* Resources */,
+				DEEE1E911BDAF7E6004C16BE /* Button ID Check */,
 			);
 			buildRules = (
 			);
@@ -188,6 +189,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DEEE1E911BDAF7E6004C16BE /* Button ID Check */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Button ID Check";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"ERROR:\"\nfind \"${SRCROOT}/../Example-Source\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ error: \\$1/\"\n\nMATCHES=${PIPESTATUS[1]}\nif [ $MATCHES == 0 ]; then\nexit 1\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DEF1DBF01BAA28F6003252D2 /* Sources */ = {
