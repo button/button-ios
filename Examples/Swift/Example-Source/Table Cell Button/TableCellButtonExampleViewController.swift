@@ -3,7 +3,8 @@ import Button
 
 class TableCellButtonExampleViewController: UITableViewController {
 
-    lazy var venue: BTNVenue  = BTNVenue.init(id: "abc123", venueName: "Parm", latitude: 40.723027, longitude: -73.9956459)
+    let context: BTNContext = BTNContext.init(subjectLocation:
+        BTNLocation.init(name: "Parm", latitude: 40.723027, longitude: -73.9956459));
     
     lazy var items: [[String:String]] = [
         ["cell-id": "your-cell",    "text": "(212) 993-7189"],
@@ -42,7 +43,7 @@ class TableCellButtonExampleViewController: UITableViewController {
             // ERROR: Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
             buttonCell.buttonId = "YOUR_BUTTON_ID"
             
-            buttonCell.prepareForDisplayWithVenue(venue, completion: { (isDisplayable: Bool) -> Void in
+            buttonCell.prepareWithContext(context, completion: { (isDisplayable: Bool) -> Void in
                 print("Displayable: \(isDisplayable)")
             })
         }

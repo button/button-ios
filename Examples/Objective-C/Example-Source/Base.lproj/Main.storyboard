@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4cj-S5-jx3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4cj-S5-jx3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Table Cell Button-->
@@ -108,46 +108,6 @@
             </objects>
             <point key="canvasLocation" x="1190" y="-182"/>
         </scene>
-        <!--Reminder Button-->
-        <scene sceneID="qTe-Ih-kaq">
-            <objects>
-                <viewController id="Tw5-K5-F7O" customClass="ReminderButtonExampleViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GAz-N6-FjV"/>
-                        <viewControllerLayoutGuide type="bottom" id="TsU-nT-XcD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AeF-2g-cvf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cp-qc-Kd5" customClass="BTNDropinButton">
-                                <rect key="frame" x="25" y="264" width="270" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="270" placeholder="YES" id="e9g-t0-tAH"/>
-                                    <constraint firstAttribute="height" constant="40" id="p5T-be-yb3"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonId" value="test-placement"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="7cp-qc-Kd5" secondAttribute="centerY" id="fFc-H3-lfP"/>
-                            <constraint firstAttribute="centerX" secondItem="7cp-qc-Kd5" secondAttribute="centerX" id="uFv-qO-Oq9"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Reminder Button" id="E2a-me-aAy"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="dropinButton" destination="7cp-qc-Kd5" id="4q9-az-5Ji"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ccz-Sy-E9n" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1570" y="436"/>
-        </scene>
         <!--Examples-->
         <scene sceneID="pxr-JH-TSr">
             <objects>
@@ -211,33 +171,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="PKY-6k-71Y" kind="show" id="EHG-5e-H2s"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="cHx-Ec-Q6T" detailTextLabel="pO5-qR-Gfp" style="IBUITableViewCellStyleSubtitle" id="tk8-C3-za9">
-                                        <rect key="frame" x="0.0" y="192" width="320" height="64"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tk8-C3-za9" id="Z30-if-Brm">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Reminder Button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cHx-Ec-Q6T">
-                                                    <rect key="frame" x="15" y="16" width="122" height="19.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="A reminder button integration example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pO5-qR-Gfp">
-                                                    <rect key="frame" x="15" y="35.5" width="202.5" height="13.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Tw5-K5-F7O" kind="show" id="FUe-uh-a5J"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

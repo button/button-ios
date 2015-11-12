@@ -3,7 +3,7 @@
 
 @interface TableCellButtonExampleViewController ()
 
-@property (nonatomic, strong) BTNVenue *venue;
+@property (nonatomic, strong) BTNContext *buttonContext;
 @property (nonatomic, strong) NSArray *items;
 
 @end
@@ -13,10 +13,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.venue = [BTNVenue venueWithId:@"abc123"
-                             venueName:@"Parm"
-                              latitude:40.723027
-                             longitude:-73.9956459];
+    BTNLocation *location = [BTNLocation locationWithName:@"Parm" latitude:40.723027 longitude:-73.9956459];
+    self.buttonContext = [BTNContext contextWithSubjectLocation:location];
     
     self.items = @[ @{ @"cell-identifier": @"your-cell", @"text": @"(212) 993-7189" },
                     @{ @"cell-identifier": @"your-cell", @"text": @"parmnyc.com" },
@@ -54,10 +52,10 @@
     if ([cell isKindOfClass:[BTNDropinButtonCell class]]) {
         BTNDropinButtonCell *buttonCell = (BTNDropinButtonCell *)cell;
         
-#error Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
-        buttonCell.buttonId = @"YOUR_BUTTON_ID";
+        // Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
+        buttonCell.buttonId = YOUR_BUTTON_ID;
         
-        [buttonCell prepareForDisplayWithVenue:self.venue completion:^(BOOL isDisplayable) {
+        [buttonCell prepareWithContext:self.buttonContext completion:^(BOOL isDisplayable) {
             NSLog(@"Displayable: %@", @(isDisplayable));
             // You might remove the backing data item and reload your table view if the button cell is not displayable.
         }];

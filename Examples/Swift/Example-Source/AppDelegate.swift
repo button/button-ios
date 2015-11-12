@@ -28,11 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
-        Button.sharedButton().handleLocalNotification(notification);
-    }
-    
-    
     func applyButtonAppearance() {
         let button: BTNDropinButton = BTNDropinButton.appearance()
         

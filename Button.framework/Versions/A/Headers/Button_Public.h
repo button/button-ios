@@ -6,16 +6,9 @@
 #import "BTNDropinButton.h"
 #import "BTNDropinButtonCell.h"
 
-// Location
-#import "BTNLocationManager.h"
-#import "BTNLocation.h"
-#import "BTNVenue.h"
+// Context
+#import "BTNContext.h"
 
-// Reminders
-#import "BTNReminder.h"
-
-// Deprecated
-#import "BTNRideService.h"
 
 // System
 @import SystemConfiguration;

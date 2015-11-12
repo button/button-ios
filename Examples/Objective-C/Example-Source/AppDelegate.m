@@ -7,10 +7,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     /// This is not required if you manage your own permission requesting.
-    [BTNLocationManager allowButtonToRequestLocationPermission:YES];
+    [Button allowButtonToRequestLocationPermission:YES];
     
-#error Replace YOUR_BUTTON_APP_ID with your App ID from the Button Dashboard https://app.usebutton.com
-    [[Button sharedButton] configureWithApplicationId:@"YOUR_BUTTON_APP_ID" completion:^(NSError *error) {
+    // Replace YOUR_BUTTON_APP_ID with your App ID from the Button Dashboard https://app.usebutton.com
+    [[Button sharedButton] configureWithApplicationId:YOUR_BUTTON_APP_ID completion:^(NSError *error) {
         if (error) {
             NSLog(@"Error: %@", error.localizedDescription);
         }
@@ -25,13 +25,9 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     
-    return [[Button sharedButton] handleURL:url];
-}
-
-
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-
-    [[Button sharedButton] handleLocalNotification:notification];
+    [[Button sharedButton] handleURL:url];
+    
+    return YES;
 }
 
 

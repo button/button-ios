@@ -1,17 +1,11 @@
-#import "BTNModelObject.h"
+#import "BTNBaseEntity.h"
 @import CoreLocation;
 
-extern NSString * const BTNContextStartLocationKey;
-extern NSString * const BTNContextEndLocationKey;
-
-@interface BTNLocation : BTNModelObject
-
-/// The displayable name of the location.
-@property (nonatomic, copy, readonly) NSString *displayName;
-
-@property (nonatomic, assign, readonly) CLLocationDegrees latitude;
-@property (nonatomic, assign, readonly) CLLocationDegrees longitude;
-
+/**
+ All fields are optional and should be populated only if known.
+ @see `BTNBaseEntity` for inherited configuration options.
+ */
+@interface BTNLocation : BTNBaseEntity
 
 ///---------------------
 /// @name Initialization
@@ -19,34 +13,56 @@ extern NSString * const BTNContextEndLocationKey;
 
 
 /**
- Returns a location instance with a display name. [Highly recommended]
- @param displayName The displayable name of the location.
- @param location A CLLocation instance.
- */
-+ (instancetype)locationWithName:(NSString *)displayName
-                        location:(CLLocation *)location;
-
-
-/**
- Returns a location instance with a display name. [Highly recommended]
- @param displayName The displayable name of the location.
+ Returns a named location instance.
+ @param name The displayable name of the location.
  @param latitude  The latitude of the location.
  @param longitude The longitude of the location.
  */
-+ (instancetype)locationWithName:(NSString *)displayName
-                        latitude:(double)latitude
-                       longitude:(double)longitude;
++ (instancetype)locationWithName:(NSString *)name
+                        latitude:(CLLocationDegrees)latitude
+                       longitude:(CLLocationDegrees)longitude;
 
-
-///---------------
-/// @name Equality
-///---------------
 
 /**
- Returns a Boolean value that indicates whether a given BTNLocation instance is equal to the receiver.
- @param object A BTNLocation instance to compare to the receiver.
- @return YES if the BTNLocation instance is equivalent to the receiver.
+ Returns a location instance.
+ @param latitude  The latitude of the location.
+ @param longitude The longitude of the location.
  */
-- (BOOL)isEqualToLocation:(BTNLocation *)location;
++ (instancetype)locationWithLatitude:(CLLocationDegrees)latitude
+                           longitude:(CLLocationDegrees)longitude;
+
+
+
+///--------------------
+/// @name Configuration
+///--------------------
+
+
+/// Sets the latitude of the location (requires a longitude).
+- (void)setLatitude:(CLLocationDegrees)latitude;
+
+
+/// Sets the longitude of the location (requires a latitude).
+- (void)setLongitude:(CLLocationDegrees)longitude;
+
+
+/// Sets the city associated with the location.
+- (void)setCity:(NSString *)city;
+
+
+/// Sets the state associated with the location.
+- (void)setState:(NSString *)state;
+
+
+/// Sets the postal code associated with the location.
+- (void)setZip:(NSString *)zip;
+
+
+/// The country of the location.
+- (void)setCountry:(NSString *)country;
+
+
+/// An address line for the location (e.g. 220 E 23rd Street).
+- (void)setAddressLine:(NSString *)addressLine;
 
 @end

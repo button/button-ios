@@ -8,14 +8,15 @@ class SimpleButtonExampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let venue: BTNVenue = BTNVenue.init(id: "abc123", venueName: "Parm", latitude: 40.723027, longitude: -73.9956459)
+        let location: BTNLocation = BTNLocation.init(name: "Parm", latitude: 40.723027, longitude: -73.9956459);
+        let context: BTNContext = BTNContext.init(subjectLocation: location);
         
         if let button = self.dropinButton {
             
             // ERROR: Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
             button.buttonId = "YOUR_BUTTON_ID"
             
-            button.prepareForDisplayWithVenue(venue, completion: { (isDisplayable: Bool) -> Void in
+            button.prepareWithContext(context, completion: { (isDisplayable: Bool) -> Void in
                 print("Displayable: \(isDisplayable)")
             })
         }

@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE4F05511BAA8C1200151E54 /* Button.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE4F05501BAA8C1200151E54 /* Button.bundle */; settings = {ASSET_TAGS = (); }; };
-		DEDD25FF1BAA8D7500D957A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEDD25FE1BAA8D7500D957A1 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		DE4F05511BAA8C1200151E54 /* Button.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE4F05501BAA8C1200151E54 /* Button.bundle */; };
 		DEDD26011BAA8DA900D957A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED082121BAA82840093F867 /* AppDelegate.swift */; };
-		DEDD26021BAA8DB700D957A1 /* SimpleButtonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1DC181BAA2B2B003252D2 /* SimpleButtonExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DEDD26031BAA8DBB00D957A1 /* TableCellButtonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1DC1C1BAA5AC8003252D2 /* TableCellButtonExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DEDD26041BAA8DC000D957A1 /* ReminderButtonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1DC1E1BAA642C003252D2 /* ReminderButtonExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DEDD26021BAA8DB700D957A1 /* SimpleButtonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1DC181BAA2B2B003252D2 /* SimpleButtonExampleViewController.swift */; };
+		DEDD26031BAA8DBB00D957A1 /* TableCellButtonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1DC1C1BAA5AC8003252D2 /* TableCellButtonExampleViewController.swift */; };
 		DEDD26051BAA8DF600D957A1 /* Button.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEE42AB1BAA8BCA00E6A024 /* Button.framework */; };
-		DEDD26081BAA8FB500D957A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEE429B1BAA86B900E6A024 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		DEDD26081BAA8FB500D957A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEE429B1BAA86B900E6A024 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +26,6 @@
 		DEF1DBFE1BAA28F6003252D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../Example-Source/Assets.xcassets"; sourceTree = "<group>"; };
 		DEF1DC181BAA2B2B003252D2 /* SimpleButtonExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleButtonExampleViewController.swift; path = "../Example-Source/Simple Button/SimpleButtonExampleViewController.swift"; sourceTree = SOURCE_ROOT; };
 		DEF1DC1C1BAA5AC8003252D2 /* TableCellButtonExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableCellButtonExampleViewController.swift; path = "../Example-Source/Table Cell Button/TableCellButtonExampleViewController.swift"; sourceTree = SOURCE_ROOT; };
-		DEF1DC1E1BAA642C003252D2 /* ReminderButtonExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReminderButtonExampleViewController.swift; path = "../Example-Source/Reminder Button/ReminderButtonExampleViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +63,6 @@
 				DEEE429B1BAA86B900E6A024 /* Main.storyboard */,
 				DEF1DC291BAA7921003252D2 /* Simple Button */,
 				DEF1DC2A1BAA792F003252D2 /* Table Cell Button */,
-				DEF1DC2B1BAA7942003252D2 /* Reminder Button */,
 				DEF1DC0F1BAA297E003252D2 /* Supporting Files */,
 				DEF1DC0D1BAA295F003252D2 /* Vendor */,
 			);
@@ -116,14 +112,6 @@
 			name = "Table Cell Button";
 			sourceTree = "<group>";
 		};
-		DEF1DC2B1BAA7942003252D2 /* Reminder Button */ = {
-			isa = PBXGroup;
-			children = (
-				DEF1DC1E1BAA642C003252D2 /* ReminderButtonExampleViewController.swift */,
-			);
-			name = "Reminder Button";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,7 +139,7 @@
 		DEF1DBEC1BAA28F6003252D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Button;
 				TargetAttributes = {
 					DEF1DBF31BAA28F6003252D2 = {
@@ -183,7 +171,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDD26081BAA8FB500D957A1 /* Main.storyboard in Resources */,
-				DEDD25FF1BAA8D7500D957A1 /* Info.plist in Resources */,
 				DE4F05511BAA8C1200151E54 /* Button.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,7 +190,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "TAGS=\"ERROR:\"\nfind \"${SRCROOT}/../Example-Source\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ error: \\$1/\"\n\nMATCHES=${PIPESTATUS[1]}\nif [ $MATCHES == 0 ]; then\nexit 1\nfi";
+			shellScript = "TAGS=\"ERROR:\"\nfind \"${SRCROOT}/../Example-Source\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ error: \\$1/\"\n\nMATCHES=${PIPESTATUS[1]}\nif [ $MATCHES == 0 ]; then\n  exit 1\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -213,7 +200,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDD26011BAA8DA900D957A1 /* AppDelegate.swift in Sources */,
-				DEDD26041BAA8DC000D957A1 /* ReminderButtonExampleViewController.swift in Sources */,
 				DEDD26031BAA8DBB00D957A1 /* TableCellButtonExampleViewController.swift in Sources */,
 				DEDD26021BAA8DB700D957A1 /* SimpleButtonExampleViewController.swift in Sources */,
 			);

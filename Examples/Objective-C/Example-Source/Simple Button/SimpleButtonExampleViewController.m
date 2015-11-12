@@ -6,16 +6,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    BTNVenue *venue = [BTNVenue venueWithId:@"abc123"
-                                  venueName:@"Parm"
-                                   latitude:40.723027
-                                  longitude:-73.9956459];
+    BTNLocation *location = [BTNLocation locationWithName:@"Parm" latitude:40.723027 longitude:-73.9956459];
+    BTNContext *context   = [BTNContext contextWithSubjectLocation:location];
+
+    // Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
+    self.dropinButton.buttonId = YOUR_BUTTON_ID;
     
-    
-#error Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
-    self.dropinButton.buttonId = @"YOUR_BUTTON_ID";
-    
-    [self.dropinButton prepareForDisplayWithContext:@{ BTNContextEndLocationKey: venue.location } completion:^(BOOL isDisplayable) {
+    [self.dropinButton prepareWithContext:context completion:^(BOOL isDisplayable) {
         NSLog(@"Displayable: %@", @(isDisplayable));
     }];
 }

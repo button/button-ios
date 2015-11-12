@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6F8D1C6FFBE038FD1E5781BB /* Pods_SwiftPodsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6334C567B523A7252AC2B7E8 /* Pods_SwiftPodsExample.framework */; };
-		DEDD25FF1BAA8D7500D957A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEDD25FE1BAA8D7500D957A1 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		DEDD26011BAA8DA900D957A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED082121BAA82840093F867 /* AppDelegate.swift */; };
-		DEDD26021BAA8DB700D957A1 /* SimpleButtonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1DC181BAA2B2B003252D2 /* SimpleButtonExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DEDD26031BAA8DBB00D957A1 /* TableCellButtonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1DC1C1BAA5AC8003252D2 /* TableCellButtonExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DEDD26041BAA8DC000D957A1 /* ReminderButtonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1DC1E1BAA642C003252D2 /* ReminderButtonExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DEDD26081BAA8FB500D957A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEE429B1BAA86B900E6A024 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		DEDD26021BAA8DB700D957A1 /* SimpleButtonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1DC181BAA2B2B003252D2 /* SimpleButtonExampleViewController.swift */; };
+		DEDD26031BAA8DBB00D957A1 /* TableCellButtonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1DC1C1BAA5AC8003252D2 /* TableCellButtonExampleViewController.swift */; };
+		DEDD26081BAA8FB500D957A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEE429B1BAA86B900E6A024 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +24,6 @@
 		DEF1DBFE1BAA28F6003252D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../Example-Source/Assets.xcassets"; sourceTree = "<group>"; };
 		DEF1DC181BAA2B2B003252D2 /* SimpleButtonExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleButtonExampleViewController.swift; path = "../Example-Source/Simple Button/SimpleButtonExampleViewController.swift"; sourceTree = SOURCE_ROOT; };
 		DEF1DC1C1BAA5AC8003252D2 /* TableCellButtonExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableCellButtonExampleViewController.swift; path = "../Example-Source/Table Cell Button/TableCellButtonExampleViewController.swift"; sourceTree = SOURCE_ROOT; };
-		DEF1DC1E1BAA642C003252D2 /* ReminderButtonExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReminderButtonExampleViewController.swift; path = "../Example-Source/Reminder Button/ReminderButtonExampleViewController.swift"; sourceTree = SOURCE_ROOT; };
 		E26BCFFE011EF9BD3903FF89 /* Pods-SwiftPodsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPodsExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPodsExample/Pods-SwiftPodsExample.debug.xcconfig"; sourceTree = "<group>"; };
 		EE16023B6280EF20FCD03F7B /* Pods-SwiftPodsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPodsExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPodsExample/Pods-SwiftPodsExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +74,6 @@
 				DEEE429B1BAA86B900E6A024 /* Main.storyboard */,
 				DEF1DC291BAA7921003252D2 /* Simple Button */,
 				DEF1DC2A1BAA792F003252D2 /* Table Cell Button */,
-				DEF1DC2B1BAA7942003252D2 /* Reminder Button */,
 				DEF1DC0F1BAA297E003252D2 /* Supporting Files */,
 			);
 			name = "Button Swift Example";
@@ -107,14 +103,6 @@
 				DEF1DC1C1BAA5AC8003252D2 /* TableCellButtonExampleViewController.swift */,
 			);
 			name = "Table Cell Button";
-			sourceTree = "<group>";
-		};
-		DEF1DC2B1BAA7942003252D2 /* Reminder Button */ = {
-			isa = PBXGroup;
-			children = (
-				DEF1DC1E1BAA642C003252D2 /* ReminderButtonExampleViewController.swift */,
-			);
-			name = "Reminder Button";
 			sourceTree = "<group>";
 		};
 		F89CB4E61B4D85411E46AC1D /* Frameworks */ = {
@@ -155,7 +143,7 @@
 		DEF1DBEC1BAA28F6003252D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Button;
 				TargetAttributes = {
 					DEF1DBF31BAA28F6003252D2 = {
@@ -187,7 +175,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDD26081BAA8FB500D957A1 /* Main.storyboard in Resources */,
-				DEDD25FF1BAA8D7500D957A1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +248,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDD26011BAA8DA900D957A1 /* AppDelegate.swift in Sources */,
-				DEDD26041BAA8DC000D957A1 /* ReminderButtonExampleViewController.swift in Sources */,
 				DEDD26031BAA8DBB00D957A1 /* TableCellButtonExampleViewController.swift in Sources */,
 				DEDD26021BAA8DB700D957A1 /* SimpleButtonExampleViewController.swift in Sources */,
 			);

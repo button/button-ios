@@ -7,8 +7,6 @@
 
 @class BTNSession;
 
-typedef void(^BTNConfigurationCompletionBlock)(NSError *error);
-
 @interface Button : NSObject
 
 @property (nonatomic, strong, readonly) BTNSession *session;
@@ -26,7 +24,19 @@ typedef void(^BTNConfigurationCompletionBlock)(NSError *error);
  @param completionBlock block to execute when completed (optional)
  **/
 - (void)configureWithApplicationId:(NSString *)applicationId
-                        completion:(BTNConfigurationCompletionBlock)completionBlock;
+                        completion:(void(^)(NSError *error))completionBlock;
+
+
+/**
+ Checks whether Button has an action available for a buttonId and contextually relevant data.
+ @param buttonId The identifier for a button (e.g. btn-xxxxxxxxxxxx).
+ @param context A BTNContext object providing context about your user's current activity.
+ @param completionHandler A block to be executed upon completion of preparation.
+ */
+- (void)willDisplayButtonWithId:(NSString *)buttonId
+                        context:(BTNContext *)context
+                     completion:(void(^)(BOOL willDisplay))completionHandler;
+
 
 
 ///-------------------------
@@ -42,6 +52,7 @@ typedef void(^BTNConfigurationCompletionBlock)(NSError *error);
  at the time that this method returns
  **/
 - (BOOL)handleURL:(NSURL *)url;
+
 
 
 ///------------------
@@ -77,18 +88,6 @@ typedef void(^BTNConfigurationCompletionBlock)(NSError *error);
                 currencyCode:(NSString *)currencyCode;
 
 
-///----------------------------
-/// @name Notification Handling
-///----------------------------
-
-
-/**
- Handles local notifications created by the Button SDK (e.g. Reminders)
- @param notification A local notification to be handled.
- @return YES if the notification was handled by Button, otherwise NO.
- */
-- (BOOL)handleLocalNotification:(UILocalNotification *)notification;
-
 
 ///------------------
 /// @name Debugging
@@ -103,6 +102,7 @@ typedef void(^BTNConfigurationCompletionBlock)(NSError *error);
  @note The default value is NO.
  */
 - (void)setDebugLoggingEnabled:(BOOL)enabled;
+
 
 
 ///------------------
