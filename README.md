@@ -7,11 +7,11 @@
 
 ## Overview
 
-Button  enables rich cross-application functionality initiated from drop-in `Buttons`. Buttons act as the entry point to highly-contextual, fully attributed actions across apps.
+Buttons enable rich cross-application functionality initiated from drop-in UI components, called Buttons! Buttons act as the entry point to highly-contextual, fully attributed actions across apps.
 
-The Button SDK provides full functionality for both sending and receiving users, attributed within the Button Marketplace.
+The Button SDK provides full functionality for both displaying Buttons and attributing incoming users from the Button marketplace.
 
-Add a `Button` to your app, pass it some `context` and it will render & display itself. e.g...
+Add a Button to your app, pass it some context and it will render & display itself. e.g... 
 
 <p align="center"><img src="http://www.usebutton.com/img/sdk/img_dlc-uber-button.png" width="300" />
 <br/>
