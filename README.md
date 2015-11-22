@@ -15,7 +15,7 @@ Add a `Button` to your app, pass it some `context` and it will render & display 
 
 <p align="center"><img src="http://www.usebutton.com/img/sdk/img_dlc-uber-button.png" width="300" />
 <br/>
-_Ride use-case with an <code>subjectLocation</code>_
+Ride use-case with an <code>subjectLocation</code>
 </p>
 
 
