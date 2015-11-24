@@ -88,6 +88,15 @@
                 currencyCode:(NSString *)currencyCode;
 
 
+/**
+ Report an event to Button.
+ @param eventName The name of the event.
+ @param properties A dictionary of key-value string pairs for adding detail to the event.
+ */
+- (void)reportEventWithName:(NSString *)eventName
+                 properties:(NSDictionary <NSString *, NSString *> *)properties;
+
+
 
 ///------------------
 /// @name Debugging
