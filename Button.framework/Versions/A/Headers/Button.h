@@ -21,17 +21,17 @@
 /**
  Configures a Button instance with the provided applicationId
  @param applicationId Your applicationId (required)
- @param completionBlock block to execute when completed (optional)
+ @param completionHandler A block to be executed upon completion. (optional)
  **/
 - (void)configureWithApplicationId:(NSString *)applicationId
-                        completion:(void(^)(NSError *error))completionBlock;
+                        completion:(void(^)(NSError *error))completionHandler;
 
 
 /**
  Checks whether Button has an action available for a buttonId and contextually relevant data.
  @param buttonId The identifier for a button (e.g. btn-xxxxxxxxxxxx).
  @param context A BTNContext object providing context about your user's current activity.
- @param completionHandler A block to be executed upon completion of preparation.
+ @param completionHandler A block to be executed upon completion.
  */
 - (void)willDisplayButtonWithId:(NSString *)buttonId
                         context:(BTNContext *)context
@@ -61,8 +61,19 @@
 
 
 /**
- The Button referrer token `btn_ref` indicating the last referrer.
+ Checks for any deferred deep links.
+ @param completionBlock A block to be executed once the check has completed. 
+ If deeplinkURL is not nil, your application should open the url and update the UI accordingly.
+ @note This should be called after -configureWithApplicationId:completion:
  */
+- (void)checkForDeeplinkWithCompletion:(void(^)(NSURL *deeplinkURL))completionBlock;
+
+
+/**
+ Returns the current referrerToken for the last inbound link from
+ the Button marketplace or nil if none is present.
+ @return String value of the last inbound referrerToken
+ **/
 - (NSString *)referrerToken;
 
 
