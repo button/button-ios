@@ -9,6 +9,9 @@
 // Context
 #import "BTNContext.h"
 
+// Orders
+#import "BTNLineItem.h"
+
 
 // System
 @import SystemConfiguration;

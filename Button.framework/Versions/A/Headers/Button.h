@@ -5,8 +5,6 @@
 @import Foundation;
 #import "Button_Public.h"
 
-@class BTNSession;
-
 @interface Button : NSObject
 
 @property (nonatomic, strong, readonly) BTNSession *session;
@@ -24,6 +22,17 @@
  @param completionHandler A block to be executed upon completion. (optional)
  **/
 - (void)configureWithApplicationId:(NSString *)applicationId
+                        completion:(void(^)(NSError *error))completionHandler;
+
+
+/**
+ Configures a Button instance with the provided applicationId
+ @param applicationId Your applicationId (required)
+ @param deeplinkHandler A block executed if a deferred deeplink is found and should be followed.
+ @param completionHandler A block to be executed upon completion. (optional)
+ **/
+- (void)configureWithApplicationId:(NSString *)applicationId
+                   deeplinkHandler:(void(^)(NSURL *deeplinkURL))deeplinkHandler
                         completion:(void(^)(NSError *error))completionHandler;
 
 
@@ -59,16 +68,6 @@
 /// @name Attribution
 ///------------------
 
-
-/**
- Checks for any deferred deep links.
- @param completionBlock A block to be executed once the check has completed. 
- If deeplinkURL is not nil, your application should open the url and update the UI accordingly.
- @note This should be called after -configureWithApplicationId:completion:
- */
-- (void)checkForDeeplinkWithCompletion:(void(^)(NSURL *deeplinkURL))completionBlock;
-
-
 /**
  Returns the current referrerToken for the last inbound link from
  the Button marketplace or nil if none is present.
@@ -90,13 +89,27 @@
 
 /**
  Reports an order to Button.
- @param orderValue The value of the order in pennies.
+ @param orderValue The total order value in the smallest decimal unit for this currency (e.g. 3999 for $39.99).
+ @param orderId An order identifier (required).
+ @param currencyCode The ISO 4217 currency code. (default is USD).
+ @param lineItems An array of BTNLineItem objects.
+ */
+- (void)reportOrderWithValue:(NSInteger)orderValue
+                     orderId:(NSString *)orderId
+                currencyCode:(NSString *)currencyCode
+                   lineItems:(NSArray <BTNLineItem *> *)lineItems;
+
+
+/**
+ Reports an order to Button.
+ @param orderValue The total order value in the smallest decimal unit for this currency (e.g. 3999 for $39.99).
  @param orderId An order identifier (required).
  @param currencyCode The ISO 4217 currency code. (default is USD).
  */
 - (void)reportOrderWithValue:(NSInteger)orderValue
                      orderId:(NSString *)orderId
                 currencyCode:(NSString *)currencyCode;
+
 
 
 /**
@@ -109,10 +122,9 @@
 
 
 
-///------------------
-/// @name Debugging
-///------------------
-
+///--------------------
+/// @name Debug Logging
+///--------------------
 
 /**
  Sets whether the Button SDK will output debug log messages to the console.
