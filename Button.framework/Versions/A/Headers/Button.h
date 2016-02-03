@@ -99,16 +99,14 @@
 
 
 /**
- Reports an order to Button.
- @param orderValue The total order value in the smallest decimal unit for this currency (e.g. 3999 for $39.99).
+ Reports an order to Button with line items.
  @param orderId An order identifier (required).
  @param currencyCode The ISO 4217 currency code. (default is USD).
  @param lineItems An array of BTNLineItem objects.
  */
-- (void)reportOrderWithValue:(NSInteger)orderValue
-                     orderId:(NSString *)orderId
-                currencyCode:(NSString *)currencyCode
-                   lineItems:(NSArray <BTNLineItem *> *)lineItems;
+- (void)reportOrderWithId:(NSString *)orderId
+             currencyCode:(NSString *)currencyCode
+                lineItems:(NSArray <BTNLineItem *> *)lineItems;
 
 
 /**
