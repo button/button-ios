@@ -26,14 +26,13 @@
 
 
 /**
- Configures a Button instance with the provided applicationId
- @param applicationId Your applicationId (required)
- @param deeplinkHandler A block executed if a deferred deeplink is found and should be followed.
- @param completionHandler A block to be executed upon completion. (optional)
- **/
-- (void)configureWithApplicationId:(NSString *)applicationId
-                   deeplinkHandler:(void(^)(NSURL *deeplinkURL))deeplinkHandler
-                        completion:(void(^)(NSError *error))completionHandler;
+ Sets a block to be executed when a deferred deeplink URL is received.
+ @param deferredDeeplinkHandler The block to be executed upon receipt of a deferred deeplink URL.
+ 
+ @discussion Upon receiving a deferred deeplink, your application should load any relevant data
+ and present appropriate UI like you would with any incoming URL to navigate the user accordingly.
+ */
+- (void)setDeferredDeeplinkHandler:(void(^)(NSURL *deferredDeeplinkURL))deferredDeeplinkHandler;
 
 
 /**
@@ -54,11 +53,23 @@
 
 
 /**
- Handles an incoming URL to the App. This method should be called from
- the AppDelegate application:openURL:sourceApplication:annotation: method
- @return BOOL indicating whether the Button SDK can & *will* handle the URL
- @note The Button SDK handles URLs asynchronously. The action may not be complete
- at the time that this method returns
+ Continues incoming NSUserActivity objects from Universal Links (e.g. Button Links). 
+ This method should be called from your application delegate method: @c
+ 
+ -application:continueUserActivity:userActivity:restorationHandler:
+ 
+ @return BOOL indicating whether the Button SDK can & *will* handle the userActivity.
+ **/
+- (BOOL)continueUserActivity:(NSUserActivity *)userActivity;
+
+
+/**
+ Handles an incoming URL to your App. 
+ This method should be called from your Application Delegate method: @c
+
+ -application:openURL:sourceApplication:annotation:
+ 
+ @return BOOL indicating whether the Button SDK can & *will* handle the URL.
  **/
 - (BOOL)handleURL:(NSURL *)url;
 

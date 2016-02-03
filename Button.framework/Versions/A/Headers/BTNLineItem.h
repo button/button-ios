@@ -61,7 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param identifier The identifier/sku for this line item (e.g. ‘sku-1234’).
  @param amount Per item cost in the smallest decimal unit for this currency (e.g. 199 for $1.99).
  @param quantity The number of items of this type.
- @param description/name A name or description for this item (optional).
+ @param description A name or description for this item (optional).
  */
 + (instancetype)lineItemWithId:(NSString *)identifier
                         amount:(NSInteger)amount
