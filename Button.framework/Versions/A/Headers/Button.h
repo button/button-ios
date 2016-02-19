@@ -46,6 +46,17 @@
                      completion:(void(^)(BOOL willDisplay))completionHandler;
 
 
+/**
+ Fetches an app action for a buttonId and contextually relevant data.
+ @param buttonId The identifier for a button (e.g. btn-xxxxxxxxxxxx).
+ @param context A BTNContext object providing context about your user's current activity.
+ @param completionHandler A block to be executed upon completion.
+ */
+- (void)fetchAppActionWithButtonId:(NSString *)buttonId
+                           context:(BTNContext *)context
+                        completion:(void(^)(BTNAppAction *appAction, NSError *error))completionHandler;
+
+
 
 ///-------------------------
 /// @name Deep Link Handling
