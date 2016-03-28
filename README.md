@@ -2,7 +2,7 @@
 </p>
 
 <h1 align="center">Button SDK</h1>
-<p align="center"><img align="center" src="https://magnum.travis-ci.com/usebutton/button-ios-private.svg?token=k3WXaLvcPSYLScEJC6s3&branch=master" /> <img align="center" src="https://img.shields.io/cocoapods/v/Button.svg?style=flat" /> 
+<p align="center"><img align="center" src="https://magnum.travis-ci.com/button/button-ios-private.svg?token=k3WXaLvcPSYLScEJC6s3&branch=master" /> <img align="center" src="https://img.shields.io/cocoapods/v/Button.svg?style=flat" /> 
 </p>
 
 ## Overview
