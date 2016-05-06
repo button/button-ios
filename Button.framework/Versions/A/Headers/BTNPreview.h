@@ -9,6 +9,10 @@
  */
 @interface BTNPreview : BTNModelObject
 
+/// An optional title text.
+@property (nonatomic, copy, readonly) BTNText *titleText;
+
+
 /// The button text.
 @property (nonatomic, copy, readonly) BTNText *labelText;
 

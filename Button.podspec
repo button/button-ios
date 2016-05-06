@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name    = "Button"
-  s.version = "4.4.2"
+  s.version = "4.7.0"
   s.summary = "Button iOS SDK."
 
   s.description = <<-DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author      = "Button, Inc"
 
   s.platform    = :ios, "7.0"
-  s.source      = { :git => "https://github.com/usebutton/button-ios.git",
+  s.source      = { :git => "https://github.com/button/button-ios.git",
                     :tag => "v#{s.version}" }
 
   s.requires_arc   = true

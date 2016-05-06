@@ -100,13 +100,14 @@
 
 /**
  Associate your ID for the current user with the Button session
- @param thirdPartyId your identifier for the user
+ @param userIdentifier your identifier for the user
  @note This is required for attribution.
  @warning This will fail silently if there is no session. Run only
  when you know Button is configured (e.g. in the completion block of 
- configureWithApplicationId:completion:)
+ configureWithApplicationId:completion:) and also when a user logs in.
  **/
-- (void)setThirdPartyId:(NSString *)thirdPartyId;
+- (void)setUserIdentifier:(NSString *)userIdentifier;
+- (void)setThirdPartyId:(NSString *)thirdPartyId DEPRECATED_MSG_ATTRIBUTE("Use -setUserIdentifier: instead");
 
 
 /**
@@ -139,6 +140,17 @@
  */
 - (void)reportEventWithName:(NSString *)eventName
                  properties:(NSDictionary <NSString *, NSString *> *)properties;
+
+
+
+///--------------
+/// @name Log Out
+///--------------
+
+/**
+ Discards the current session, discards any user unique data, and creates a new session.
+ **/
+- (void)logOut;
 
 
 
