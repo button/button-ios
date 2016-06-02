@@ -52,8 +52,17 @@
 /// @name Known Providers
 ///----------------------
 
+extern NSString * const BTNIDProviderAmazon;
+extern NSString * const BTNIDProviderDeliveryHero;
+extern NSString * const BTNIDProviderFacebook;
+extern NSString * const BTNIDProviderFactual;
+extern NSString * const BTNIDProviderFoursquare;
+extern NSString * const BTNIDProviderGoogleMaps;
+extern NSString * const BTNIDProviderOpenStreetMap;
 extern NSString * const BTNIDProviderOpenTable;
 extern NSString * const BTNIDProviderTicketmaster;
-extern NSString * const BTNIDProviderDeliveryHero;
+extern NSString * const BTNIDProviderWalmart;
+extern NSString * const BTNIDProviderYelp;
+
 extern NSString * const BTNIDProviderSelfProvided;
 

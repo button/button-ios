@@ -14,12 +14,28 @@
 + (instancetype)itemWithName:(NSString *)name SKU:(NSString *)SKU;
 
 
+
 /**
  Returns an new instance with a name and UPC.
  @param name The name of the item.
  @param UPC The item UPC.
  */
 + (instancetype)itemWithName:(NSString *)name UPC:(NSString *)UPC;
+
+
+/**
+ Returns an new instance with a SKU.
+ @param SKU The item SKU.
+ */
++ (instancetype)itemWithSKU:(NSString *)SKU;
+
+
+/**
+ Returns an new instance with a UPC.
+ @param UPC The item UPC.
+ */
++ (instancetype)itemWithUPC:(NSString *)UPC;
+
 
 
 /// Sets the SKU of the item.

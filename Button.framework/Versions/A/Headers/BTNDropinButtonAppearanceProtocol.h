@@ -86,19 +86,16 @@
 @property (nonatomic, strong) UIColor *highlightedTextColor UI_APPEARANCE_SELECTOR;
 
 
-/// Defines the color of the dropin button icon (supersedes tintColor).
-@property (nonatomic, strong) UIColor *iconColor UI_APPEARANCE_SELECTOR;
-
-
-// Defines the highlighted color of the dropin button icon (supersedes highlightedTintColor).
-@property (nonatomic, strong) UIColor *highlightedIconColor UI_APPEARANCE_SELECTOR;
-
-
 /// Defines the normal background color for the button.
 @property (nonatomic, strong) UIColor *normalBackgroundColor UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the highlighted background color for the button.
 @property (nonatomic, strong) UIColor *highlightedBackgroundColor UI_APPEARANCE_SELECTOR;
+
+
+@property (nonatomic, strong) UIColor *iconColor DEPRECATED_ATTRIBUTE;
+@property (nonatomic, strong) UIColor *highlightedIconColor DEPRECATED_ATTRIBUTE;
+
 
 @end

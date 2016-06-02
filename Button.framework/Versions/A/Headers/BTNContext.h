@@ -62,6 +62,15 @@
 + (instancetype)contextWithEvent:(BTNEvent *)event;
 
 
+
+/**
+ Returns a newly instantiated context object with a single item.
+ @param item An item that is the subject of the page.
+ @see -addItems: for more info.
+ */
++ (instancetype)contextWithItem:(BTNItem *)item;
+
+
 /**
  Returns a newly instantiated context object with an array of items.
  @param items one or more items that are the subject of the page.
