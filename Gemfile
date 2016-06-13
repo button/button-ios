@@ -1,6 +1,7 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 gem 'json'
 gem 'octokit'
 gem 'rainbow'
 gem 'ruby-keychain', :require => 'keychain'
+gem 'cocoapods'

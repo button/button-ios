@@ -18,11 +18,28 @@
 
 /**
  Configures a Button instance with the provided applicationId
+
  @param applicationId Your applicationId (required)
- @param completionHandler A block to be executed upon completion. (optional)
+ @param completionHandler A block to be executed upon completion (optional).
  **/
 - (void)configureWithApplicationId:(NSString *)applicationId
                         completion:(void(^)(NSError *error))completionHandler;
+
+
+/**
+ Configures a Button instance with the provided applicationId
+
+ @param applicationId Your applicationId (required)
+ @param userId The user identifier (if known) for the current user to associate with the Button session (optional).
+ @param completionHandler A block to be executed upon completion (optional).
+
+ @discussion The completion handler takes two parameters
+    - error Will be set in the event of a configuration error.
+    - targetURL If not nil, a URL that specifies the user's expected destination in your app.
+ **/
+- (void)configureWithApplicationId:(NSString *)applicationId
+                            userId:(NSString *)userId
+                        completion:(void(^)(NSError *error, NSURL *targetURL))completionHandler;
 
 
 /**
@@ -32,7 +49,7 @@
  @discussion Upon receiving a deferred deeplink, your application should load any relevant data
  and present appropriate UI like you would with any incoming URL to navigate the user accordingly.
  */
-- (void)setDeferredDeeplinkHandler:(void(^)(NSURL *deferredDeeplinkURL))deferredDeeplinkHandler;
+- (void)setDeferredDeeplinkHandler:(void(^)(NSURL *deferredDeeplinkURL))deferredDeeplinkHandler DEPRECATED_MSG_ATTRIBUTE("Use -configureWithApplicationId:userId:completion: instead");
 
 
 /**

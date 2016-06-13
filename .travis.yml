@@ -1,0 +1,14 @@
+language: objective-c
+
+osx_image: xcode7.2
+
+branches:
+  only:
+    - master
+
+before_install:
+- bundle
+- pod install --project-directory=Tests
+
+script:
+- xcodebuild test -workspace "Tests/Tests.xcworkspace" -scheme "Tests" -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2'

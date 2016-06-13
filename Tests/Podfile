@@ -1,0 +1,8 @@
+platform :ios, '7.0'
+
+target 'PublicAPITests' do
+    pod 'Button', :path => '..'
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'OCMock'
+end
