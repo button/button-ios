@@ -51,6 +51,21 @@ context(@"Button", ^{
 
     });
 
+    describe(@"configureWithApplicationId:userId:completion:", ^{
+
+        it(@"is a valid selector", ^{
+            expect([Button instancesRespondToSelector:@selector(configureWithApplicationId:userId:completion:)])
+            .to
+            .beTruthy();
+        });
+
+        it(@"takes the expected argument types", ^{
+            [mockedButton configureWithApplicationId:@"application-id" userId:@"user-id"
+                                          completion:^(NSError *error, NSURL *targetURL) { }];
+        });
+        
+    });
+
     describe(@"setDeferredDeeplinkHandler:", ^{
 
         it(@"is a valid selector", ^{
@@ -60,7 +75,10 @@ context(@"Button", ^{
         });
 
         it(@"takes the expected argument types", ^{
+            #pragma clang diagnostic push
+            #pragma clang diagnostic ignored "-Wdeprecated-declarations"
             [mockedButton setDeferredDeeplinkHandler:^(NSURL *deferredDeeplinkURL) {}];
+            #pragma clang diagnostic pop
         });
 
     });

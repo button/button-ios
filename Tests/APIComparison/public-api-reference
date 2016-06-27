@@ -79,6 +79,7 @@
 - attributes 
 + sharedButton 
 - configureWithApplicationId:completion: 
+- configureWithApplicationId:userId:completion: 
 - setDeferredDeeplinkHandler: 
 - willDisplayButtonWithId:context:completion: 
 - fetchAppActionWithButtonId:context:completion: 
