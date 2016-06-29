@@ -63,7 +63,7 @@ context(@"Button", ^{
             [mockedButton configureWithApplicationId:@"application-id" userId:@"user-id"
                                           completion:^(NSError *error, NSURL *targetURL) { }];
         });
-        
+
     });
 
     describe(@"setDeferredDeeplinkHandler:", ^{
