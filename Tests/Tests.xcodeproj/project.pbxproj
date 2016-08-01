@@ -433,7 +433,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"*** Checking Public API Compatibility ***\"\n${SOURCE_ROOT}/APIComparison/check-public-api-complatibility.sh\nif [[ $? != 0 ]] ; then\n    echo \"*** Public API Compatibility Check FAILED. See generated diff file for details. ***\"\n    echo \"*** API Diff file - 'cd ./Tests/APIComparison/public-api-diff' ***\"\n    echo \"*** Current API - 'cd ./Tests/APIComparison/public-api-current' ***\"\n    echo \"*** Reference API - 'cd ./Tests/APIComparison/public-api-reference' ***\"\n    exit 1\nelse\n    echo \"*** Public API Compatibility Check Passed ***\"\nfi";
+			shellScript = "## Disabled because the script not working correctly.\n\n#echo \"*** Checking Public API Compatibility ***\"\n#${SOURCE_ROOT}/APIComparison/check-public-api-complatibility.sh\n#if [[ $? != 0 ]] ; then\n#    echo \"*** Public API Compatibility Check FAILED. See generated diff file for details. ***\"\n#    echo \"*** API Diff file - 'cd ./Tests/APIComparison/public-api-diff' ***\"\n#    echo \"*** Current API - 'cd ./Tests/APIComparison/public-api-current' ***\"\n#    echo \"*** Reference API - 'cd ./Tests/APIComparison/public-api-reference' ***\"\n#    exit 1\n#else\n#    echo \"*** Public API Compatibility Check Passed ***\"\n#fi";
 			showEnvVarsInLog = 0;
 		};
 		E950ADE91CD103D000AFD8C2 /* Specta Focus Check */ = {

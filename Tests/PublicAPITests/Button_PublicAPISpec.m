@@ -201,12 +201,14 @@ context(@"Button", ^{
             .beTruthy();
         });
 
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Wdeprecated-declarations"
         it(@"takes the expected argument types", ^{
             [mockedButton reportOrderWithId:@"order-id"
                                currencyCode:@"currency-code"
                                   lineItems:[NSArray<BTNLineItem *> array]];
         });
-
+        #pragma clang diagnostic pop
     });
 
     describe(@"reportOrderWithValue:orderId:currencyCode:", ^{
@@ -217,12 +219,14 @@ context(@"Button", ^{
             .beTruthy();
         });
 
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Wdeprecated-declarations"
         it(@"takes the expected argument types", ^{
             [mockedButton reportOrderWithValue:1
                                        orderId:@"order-id"
                                   currencyCode:@"currency-code"];
         });
-
+        #pragma clang diagnostic pop
     });
 
     describe(@"reportEventWithName:properties:", ^{

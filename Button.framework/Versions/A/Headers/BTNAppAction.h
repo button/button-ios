@@ -74,4 +74,18 @@
  */
 - (void)invokeFooterAction;
 
+
+
+///-----------------------------
+/// @name Fetching Preview Image
+///-----------------------------
+
+
+/**
+ Fetches the preview icon image data from the `preview.iconImage.URL` or the local cache.
+ @param completionHandler A block to be executed once the image data has loaded.
+ @note The completionHandler takes one argument, a UIImage or nil if an error occurred.
+ */
+- (void)fetchPreviewIconImageWithCompletion:(void(^)(UIImage *image))completionHandler;
+
 @end

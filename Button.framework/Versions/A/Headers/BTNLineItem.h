@@ -9,7 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BTNLineItem : BTNModelObject
+__attribute__((deprecated("Please use our order API - https://www.usebutton.com/developers/api-reference/#create-order")))
+@interface BTNLineItem : BTNModelObject 
 
 /// The identifier/sku for this line item (e.g. ‘sku-1234’). Must be unique from other line items.
 @property (nonatomic, copy, readonly) NSString *identifier;

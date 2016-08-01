@@ -33,6 +33,9 @@
  @param userId The user identifier (if known) for the current user to associate with the Button session (optional).
  @param completionHandler A block to be executed upon completion (optional).
 
+ @note If you do not have the Id of your logged in user when you call this method (typically in `-application:didFinishLaunchingWithOptions:`), 
+ make sure you call `-setUserIdentifier:` once you've successfully acquired the Id for your logged in user.
+
  @discussion The completion handler takes two parameters
     - error Will be set in the event of a configuration error.
     - targetURL If not nil, a URL that specifies the user's expected destination in your app.
@@ -116,16 +119,29 @@
 
 
 /**
- Associate your ID for the current user with the Button session
- @param userIdentifier your identifier for the user
+ Associate your ID for the current user with the Button session.
+ @param userIdentifier your identifier for the user.
  @note This is required for attribution.
- @warning This will fail silently if there is no session. Run only
- when you know Button is configured (e.g. in the completion block of 
- configureWithApplicationId:completion:) and also when a user logs in.
+ 
+ @discussion To correctly configure Button for attribution, make sure to:
+ 1. Pass your logged in user's Id when configuring Button (use `-configureWithApplicationId:userId:completion:`).
+ 2. Call this method with your user's id after a user successfully logs into your app.
+ 
+ If you don't have the Id of your logged in user in at the time you call `-configureWithApplicationId:userId:completion:` 
+ (typically in `-application:didFinishLaunchingWithOptions:`), make sure you call this method once you've successfully 
+ acquired the Id for your logged in user.
+ 
+ Note that passing nil here is a noop and will not remove the user Id from the session. 
+ If your user is logging out, call `-logOut` to reset the session and user data in Button.
  **/
 - (void)setUserIdentifier:(NSString *)userIdentifier;
 - (void)setThirdPartyId:(NSString *)thirdPartyId DEPRECATED_MSG_ATTRIBUTE("Use -setUserIdentifier: instead");
 
+
+
+///-----------------------------------
+/// @name Order Reporting - DEPRECATED
+///-----------------------------------
 
 /**
  Reports an order to Button with line items.
@@ -135,7 +151,7 @@
  */
 - (void)reportOrderWithId:(NSString *)orderId
              currencyCode:(NSString *)currencyCode
-                lineItems:(NSArray <BTNLineItem *> *)lineItems;
+                lineItems:(NSArray <BTNLineItem *> *)lineItems DEPRECATED_MSG_ATTRIBUTE("Please use our order API - https://www.usebutton.com/developers/api-reference/#create-order");
 
 
 /**
@@ -146,9 +162,13 @@
  */
 - (void)reportOrderWithValue:(NSInteger)orderValue
                      orderId:(NSString *)orderId
-                currencyCode:(NSString *)currencyCode;
+                currencyCode:(NSString *)currencyCode DEPRECATED_MSG_ATTRIBUTE("Please use our order API - https://www.usebutton.com/developers/api-reference/#create-order");
 
 
+
+///------------------------------
+/// @name Reporting Custom Events
+///------------------------------
 
 /**
  Report an event to Button.

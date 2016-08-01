@@ -5,6 +5,8 @@
 #import "NSObject+BTNClassProperties.h"
 #import "Button/BTNLineItem.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 SpecBegin(BTNLineItem_PublicAPI)
 
 context(@"BTNLineItem", ^{
@@ -127,3 +129,4 @@ context(@"BTNLineItem", ^{
 });
 
 SpecEnd
+#pragma clang diagnostic pop

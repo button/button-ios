@@ -1,0 +1,12 @@
++ lineItemWithId:amount: 
++ lineItemWithId:amount:quantity: 
++ lineItemWithId:amount:quantity:description: 
+- addAttribute:forKey: 
+- attributes 
++ sharedButton 
+- configureWithApplicationId:completion: 
+- configureWithApplicationId:userId:completion: 
+	- fetchPreviewIconImageWithCompletion: 
+	+ sharedButton 
+	- configureWithApplicationId:completion: 
+	- configureWithApplicationId:userId:completion: 
