@@ -26,6 +26,10 @@
 @property (nonatomic, copy, readonly) NSURL *deepLinkScheme;
 
 
+/// The name of the app represented by an app action.
+@property (nonatomic, copy, readonly) NSString *appDisplayName;
+
+
 /**
  Indicated whether or not the action has expired.
  @return YES is the action is expired, otherwise NO.

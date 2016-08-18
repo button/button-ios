@@ -71,6 +71,14 @@
  @param buttonId The identifier for a button (e.g. btn-xxxxxxxxxxxx).
  @param context A BTNContext object providing context about your user's current activity.
  @param completionHandler A block to be executed upon completion.
+ 
+ @discussion The completion handler takes two parameters
+    - appAction A BTNAppAction instance or nil if no action was found for the provided context.
+    - error An error will be present if a network or server error occurred.
+
+ @note You should not cache app actions yourself. App actions are automatically cached for as long as their data is valid.
+       For example, calling this method again with the same `buttonId` and `context` will return a previously fetched 
+       and cached app action if the action is still valid.
  */
 - (void)fetchAppActionWithButtonId:(NSString *)buttonId
                            context:(BTNContext *)context

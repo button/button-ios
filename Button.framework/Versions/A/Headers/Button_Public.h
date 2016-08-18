@@ -5,6 +5,7 @@
 // UI Components
 #import "BTNDropinButton.h"
 #import "BTNDropinButtonCell.h"
+#import "BTNInteractiveButton.h"
 
 // Context
 #import "BTNContext.h"

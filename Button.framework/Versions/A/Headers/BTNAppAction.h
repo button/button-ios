@@ -7,7 +7,7 @@
 #import "BTNFooter.h"
 
 /**
- An App Action representations a button (i.e. “preview”) and inventory typically rendered as a “commerce card”.
+ An App Action represents a button (i.e. “preview”) and inventory typically rendered as a “commerce card”.
  */
 @interface BTNAppAction : BTNModelObject
 
@@ -24,7 +24,7 @@
 
 
 /// Grouped inventory (note: one of `groups` or `product` will be non-nil).
-@property (nonatomic, strong, readonly) NSArray <BTNGroup *> *groups;
+@property (nonatomic, strong, readonly) NSArray<BTNGroup *> *groups;
 
 
 /// A single product representation (note: one of `groups` or `product` will be non-nil).
