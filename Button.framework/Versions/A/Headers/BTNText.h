@@ -7,10 +7,10 @@
 @interface BTNText : BTNModelObject
 
 /// A string of text.
-@property (nonatomic, copy, readonly) NSString *text;
+@property (nullable, nonatomic, copy, readonly) NSString *text;
 
 
 /// The color for rendering the associated `text'.
-@property (nonatomic, copy, readonly) NSString *color;
+@property (nullable, nonatomic, copy, readonly) NSString *color;
 
 @end

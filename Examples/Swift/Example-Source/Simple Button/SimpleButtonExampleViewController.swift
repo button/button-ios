@@ -16,7 +16,7 @@ class SimpleButtonExampleViewController: UIViewController {
             // ERROR: Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
             button.buttonId = "YOUR_BUTTON_ID"
             
-            button.prepareWithContext(context, completion: { (isDisplayable: Bool) -> Void in
+            button.prepare(with: context, completion: { (isDisplayable: Bool) -> Void in
                 print("Displayable: \(isDisplayable)")
             })
         }

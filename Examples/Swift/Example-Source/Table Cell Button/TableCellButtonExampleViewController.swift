@@ -24,26 +24,26 @@ class TableCellButtonExampleViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let rowInfo = items[indexPath.row]
+        let rowInfo = items[(indexPath as NSIndexPath).row]
 
-        let cell = tableView.dequeueReusableCellWithIdentifier(rowInfo["cell-id"]!, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: rowInfo["cell-id"]!, for: indexPath)
         
         cell.textLabel?.text = rowInfo["text"]
         cell.detailTextLabel?.text = rowInfo["details"]
 
         if let buttonCell = cell as? BTNDropinButtonCell {
-            buttonCell.dropinButton.borderWidth = 0.0
+            buttonCell.dropinButton?.borderWidth = 0.0
             
             // ERROR: Replace YOUR_BUTTON_ID with your Button ID from the Button Dashboard https://app.usebutton.com
             buttonCell.buttonId = "YOUR_BUTTON_ID"
             
-            buttonCell.prepareWithContext(context, completion: { (isDisplayable: Bool) -> Void in
+            buttonCell.prepare(with: context, completion: { (isDisplayable: Bool) -> Void in
                 print("Displayable: \(isDisplayable)")
             })
         }

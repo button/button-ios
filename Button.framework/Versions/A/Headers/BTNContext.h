@@ -10,6 +10,9 @@
  All fields are optional and should be populated only if known.
  @see `BTNBaseEntity` for inherited configuration options.
  */
+
+NS_ASSUME_NONNULL_BEGIN
+
 @interface BTNContext : BTNBaseEntity
 
 ///--------------------
@@ -172,3 +175,5 @@
 - (void)addCustomValue:(id)obj forContextKey:(NSString *)key;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -9,30 +9,31 @@
 /**
  An App Action represents a button (i.e. “preview”) and inventory typically rendered as a “commerce card”.
  */
+
 @interface BTNAppAction : BTNModelObject
 
 /// App action metadata (id, source token, expiry, etc).
-@property (nonatomic, copy, readonly) BTNAppActionMeta *meta;
+@property (nullable, nonatomic, copy, readonly) BTNAppActionMeta *meta;
 
 
 /// The button preview data.
-@property (nonatomic, copy, readonly) BTNPreview *preview;
+@property (nullable, nonatomic, copy, readonly) BTNPreview *preview;
 
 
 /// Heading information for the inventory.
-@property (nonatomic, strong, readonly) BTNHeader *header;
+@property (nullable, nonatomic, strong, readonly) BTNHeader *header;
 
 
 /// Grouped inventory (note: one of `groups` or `product` will be non-nil).
-@property (nonatomic, strong, readonly) NSArray<BTNGroup *> *groups;
+@property (nullable, nonatomic, strong, readonly) NSArray<BTNGroup *> *groups;
 
 
 /// A single product representation (note: one of `groups` or `product` will be non-nil).
-@property (nonatomic, strong, readonly) BTNProduct *product;
+@property (nullable, nonatomic, strong, readonly) BTNProduct *product;
 
 
 /// Footer information for the inventory and default action.
-@property (nonatomic, strong, readonly) BTNFooter *footer;
+@property (nullable, nonatomic, strong, readonly) BTNFooter *footer;
 
 
 
@@ -61,7 +62,7 @@
  @note Users will be sent to the destination application or through the
  Attended Install flow if the destination application is not installed.
  */
-- (void)invokeActionForListItem:(BTNListItem *)listItem;
+- (void)invokeActionForListItem:(nonnull BTNListItem *)listItem;
 
 
 /**
@@ -86,6 +87,6 @@
  @param completionHandler A block to be executed once the image data has loaded.
  @note The completionHandler takes one argument, a UIImage or nil if an error occurred.
  */
-- (void)fetchPreviewIconImageWithCompletion:(void(^)(UIImage *image))completionHandler;
+- (void)fetchPreviewIconImageWithCompletion:(nonnull void(^)(UIImage * __nullable image))completionHandler;
 
 @end

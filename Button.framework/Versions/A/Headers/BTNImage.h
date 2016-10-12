@@ -8,7 +8,7 @@
 @interface BTNImage : BTNModelObject
 
 /// The URL of an image to be retrieved.
-@property (nonatomic, copy, readonly) NSURL *URL;
+@property (nullable, nonatomic, copy, readonly) NSURL *URL;
 
 
 /// The fill mode of an image (aspect fit or aspect fill).
@@ -16,6 +16,6 @@
 
 
 /// Alternative text for the image.
-@property (nonatomic, copy, readonly) BTNText *altText;
+@property (nullable, nonatomic, copy, readonly) BTNText *altText;
 
 @end

@@ -8,7 +8,7 @@
  Provides a required, base implementation to ensure the passed dictionary is in fact an NSDictionary.
  @see BTNSerializable
  */
-+ (BOOL)canInitWithDictionary:(NSDictionary *)dictionary NS_REQUIRES_SUPER;
++ (BOOL)canInitWithDictionary:(nonnull NSDictionary *)dictionary NS_REQUIRES_SUPER;
 
 
 
@@ -21,13 +21,13 @@
  @param representations An array of dictionary representations to be converted into objects.
  @note Non NSDictionary objects will be omitted.
  */
-+ (NSArray *)arrayOfObjectsFromRepresentations:(NSArray <NSDictionary *> *)representations;
++ (nullable NSArray *)arrayOfObjectsFromRepresentations:(nullable NSArray <NSDictionary *> *)representations;
 
 
 /**
  Returns a serialized array of dictionaries from an array of BTNModelObject objects.
  @note Objects not conforming to BTNSerializable will be omitted.
  */
-+ (NSArray <NSDictionary *> *)arrayOfRepresentationsFromObjects:(NSArray <BTNModelObject *> *)objects;
++ (nullable NSArray <NSDictionary *> *)arrayOfRepresentationsFromObjects:(nullable NSArray <BTNModelObject *> *)objects;
 
 @end

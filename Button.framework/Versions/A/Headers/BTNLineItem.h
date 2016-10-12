@@ -7,13 +7,11 @@
  or to break down the order total to vat, discount etc.
  */
 
-NS_ASSUME_NONNULL_BEGIN
-
 __attribute__((deprecated("Please use our order API - https://www.usebutton.com/developers/api-reference/#create-order")))
 @interface BTNLineItem : BTNModelObject 
 
 /// The identifier/sku for this line item (e.g. ‘sku-1234’). Must be unique from other line items.
-@property (nonatomic, copy, readonly) NSString *identifier;
+@property (nullable, nonatomic, copy, readonly) NSString *identifier;
 
 
 /// Per item cost in the smallest decimal unit for this currency (e.g. 199 for $1.99).
@@ -25,7 +23,7 @@ __attribute__((deprecated("Please use our order API - https://www.usebutton.com/
 
 
 /// A name or description for this line item.
-@property (nonatomic, copy, readonly) NSString *itemDescription;
+@property (nullable, nonatomic, copy, readonly) NSString *itemDescription;
 
 
 /**
@@ -33,8 +31,8 @@ __attribute__((deprecated("Please use our order API - https://www.usebutton.com/
  @param identifier The identifier/sku for this line item (e.g. ‘sku-1234’).
  @param amount Per item cost in the smallest decimal unit for this currency (e.g. 199 for $1.99).
  */
-+ (instancetype)lineItemWithId:(NSString *)identifier
-                        amount:(NSInteger)amount;
++ (nonnull instancetype)lineItemWithId:(nonnull NSString *)identifier
+                                amount:(NSInteger)amount;
 
 
 /**
@@ -43,9 +41,9 @@ __attribute__((deprecated("Please use our order API - https://www.usebutton.com/
  @param amount Per item cost in the smallest decimal unit for this currency (e.g. 199 for $1.99).
  @param quantity The number of items of this type.
  */
-+ (instancetype)lineItemWithId:(NSString *)identifier
-                        amount:(NSInteger)amount
-                      quantity:(NSInteger)quantity;
++ (nonnull instancetype)lineItemWithId:(nonnull NSString *)identifier
+                                amount:(NSInteger)amount
+                              quantity:(NSInteger)quantity;
 
 
 /**
@@ -53,7 +51,7 @@ __attribute__((deprecated("Please use our order API - https://www.usebutton.com/
  Examples:
  @code
  // 3 bottles of wine at 15.99 each
- BTNLineItem *lineItem = [BTNLineItem lineItemWithId:@"abc123" 
+ BTNLineItem *lineItem = [BTNLineItem lineItemWithId:@"abc123"
                                               amount:1599 
                                             quantity:3
                                          description:@"Las Rocas"];
@@ -64,10 +62,10 @@ __attribute__((deprecated("Please use our order API - https://www.usebutton.com/
  @param quantity The number of items of this type.
  @param description A name or description for this item (optional).
  */
-+ (instancetype)lineItemWithId:(NSString *)identifier
-                        amount:(NSInteger)amount
-                      quantity:(NSInteger)quantity
-                   description:(nullable NSString *)description;
++ (nonnull instancetype)lineItemWithId:(nonnull NSString *)identifier
+                                amount:(NSInteger)amount
+                              quantity:(NSInteger)quantity
+                           description:(nullable NSString *)description;
 
 
 /**
@@ -75,15 +73,13 @@ __attribute__((deprecated("Please use our order API - https://www.usebutton.com/
  @param attribute The attribute value.
  @param key The key representing the attribute.
  */
-- (void)addAttribute:(NSString *)attribute forKey:(NSString *)key;
+- (void)addAttribute:(nonnull NSString *)attribute forKey:(nonnull NSString *)key;
 
 
 /**
  The attributes associated with this line item.
  @return an NSDictionary of attributes.
  */
-- (NSDictionary *)attributes;
+- (nullable NSDictionary *)attributes;
 
 @end
-
-NS_ASSUME_NONNULL_END

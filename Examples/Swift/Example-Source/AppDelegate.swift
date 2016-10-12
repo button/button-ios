@@ -6,12 +6,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        Button.allowButtonToRequestLocationPermission(true)
+        Button.allow(toRequestLocationPermission: true)
 
         //ERROR: Replace YOUR_BUTTON_APP_ID with your App ID from the Button Dashboard https://app.usebutton.com
-        Button.sharedButton().configureWithApplicationId("YOUR_BUTTON_APP_ID") { (configError: NSError?) -> Void in
+        Button.shared().configure(withApplicationId: "YOUR_BUTTON_APP_ID") { (configError: Error?) -> Void in
             if let error = configError {
                 print("Error: \(error.localizedDescription)")
             }
@@ -23,20 +23,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        return Button.sharedButton().handleURL(url);
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return Button.shared().handle(url);
     }
     
     
     func applyButtonAppearance() {
         let button: BTNDropinButton = BTNDropinButton.appearance()
         
-        button.highlightedTextColor = UIColor.lightGrayColor()
+        button.highlightedTextColor = UIColor.lightGray
         button.iconSize     = 20.0;
-        button.borderColor  = UIColor.grayColor();
+        button.borderColor  = UIColor.gray;
         button.borderWidth  = 1.0;
         button.cornerRadius = 5.0;
-        button.font = UIFont.systemFontOfSize(14)
+        button.font = UIFont.systemFont(ofSize: 14)
     }
 }
 

@@ -4,6 +4,9 @@
 /**
  All fields are optional and should be populated only if known.
  */
+
+NS_ASSUME_NONNULL_BEGIN
+
 @interface BTNBaseEntity : BTNModelObject <BTNSubscriptable>
 
 /**
@@ -66,3 +69,4 @@ extern NSString * const BTNIDProviderYelp;
 
 extern NSString * const BTNIDProviderSelfProvided;
 
+NS_ASSUME_NONNULL_END

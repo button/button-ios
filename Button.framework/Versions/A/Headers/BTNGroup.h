@@ -8,9 +8,9 @@
 @interface BTNGroup : BTNModelObject
 
 /// The title of the group.
-@property (nonatomic, copy, readonly) BTNText *titleText;
+@property (nullable, nonatomic, copy, readonly) BTNText *titleText;
 
 /// An array of items in the group.
-@property (nonatomic, copy, readonly) NSArray <BTNListItem *> *items;
+@property (nullable, nonatomic, copy, readonly) NSArray <BTNListItem *> *items;
 
 @end

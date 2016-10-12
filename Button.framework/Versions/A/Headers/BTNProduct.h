@@ -6,25 +6,26 @@
 /**
  BTNProduct objects specify information about rendering a single product.
  */
+
 @interface BTNProduct : BTNModelObject
 
 /// The card background.
-@property (nonatomic, copy, readonly) BTNBackground *background;
+@property (nullable, nonatomic, copy, readonly) BTNBackground *background;
 
 
 /// An array of product images.
-@property (nonatomic, copy, readonly) NSArray <BTNImage *> *images;
+@property (nullable, nonatomic, copy, readonly) NSArray <BTNImage *> *images;
 
 
 /// The main title text.
-@property (nonatomic, copy, readonly) BTNText *titleText;
+@property (nullable, nonatomic, copy, readonly) BTNText *titleText;
 
 
 /// Secondary text representing the item.
-@property (nonatomic, copy, readonly) BTNText *subtitleText;
+@property (nullable, nonatomic, copy, readonly) BTNText *subtitleText;
 
 
 /// A potentially multi-line description text.
-@property (nonatomic, copy, readonly) BTNText *descriptionText;
+@property (nullable, nonatomic, copy, readonly) BTNText *descriptionText;
 
 @end

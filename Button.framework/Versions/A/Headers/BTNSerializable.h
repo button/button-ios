@@ -10,7 +10,7 @@
  @param dictionary A dictionary of keys to be evaluated for use with initWithDictionary
  @return BOOL Whether this dictionary can create a valid instance of the object
  **/
-+ (BOOL)canInitWithDictionary:(NSDictionary *)dictionary;
++ (BOOL)canInitWithDictionary:(nonnull NSDictionary *)dictionary;
 
 
 /**
@@ -19,7 +19,7 @@
  @param dictionary The dictionary of keys to create the object from
  @return instance of the object, or nil if all mandatory keys are not present
  **/
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+- (nullable instancetype)initWithDictionary:(nonnull NSDictionary *)dictionary;
 
 
 /**
@@ -27,7 +27,7 @@
  at least all mandatory keys for the object as checked in canInitWithDictionary:
  @param dictionary The dictionary of keys to create the object from
  **/
-- (void)updateWithRepresentation:(NSDictionary *)dictionary;
+- (void)updateWithRepresentation:(nonnull NSDictionary *)dictionary;
 
 
 /**
@@ -36,7 +36,7 @@
  @note [[[instancetype alloc] initWithDictionary:[existingObject dictionaryRepresentation]] isEqual:existingObject]
     should always be true
  **/
-- (NSDictionary *)dictionaryRepresentation;
+- (nullable NSDictionary *)dictionaryRepresentation;
 
 
 @end

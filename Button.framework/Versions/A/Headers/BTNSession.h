@@ -3,11 +3,11 @@
 
 @interface BTNSession : BTNModelObject
 
-@property (nonatomic, strong) NSString    *sessionId;
-@property (nonatomic, strong) BTNCustomer *customer;
+@property (nullable, nonatomic, copy) NSString    *sessionId;
+@property (nullable, nonatomic, copy) BTNCustomer *customer;
 
 /// An optional sourceToken returned from a session. This is transient.
-@property (nonatomic, strong) NSString    *sourceToken;
+@property (nullable, nonatomic, copy) NSString *sourceToken;
 
 ///---------------
 /// @name Equality
@@ -18,6 +18,6 @@
  @param session The BTNSession with which to compare to the receiver.
  @return YES if the BTNSession is equivalent to the receiver.
  */
-- (BOOL)isEqualToSession:(BTNSession *)session;
+- (BOOL)isEqualToSession:(nonnull BTNSession *)session;
 
 @end

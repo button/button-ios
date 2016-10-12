@@ -27,7 +27,7 @@
 
 
 /// Defines the color of the dropin button border.
-@property (nonatomic, strong) UIColor *borderColor UI_APPEARANCE_SELECTOR;
+@property (nullable, nonatomic, strong) UIColor *borderColor UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the size of the icon view in the dropin button (applied to height and width).
@@ -39,15 +39,15 @@
 
 
 /// Defines the font used in the dropin button.
-@property (nonatomic, strong) UIFont *font UI_APPEARANCE_SELECTOR;
+@property (nullable, nonatomic, strong) UIFont *font UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the font used on the title label in the dropin button.
-@property (nonatomic, strong) UIFont *titleFont UI_APPEARANCE_SELECTOR;
+@property (nullable, nonatomic, strong) UIFont *titleFont UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the font used on the subtitle label in the dropin button.
-@property (nonatomic, strong) UIFont *subtitleFont UI_APPEARANCE_SELECTOR;
+@property (nullable, nonatomic, strong) UIFont *subtitleFont UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the string case of all dropin button text.
@@ -63,39 +63,34 @@
 
 
 /// Defines the color of the dropin text.
-@property (nonatomic, strong) UIColor *tintColor UI_APPEARANCE_SELECTOR;
+@property (nullable, nonatomic, strong) UIColor *tintColor UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the highlighted tint color of the dropin button, text.
-@property (nonatomic, strong) UIColor *highlightedTintColor UI_APPEARANCE_SELECTOR;
+@property (nullable, nonatomic, strong) UIColor *highlightedTintColor UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the color of the dropin button title text (supersedes tintColor).
-@property (nonatomic, strong) UIColor *titleTextColor UI_APPEARANCE_SELECTOR;
+@property (nullable, nonatomic, strong) UIColor *titleTextColor UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the color of the dropin button subtitle text (supersedes tintColor).
-@property (nonatomic, strong) UIColor *subtitleTextColor UI_APPEARANCE_SELECTOR;
+@property (nullable, nonatomic, strong) UIColor *subtitleTextColor UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the color of all dropin button text (supersedes tintColor).
-@property (nonatomic, strong) UIColor *textColor UI_APPEARANCE_SELECTOR;
+@property (nullable, nonatomic, strong) UIColor *textColor UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the highlighted color of all dropin button text (supersedes highlightedTintColor).
-@property (nonatomic, strong) UIColor *highlightedTextColor UI_APPEARANCE_SELECTOR;
+@property (nullable, nonatomic, strong) UIColor *highlightedTextColor UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the normal background color for the button.
-@property (nonatomic, strong) UIColor *normalBackgroundColor UI_APPEARANCE_SELECTOR;
+@property (nullable, nonatomic, strong) UIColor *normalBackgroundColor UI_APPEARANCE_SELECTOR;
 
 
 /// Defines the highlighted background color for the button.
-@property (nonatomic, strong) UIColor *highlightedBackgroundColor UI_APPEARANCE_SELECTOR;
-
-
-@property (nonatomic, strong) UIColor *iconColor DEPRECATED_ATTRIBUTE;
-@property (nonatomic, strong) UIColor *highlightedIconColor DEPRECATED_ATTRIBUTE;
-
+@property (nullable, nonatomic, strong) UIColor *highlightedBackgroundColor UI_APPEARANCE_SELECTOR;
 
 @end

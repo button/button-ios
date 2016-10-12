@@ -4,6 +4,9 @@
  All fields are optional and should be populated only if known.
  @see `BTNBaseEntity` for inherited configuration options.
  */
+
+NS_ASSUME_NONNULL_BEGIN
+
 @interface BTNItem : BTNBaseEntity
 
 /**
@@ -46,3 +49,5 @@
 - (void)setUPC:(NSString *)UPC;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -4,8 +4,9 @@
 /**
  BTNBackground objects specify how to fill a background.
  */
+
 @interface BTNBackground : BTNModelObject
 
-@property (nonatomic, copy, readonly) NSString *color;
+@property (nullable, nonatomic, copy, readonly) NSString *color;
 
 @end

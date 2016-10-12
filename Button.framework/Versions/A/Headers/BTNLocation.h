@@ -5,6 +5,9 @@
  All fields are optional and should be populated only if known.
  @see `BTNBaseEntity` for inherited configuration options.
  */
+
+NS_ASSUME_NONNULL_BEGIN
+
 @interface BTNLocation : BTNBaseEntity
 
 ///---------------------
@@ -18,7 +21,7 @@
  @param latitude  The latitude of the location.
  @param longitude The longitude of the location.
  */
-+ (instancetype)locationWithName:(NSString *)name
++ (instancetype)locationWithName:(nullable NSString *)name
                         latitude:(CLLocationDegrees)latitude
                        longitude:(CLLocationDegrees)longitude;
 
@@ -66,3 +69,5 @@
 - (void)setAddressLine:(NSString *)addressLine;
 
 @end
+
+NS_ASSUME_NONNULL_END

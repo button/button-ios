@@ -17,6 +17,9 @@ typedef NS_ENUM(NSInteger, BTNTransportType) {
  All fields are optional and should be populated only if known.
  @see `BTNBaseEntity` for inherited configuration options.
  */
+
+NS_ASSUME_NONNULL_BEGIN
+
 @interface BTNJourney : BTNBaseEntity
 
 /// Sets the starting location of the journey.
@@ -40,3 +43,4 @@ typedef NS_ENUM(NSInteger, BTNTransportType) {
 
 @end
 
+NS_ASSUME_NONNULL_END

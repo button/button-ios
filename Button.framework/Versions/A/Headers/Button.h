@@ -1,19 +1,31 @@
 /*
  Button SDK
- Copyright Button, Inc. 2015
+ Copyright Button, Inc. 2016
  */
 @import Foundation;
 #import "Button_Public.h"
 
+
 @interface Button : NSObject
 
-@property (nonatomic, strong, readonly) BTNSession *session;
+/**
+ Version of the Button SDK
+ **/
++ (nonnull NSString *)sdkVersion;
+
 
 /**
  Returns the singleton shared Button instance
  @return Button object singleton
+ @note Returns nil on iOS7 and older platform versions
  **/
-+ (instancetype)sharedButton;
++ (nonnull Button *)sharedButton;
+
+@end
+
+
+@protocol Button <NSObject>
+@required
 
 
 /**
@@ -22,8 +34,8 @@
  @param applicationId Your applicationId (required)
  @param completionHandler A block to be executed upon completion (optional).
  **/
-- (void)configureWithApplicationId:(NSString *)applicationId
-                        completion:(void(^)(NSError *error))completionHandler;
+- (void)configureWithApplicationId:(nonnull NSString *)applicationId
+                        completion:(nullable void(^)(NSError * __nullable error))completionHandler;
 
 
 /**
@@ -40,19 +52,9 @@
     - error Will be set in the event of a configuration error.
     - targetURL If not nil, a URL that specifies the user's expected destination in your app.
  **/
-- (void)configureWithApplicationId:(NSString *)applicationId
-                            userId:(NSString *)userId
-                        completion:(void(^)(NSError *error, NSURL *targetURL))completionHandler;
-
-
-/**
- Sets a block to be executed when a deferred deeplink URL is received.
- @param deferredDeeplinkHandler The block to be executed upon receipt of a deferred deeplink URL.
- 
- @discussion Upon receiving a deferred deeplink, your application should load any relevant data
- and present appropriate UI like you would with any incoming URL to navigate the user accordingly.
- */
-- (void)setDeferredDeeplinkHandler:(void(^)(NSURL *deferredDeeplinkURL))deferredDeeplinkHandler DEPRECATED_MSG_ATTRIBUTE("Use -configureWithApplicationId:userId:completion: instead");
+- (void)configureWithApplicationId:(nonnull NSString *)applicationId
+                            userId:(nullable NSString *)userId
+                        completion:(nullable void(^)(NSError * __nullable error, NSURL * __nullable targetURL))completionHandler;
 
 
 /**
@@ -61,9 +63,9 @@
  @param context A BTNContext object providing context about your user's current activity.
  @param completionHandler A block to be executed upon completion.
  */
-- (void)willDisplayButtonWithId:(NSString *)buttonId
-                        context:(BTNContext *)context
-                     completion:(void(^)(BOOL willDisplay))completionHandler;
+- (void)willDisplayButtonWithId:(nonnull NSString *)buttonId
+                        context:(nonnull BTNContext *)context
+                     completion:(nonnull void(^)(BOOL willDisplay))completionHandler;
 
 
 /**
@@ -80,9 +82,9 @@
        For example, calling this method again with the same `buttonId` and `context` will return a previously fetched 
        and cached app action if the action is still valid.
  */
-- (void)fetchAppActionWithButtonId:(NSString *)buttonId
-                           context:(BTNContext *)context
-                        completion:(void(^)(BTNAppAction *appAction, NSError *error))completionHandler;
+- (void)fetchAppActionWithButtonId:(nonnull NSString *)buttonId
+                           context:(nonnull BTNContext *)context
+                        completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
 
 
 
@@ -99,7 +101,7 @@
  
  @return BOOL indicating whether the Button SDK can & *will* handle the userActivity.
  **/
-- (BOOL)continueUserActivity:(NSUserActivity *)userActivity;
+- (BOOL)continueUserActivity:(nonnull NSUserActivity *)userActivity;
 
 
 /**
@@ -110,7 +112,7 @@
  
  @return BOOL indicating whether the Button SDK can & *will* handle the URL.
  **/
-- (BOOL)handleURL:(NSURL *)url;
+- (BOOL)handleURL:(nonnull NSURL *)url;
 
 
 
@@ -123,7 +125,7 @@
  the Button marketplace or nil if none is present.
  @return String value of the last inbound referrerToken
  **/
-- (NSString *)referrerToken;
+- (nullable NSString *)referrerToken;
 
 
 /**
@@ -142,35 +144,7 @@
  Note that passing nil here is a noop and will not remove the user Id from the session. 
  If your user is logging out, call `-logOut` to reset the session and user data in Button.
  **/
-- (void)setUserIdentifier:(NSString *)userIdentifier;
-- (void)setThirdPartyId:(NSString *)thirdPartyId DEPRECATED_MSG_ATTRIBUTE("Use -setUserIdentifier: instead");
-
-
-
-///-----------------------------------
-/// @name Order Reporting - DEPRECATED
-///-----------------------------------
-
-/**
- Reports an order to Button with line items.
- @param orderId An order identifier (required).
- @param currencyCode The ISO 4217 currency code. (default is USD).
- @param lineItems An array of BTNLineItem objects.
- */
-- (void)reportOrderWithId:(NSString *)orderId
-             currencyCode:(NSString *)currencyCode
-                lineItems:(NSArray <BTNLineItem *> *)lineItems DEPRECATED_MSG_ATTRIBUTE("Please use our order API - https://www.usebutton.com/developers/api-reference/#create-order");
-
-
-/**
- Reports an order to Button.
- @param orderValue The total order value in the smallest decimal unit for this currency (e.g. 3999 for $39.99).
- @param orderId An order identifier (required).
- @param currencyCode The ISO 4217 currency code. (default is USD).
- */
-- (void)reportOrderWithValue:(NSInteger)orderValue
-                     orderId:(NSString *)orderId
-                currencyCode:(NSString *)currencyCode DEPRECATED_MSG_ATTRIBUTE("Please use our order API - https://www.usebutton.com/developers/api-reference/#create-order");
+- (void)setUserIdentifier:(nonnull NSString *)userIdentifier;
 
 
 
@@ -183,8 +157,20 @@
  @param eventName The name of the event.
  @param properties A dictionary of key-value string pairs for adding detail to the event.
  */
-- (void)reportEventWithName:(NSString *)eventName
-                 properties:(NSDictionary <NSString *, NSString *> *)properties;
+- (void)reportEventWithName:(nonnull NSString *)eventName
+                 properties:(nullable NSDictionary <NSString *, NSString *> *)properties;
+
+
+
+///---------------------
+/// @name Button Session
+///---------------------
+
+
+/*
+ The current Button session.
+ */
+@property (nullable, nonatomic, copy, readonly) BTNSession *session;
 
 
 
@@ -213,6 +199,10 @@
 - (void)setDebugLoggingEnabled:(BOOL)enabled;
 
 
+@end
+
+
+@interface Button () <Button, ButtonDeprecated>
 
 ///------------------
 /// @name Permissions
@@ -222,11 +212,10 @@
 /**
  Sets whether the Button SDK is allowed to request system level location permission.
  @discussion Button will never ask your users for system level permissions unless you explicitly allow it.
- 
+
  @param isAllowed A boolean indicating whether requesting location permission is allowed.
  @note The default value is NO.
  */
 + (void)allowButtonToRequestLocationPermission:(BOOL)isAllowed;
-
 
 @end

@@ -1,4 +1,3 @@
-
 // Session
 #import "BTNSession.h"
 
@@ -15,6 +14,9 @@
 
 // Orders
 #import "BTNLineItem.h"
+
+// Deprecations
+#import "Button_Deprecated.h"
 
 
 // System

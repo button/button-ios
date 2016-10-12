@@ -8,18 +8,18 @@
 @interface BTNListItem : BTNModelObject
 
 /// The line item main text of the item.
-@property (nonatomic, copy, readonly) BTNText *titleText;
+@property (nullable, nonatomic, copy, readonly) BTNText *titleText;
 
 
 /// Secondary text for the item.
-@property (nonatomic, copy, readonly) BTNText *subtitleText;
+@property (nullable, nonatomic, copy, readonly) BTNText *subtitleText;
 
 
 /// Text to be rendered at the icon position (e.g. right aligned).
-@property (nonatomic, copy, readonly) BTNText *iconText;
+@property (nullable, nonatomic, copy, readonly) BTNText *iconText;
 
 
 /// A small preview icon representing the item.
-@property (nonatomic, copy, readonly) BTNImage *iconImage;
+@property (nullable, nonatomic, copy, readonly) BTNImage *iconImage;
 
 @end

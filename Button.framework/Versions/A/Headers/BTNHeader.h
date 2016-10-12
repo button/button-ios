@@ -8,14 +8,14 @@
 @interface BTNHeader : BTNModelObject
 
 /// The main heading text.
-@property (nonatomic, copy, readonly) BTNText *titleText;
+@property (nullable, nonatomic, copy, readonly) BTNText *titleText;
 
 
 /// An optional smaller subheading text.
-@property (nonatomic, copy, readonly) BTNText *subtitleText;
+@property (nullable, nonatomic, copy, readonly) BTNText *subtitleText;
 
 
 /// The header background.
-@property (nonatomic, copy, readonly) BTNBackground *background;
+@property (nullable, nonatomic, copy, readonly) BTNBackground *background;
 
 @end

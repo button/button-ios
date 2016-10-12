@@ -8,11 +8,11 @@
 @interface BTNDropinButtonCell : UITableViewCell <BTNDropinButtonAppearance>
 
 /// The ID of the button this cell represents.
-@property (nonatomic, copy) IBInspectable NSString *buttonId;
+@property (nullable, nonatomic, copy) IBInspectable NSString *buttonId;
 
 
 /// The dropin button that displays the use case action (e.g. Get a ride).
-@property (nonatomic, strong) IBOutlet BTNDropinButton *dropinButton;
+@property (nullable, nonatomic, strong) IBOutlet BTNDropinButton *dropinButton;
 
 
 /**
@@ -25,8 +25,8 @@
  after completion. For example, you may want to remove this cell from your tableView
  if the button is not displayable.
  */
-- (void)prepareWithContext:(BTNContext *)context
-                completion:(void(^)(BOOL isDisplayable))completionHandler;
+- (void)prepareWithContext:(nonnull BTNContext *)context
+                completion:(nullable void(^)(BOOL isDisplayable))completionHandler;
 
 
 ///-----------------

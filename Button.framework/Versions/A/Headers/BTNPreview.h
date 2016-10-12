@@ -10,18 +10,18 @@
 @interface BTNPreview : BTNModelObject
 
 /// An optional title text.
-@property (nonatomic, copy, readonly) BTNText *titleText;
+@property (nullable, nonatomic, copy, readonly) BTNText *titleText;
 
 
 /// The button text.
-@property (nonatomic, copy, readonly) BTNText *labelText;
+@property (nullable, nonatomic, copy, readonly) BTNText *labelText;
 
 
 /// The background fill details of the button.
-@property (nonatomic, copy, readonly) BTNBackground *background;
+@property (nullable, nonatomic, copy, readonly) BTNBackground *background;
 
 
 /// An icon image to be renderd on the button.
-@property (nonatomic, copy, readonly) BTNImage *iconImage;
+@property (nullable, nonatomic, copy, readonly) BTNImage *iconImage;
 
 @end

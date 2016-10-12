@@ -2,11 +2,10 @@
 #import "BTNDropinButtonAppearanceProtocol.h"
 #import "BTNContext.h"
 
-
 @interface BTNDropinButton : UIControl <BTNDropinButtonAppearance>
 
-/// The identifier for this button instance (e.g. venue_page).
-@property (nonatomic, copy) IBInspectable NSString *buttonId;
+/// The identifier for this button instance (e.g. btn-xxxxxxxxxx).
+@property (nullable, nonatomic, copy) IBInspectable NSString *buttonId;
 
 
 /**
@@ -19,8 +18,8 @@
  based on the value of `isDisplayable`. For example, you may want to remove a cell 
  from your tableView if the button is not displayable.
  */
-- (void)prepareWithContext:(BTNContext *)context
-                completion:(void(^)(BOOL isDisplayable))completionHandler;
+- (void)prepareWithContext:(nonnull BTNContext *)context
+                completion:(nullable void(^)(BOOL isDisplayable))completionHandler;
 
 
 /**
@@ -30,7 +29,7 @@
  @note The button will not be ready for display until -prepareWithContext:completion: completes.
  @see -prepareWithContext:completion:
  */
-- (instancetype)initWithButtonId:(NSString *)buttonId;
+- (nonnull instancetype)initWithButtonId:(nonnull NSString *)buttonId;
 
 
 ///-----------------
