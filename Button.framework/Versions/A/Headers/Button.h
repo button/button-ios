@@ -218,4 +218,39 @@
  */
 + (void)allowButtonToRequestLocationPermission:(BOOL)isAllowed;
 
+
+///----------------------
+/// @name Developer Setup
+///----------------------
+
+
+/**
+ Reports associated domain configuration when your build is developer signed ONLY (enabled by default).
+ @note This should be enabled when you're setting up the SDK to make sure your bttn.io domains are 
+ set up correctly in the Button Dashboard. If you have a large binary, you can pass `NO` to disable this 
+ feature after you've confirmed your bttn.io universal links are properly configured.
+ @param enabled Pass NO to disable developer build reporting.
+ */
++ (void)setDeveloperBuildReportingEnabled:(BOOL)enabled;
+
+
+
+///----------------------------
+/// @name Automatic Attribution
+///----------------------------
+
+
+/**
+ Incoming URLs are automatically routed to Button for attribution by default.
+ @note It is highly recommended that you leave this feature enabled.
+ @discussion If you prefer to follow the manual integration steps to route incoming URLs to Button
+ for attribution, you can disable this feature by overriding +load in you app delegate:
+ @code
+ + (void)load {
+    [Button setAutomaticAttributionEnabled:NO];
+ }
+ @endcode
+ */
++ (void)setAutomaticAttributionEnabled:(BOOL)enabled;
+
 @end

@@ -6,6 +6,14 @@
 #import "BTNProduct.h"
 #import "BTNFooter.h"
 
+/// Enum represening result of `-appInstallState`.
+typedef NS_ENUM(NSUInteger, BTNAppInstallState) {
+    BTNAppInstallStateUnknown = 0,
+    BTNAppInstallStateInstalled,
+    BTNAppInstallStateNotInstalled,
+    BTNAppInstallStateNotQueryable
+};
+
 /**
  An App Action represents a button (i.e. “preview”) and inventory typically rendered as a “commerce card”.
  */
@@ -88,5 +96,20 @@
  @note The completionHandler takes one argument, a UIImage or nil if an error occurred.
  */
 - (void)fetchPreviewIconImageWithCompletion:(nonnull void(^)(UIImage * __nullable image))completionHandler;
+
+
+
+///------------------------
+/// @name App Install State
+///------------------------
+
+
+/**
+ Determines whether the target app is installed, not installed or not queryable.
+ @return BTNInstallStateNotInstalled if target application is NOT installed.
+         BTNInstallStateInstalled    if target application is installed.
+         BTNInstallStateNotQueryable if app scheme was not declared in LSApplicationQueriesSchemes of Info.plist (>= iOS9).
+ */
+- (BTNAppInstallState)appInstallState;
 
 @end
