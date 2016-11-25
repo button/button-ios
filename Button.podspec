@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name    = "Button"
-  s.version = "5.2.0"
+  s.version = "5.2.1"
   s.summary = "Button iOS SDK."
 
   s.description = <<-DESC
@@ -23,6 +23,7 @@ Pod::Spec.new do |s|
 
   s.preserve_paths      = 'Button.framework'
   s.public_header_files = 'Button.framework/Versions/A/Headers/*.h'
+  s.source_files        = 'Button.framework/Versions/A/Headers/*.h'
   s.vendored_frameworks = 'Button.framework'
   s.resource            = 'Button.bundle'
 
