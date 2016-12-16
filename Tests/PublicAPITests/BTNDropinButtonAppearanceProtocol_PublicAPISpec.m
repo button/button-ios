@@ -189,38 +189,6 @@ context(@"BTNDropinButtonAppearance", ^{
 
     });
 
-    describe(@"iconColor", ^{
-
-        it(@"is declared", ^{
-            expect(appearanceMock).to.respondTo(@selector(iconColor));
-        });
-
-        it(@"takes and returns the expected argument types", ^{
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-            UIColor *iconColor = [appearanceMock iconColor];
-            [appearanceMock setIconColor:iconColor];
-#pragma clang diagnostic pop
-        });
-
-    });
-
-    describe(@"highlightedIconColor", ^{
-
-        it(@"is declared", ^{
-            expect(appearanceMock).to.respondTo(@selector(highlightedIconColor));
-        });
-
-        it(@"takes and returns the expected argument types", ^{
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-            UIColor *color = [appearanceMock highlightedIconColor];
-            [appearanceMock setHighlightedIconColor:color];
-#pragma clang diagnostic pop
-        });
-
-    });
-
     describe(@"normalBackgroundColor", ^{
 
         it(@"is declared", ^{

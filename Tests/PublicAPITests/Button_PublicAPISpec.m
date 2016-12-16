@@ -35,15 +35,13 @@ context(@"Button", ^{
             expect([Button sharedButton]).to.beKindOf([Button class]);
         });
 
+        it(@"conforms to Button protocol", ^{
+            expect([Button conformsToProtocol:@protocol(Button)]);
+        });
+
     });
 
     describe(@"configureWithApplicationId:completion:", ^{
-
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(configureWithApplicationId:completion:)])
-            .to
-            .beTruthy();
-        });
 
         it(@"takes the expected argument types", ^{
             [mockedButton configureWithApplicationId:@"application-id" completion:^(NSError *error) {}];
@@ -53,12 +51,6 @@ context(@"Button", ^{
 
     describe(@"configureWithApplicationId:userId:completion:", ^{
 
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(configureWithApplicationId:userId:completion:)])
-            .to
-            .beTruthy();
-        });
-
         it(@"takes the expected argument types", ^{
             [mockedButton configureWithApplicationId:@"application-id" userId:@"user-id"
                                           completion:^(NSError *error, NSURL *targetURL) { }];
@@ -66,30 +58,7 @@ context(@"Button", ^{
 
     });
 
-    describe(@"setDeferredDeeplinkHandler:", ^{
-
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(setDeferredDeeplinkHandler:)])
-            .to
-            .beTruthy();
-        });
-
-        it(@"takes the expected argument types", ^{
-            #pragma clang diagnostic push
-            #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-            [mockedButton setDeferredDeeplinkHandler:^(NSURL *deferredDeeplinkURL) {}];
-            #pragma clang diagnostic pop
-        });
-
-    });
-
     describe(@"willDisplayButtonWithId:context:completion:", ^{
-
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(willDisplayButtonWithId:context:completion:)])
-            .to
-            .beTruthy();
-        });
 
         it(@"takes the expected argument types", ^{
             [mockedButton willDisplayButtonWithId:@"button-id"
@@ -101,12 +70,6 @@ context(@"Button", ^{
 
     describe(@"fetchAppActionWithButtonId:context:completion:", ^{
 
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(fetchAppActionWithButtonId:context:completion:)])
-            .to
-            .beTruthy();
-        });
-
         it(@"takes the expected argument types", ^{
             [mockedButton fetchAppActionWithButtonId:@"button-id"
                                              context:[BTNContext new]
@@ -117,12 +80,6 @@ context(@"Button", ^{
 
     describe(@"continueUserActivity:", ^{
 
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(continueUserActivity:)])
-            .to
-            .beTruthy();
-        });
-
         it(@"takes the expected argument types", ^{
             [mockedButton continueUserActivity:[[NSUserActivity alloc] initWithActivityType:@"BTNBrowsing"]];
         });
@@ -130,12 +87,6 @@ context(@"Button", ^{
     });
 
     describe(@"handleURL:", ^{
-
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(handleURL:)])
-            .to
-            .beTruthy();
-        });
 
         it(@"takes and returns the expected argument types", ^{
             BOOL result = [mockedButton handleURL:[NSURL new]];
@@ -146,12 +97,6 @@ context(@"Button", ^{
 
     describe(@"referrerToken", ^{
 
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(referrerToken)])
-            .to
-            .beTruthy();
-        });
-
         it(@"returns the expected argument types", ^{
             NSString *token = [mockedButton referrerToken];
             if (token) {}
@@ -161,45 +106,13 @@ context(@"Button", ^{
 
     describe(@"setUserIdentifier:", ^{
 
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(setUserIdentifier:)])
-            .to
-            .beTruthy();
-        });
-
         it(@"takes the expected argument types", ^{
             [mockedButton setUserIdentifier:@"user-id"];
         });
 
     });
 
-    describe(@"setThirdPartyId:", ^{
-
-        it(@"is a valid selector", ^{
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-            expect([Button instancesRespondToSelector:@selector(setThirdPartyId:)])
-            .to
-            .beTruthy();
-#pragma clang diagnostic pop
-        });
-
-        it(@"takes the expected argument types", ^{
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-            [mockedButton setThirdPartyId:@"third-party-id"];
-#pragma clang diagnostic pop
-        });
-
-    });
-
     describe(@"reportOrderWithId:currencyCode:lineItems:", ^{
-
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(reportOrderWithId:currencyCode:lineItems:)])
-            .to
-            .beTruthy();
-        });
 
         #pragma clang diagnostic push
         #pragma clang diagnostic ignored "-Wdeprecated-declarations"
@@ -213,12 +126,6 @@ context(@"Button", ^{
 
     describe(@"reportOrderWithValue:orderId:currencyCode:", ^{
 
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(reportOrderWithValue:orderId:currencyCode:)])
-            .to
-            .beTruthy();
-        });
-
         #pragma clang diagnostic push
         #pragma clang diagnostic ignored "-Wdeprecated-declarations"
         it(@"takes the expected argument types", ^{
@@ -231,12 +138,6 @@ context(@"Button", ^{
 
     describe(@"reportEventWithName:properties:", ^{
 
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(reportEventWithName:properties:)])
-            .to
-            .beTruthy();
-        });
-
         it(@"takes the expected argument types", ^{
             NSDictionary<NSString *, NSString *> *properties = [NSDictionary dictionary];
             [mockedButton reportEventWithName:@"" properties:properties];
@@ -245,12 +146,6 @@ context(@"Button", ^{
     });
 
     describe(@"setDebugLoggingEnabled:", ^{
-
-        it(@"is a valid selector", ^{
-            expect([Button instancesRespondToSelector:@selector(setDebugLoggingEnabled:)])
-            .to
-            .beTruthy();
-        });
 
         it(@"takes the expected argument types", ^{
             [mockedButton setDebugLoggingEnabled:YES];

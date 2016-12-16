@@ -1,5 +1,5 @@
 PODS:
-  - Button (4.11.0)
+  - Button (5.3.0)
   - Expecta (1.0.5)
   - OCMock (3.3)
   - Specta (1.0.5)
@@ -12,12 +12,14 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   Button:
-    :path: ..
+    :path: ".."
 
 SPEC CHECKSUMS:
-  Button: e521c3f9010cbf12166b96bd5b2c2068a94894bf
+  Button: 553956b88caa385a2004c746273b4cb12a36369d
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: df8037b70f379db94ca50690b96641b47183710c
+
+COCOAPODS: 1.1.1

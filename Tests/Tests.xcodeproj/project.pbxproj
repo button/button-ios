@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		46F7FCEB614143F9C2461935 /* libPods-PublicAPITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 131FFEBF526EBF6E365FE405 /* libPods-PublicAPITests.a */; };
+		0DE26034967DC7ED7C55CF28 /* libPods-PublicAPITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4AD11F13C7EB5E474D73B /* libPods-PublicAPITests.a */; };
 		E90D02A11CC00D2C00EA9F8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E90D02A01CC00D2C00EA9F8A /* main.m */; };
 		E90D02A41CC00D2C00EA9F8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90D02A31CC00D2C00EA9F8A /* AppDelegate.m */; };
 		E90D02A71CC00D2C00EA9F8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90D02A61CC00D2C00EA9F8A /* ViewController.m */; };
@@ -59,6 +59,8 @@
 		E935367C1CC6CA1F00E768EA /* BTNBackground_PublicAPISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E935367B1CC6CA1F00E768EA /* BTNBackground_PublicAPISpec.m */; };
 		E935367E1CC6CAB800E768EA /* BTNAppActionMeta_PublicAPISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E935367D1CC6CAB800E768EA /* BTNAppActionMeta_PublicAPISpec.m */; };
 		E93536801CC6CBBA00E768EA /* BTNAppAction_PublicAPISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E935367F1CC6CBBA00E768EA /* BTNAppAction_PublicAPISpec.m */; };
+		E93AFE211DF5D08A0085F7F0 /* ButtonProtocol_PublicAPISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E93AFE201DF5D08A0085F7F0 /* ButtonProtocol_PublicAPISpec.m */; };
+		E93AFE231DF5D3DA0085F7F0 /* ButtonDeprecatedProtocol_PublicAPISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E93AFE221DF5D3DA0085F7F0 /* ButtonDeprecatedProtocol_PublicAPISpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,12 +74,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FFD08A5F8902B67100AFB64 /* Pods-PublicAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PublicAPITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PublicAPITests/Pods-PublicAPITests.debug.xcconfig"; sourceTree = "<group>"; };
-		131FFEBF526EBF6E365FE405 /* libPods-PublicAPITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PublicAPITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AA9B191D9B7E2525A40DEAE /* libPods-TestsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		725E09B0270D6B9C84ED4617 /* Pods-TestsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestsTests/Pods-TestsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7C6C6897E2C66E51A1F7E1EA /* Pods-PublicAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PublicAPITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PublicAPITests/Pods-PublicAPITests.release.xcconfig"; sourceTree = "<group>"; };
-		D5A702E426AC02D3E8282998 /* Pods-TestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestsTests/Pods-TestsTests.release.xcconfig"; sourceTree = "<group>"; };
+		A006D73EB291409B254D06B9 /* Pods-PublicAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PublicAPITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PublicAPITests/Pods-PublicAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD56C988FF95C6462F84E29F /* Pods-PublicAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PublicAPITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PublicAPITests/Pods-PublicAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E90D029C1CC00D2C00EA9F8A /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90D02A01CC00D2C00EA9F8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E90D02A21CC00D2C00EA9F8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +121,10 @@
 		E935367B1CC6CA1F00E768EA /* BTNBackground_PublicAPISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTNBackground_PublicAPISpec.m; sourceTree = "<group>"; };
 		E935367D1CC6CAB800E768EA /* BTNAppActionMeta_PublicAPISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTNAppActionMeta_PublicAPISpec.m; sourceTree = "<group>"; };
 		E935367F1CC6CBBA00E768EA /* BTNAppAction_PublicAPISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTNAppAction_PublicAPISpec.m; sourceTree = "<group>"; };
+		E93AFE1E1DF5C4F40085F7F0 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
+		E93AFE201DF5D08A0085F7F0 /* ButtonProtocol_PublicAPISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonProtocol_PublicAPISpec.m; sourceTree = "<group>"; };
+		E93AFE221DF5D3DA0085F7F0 /* ButtonDeprecatedProtocol_PublicAPISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonDeprecatedProtocol_PublicAPISpec.m; sourceTree = "<group>"; };
+		F5A4AD11F13C7EB5E474D73B /* libPods-PublicAPITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PublicAPITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,30 +139,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46F7FCEB614143F9C2461935 /* libPods-PublicAPITests.a in Frameworks */,
+				0DE26034967DC7ED7C55CF28 /* libPods-PublicAPITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		889A1021A13BD6F8DDFF68BD /* Frameworks */ = {
+		A445B3C6845BA4554AE82A65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6AA9B191D9B7E2525A40DEAE /* libPods-TestsTests.a */,
-				131FFEBF526EBF6E365FE405 /* libPods-PublicAPITests.a */,
+				F5A4AD11F13C7EB5E474D73B /* libPods-PublicAPITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D01FCCC516022DCD9F837B2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD56C988FF95C6462F84E29F /* Pods-PublicAPITests.debug.xcconfig */,
+				A006D73EB291409B254D06B9 /* Pods-PublicAPITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E90D02931CC00D2C00EA9F8A = {
 			isa = PBXGroup;
 			children = (
+				E93AFE1E1DF5C4F40085F7F0 /* .travis.yml */,
 				E90D029E1CC00D2C00EA9F8A /* Tests */,
 				E90D02C91CC00FBF00EA9F8A /* PublicAPITests */,
 				E90D029D1CC00D2C00EA9F8A /* Products */,
-				F08B5735EF22427D9F2249D2 /* Pods */,
-				889A1021A13BD6F8DDFF68BD /* Frameworks */,
+				D01FCCC516022DCD9F837B2D /* Pods */,
+				A445B3C6845BA4554AE82A65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +214,8 @@
 				E90D02E11CC01DFE00EA9F8A /* TestConvenience */,
 				E90D02CC1CC00FBF00EA9F8A /* Info.plist */,
 				E90D02D41CC0101A00EA9F8A /* Button_PublicAPISpec.m */,
+				E93AFE201DF5D08A0085F7F0 /* ButtonProtocol_PublicAPISpec.m */,
+				E93AFE221DF5D3DA0085F7F0 /* ButtonDeprecatedProtocol_PublicAPISpec.m */,
 				E93536491CC512BA00E768EA /* BTNView_PublicAPISpec.m */,
 				E935364B1CC5170200E768EA /* BTNText_PublicAPISpec.m */,
 				E935364D1CC5194000E768EA /* BTNSubscriptableProtocol_PublicAPISpec.m */,
@@ -246,17 +259,6 @@
 			path = TestConvenience;
 			sourceTree = "<group>";
 		};
-		F08B5735EF22427D9F2249D2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				725E09B0270D6B9C84ED4617 /* Pods-TestsTests.debug.xcconfig */,
-				D5A702E426AC02D3E8282998 /* Pods-TestsTests.release.xcconfig */,
-				0FFD08A5F8902B67100AFB64 /* Pods-PublicAPITests.debug.xcconfig */,
-				7C6C6897E2C66E51A1F7E1EA /* Pods-PublicAPITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,14 +283,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E90D02D11CC00FBF00EA9F8A /* Build configuration list for PBXNativeTarget "PublicAPITests" */;
 			buildPhases = (
-				37CA8B5FE2AF6E761705CCD9 /* Check Pods Manifest.lock */,
+				46850E4DE2F5764DFB96AF28 /* [CP] Check Pods Manifest.lock */,
 				E90D02C41CC00FBF00EA9F8A /* Sources */,
 				E90D02C51CC00FBF00EA9F8A /* Frameworks */,
 				E90D02C61CC00FBF00EA9F8A /* Resources */,
-				718D637A0681501B3ED66900 /* Embed Pods Frameworks */,
-				4D9A2F466CB7A64F4D4E19F4 /* Copy Pods Resources */,
 				E93536CD1CCAABBB00E768EA /* Public API Compatibility Check */,
 				E950ADE91CD103D000AFD8C2 /* Specta Focus Check */,
+				4986A60CAF0BB349A5318D0B /* [CP] Embed Pods Frameworks */,
+				6A1CA48A3A5CBBCF46375970 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,7 +308,7 @@
 		E90D02941CC00D2C00EA9F8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Button;
 				TargetAttributes = {
 					E90D029B1CC00D2C00EA9F8A = {
@@ -362,49 +364,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		37CA8B5FE2AF6E761705CCD9 /* Check Pods Manifest.lock */ = {
+		46850E4DE2F5764DFB96AF28 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4D9A2F466CB7A64F4D4E19F4 /* Copy Pods Resources */ = {
+		4986A60CAF0BB349A5318D0B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PublicAPITests/Pods-PublicAPITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		718D637A0681501B3ED66900 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PublicAPITests/Pods-PublicAPITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A1CA48A3A5CBBCF46375970 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PublicAPITests/Pods-PublicAPITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E93536CC1CCAA8D000E768EA /* ShellScript */ = {
@@ -493,9 +495,11 @@
 				E90D02E71CC1397300EA9F8A /* NSObject+BTNClassProperties.m in Sources */,
 				E935365C1CC58FEC00E768EA /* BTNLocation_PublicAPISpec.m in Sources */,
 				E90D02E41CC01DFE00EA9F8A /* NSObject+BTNMock.m in Sources */,
+				E93AFE231DF5D3DA0085F7F0 /* ButtonDeprecatedProtocol_PublicAPISpec.m in Sources */,
 				E93536661CC59EB400E768EA /* BTNImage_PublicAPISpec.m in Sources */,
 				E935366C1CC678FC00E768EA /* BTNFooter_PublicAPISpec.m in Sources */,
 				E935364E1CC5194000E768EA /* BTNSubscriptableProtocol_PublicAPISpec.m in Sources */,
+				E93AFE211DF5D08A0085F7F0 /* ButtonProtocol_PublicAPISpec.m in Sources */,
 				E93536541CC563DD00E768EA /* BTNProduct_PublicAPISpec.m in Sources */,
 				E935367A1CC6BE8800E768EA /* BTNBaseEntity_PublicAPISpec.m in Sources */,
 			);
@@ -545,8 +549,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -568,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -590,8 +596,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -607,7 +615,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -641,7 +649,7 @@
 		};
 		E90D02CF1CC00FBF00EA9F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FFD08A5F8902B67100AFB64 /* Pods-PublicAPITests.debug.xcconfig */;
+			baseConfigurationReference = AD56C988FF95C6462F84E29F /* Pods-PublicAPITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -656,7 +664,7 @@
 		};
 		E90D02D01CC00FBF00EA9F8A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C6C6897E2C66E51A1F7E1EA /* Pods-PublicAPITests.release.xcconfig */;
+			baseConfigurationReference = A006D73EB291409B254D06B9 /* Pods-PublicAPITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
