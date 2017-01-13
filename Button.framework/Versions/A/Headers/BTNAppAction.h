@@ -112,4 +112,21 @@ typedef NS_ENUM(NSUInteger, BTNAppInstallState) {
  */
 - (BTNAppInstallState)appInstallState;
 
+
+
+///---------------------
+/// @name Event Tracking
+///---------------------
+
+
+/**
+ Tracks a "button viewed" event each time this method is called.
+ @note Invoke this method when your custom button is displayed to the user.
+ @discussion Used to measure performance so make sure you report at the same
+             interval across iOS and Android. We suggest that you report this
+             right after you've configured your UI with the AppAction if those
+             views will be visible.
+ */
+- (void)trackButtonViewed;
+
 @end
