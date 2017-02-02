@@ -1,5 +1,7 @@
 #import "BTNModelObject.h"
 
+@class BTNImage;
+
 /**
  App action metadata objects contain information about the referrer, 
  destination app, and expiration of an app action.
@@ -29,6 +31,10 @@
 
 /// The name of the app represented by an app action.
 @property (nullable, nonatomic, copy, readonly) NSString *appDisplayName;
+
+
+/// The icon of the app represented by an app action.
+@property (nullable, nonatomic, copy, readonly) BTNImage *appIcon;
 
 
 /**

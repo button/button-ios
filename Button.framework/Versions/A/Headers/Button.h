@@ -87,6 +87,20 @@
                         completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
 
 
+/**
+ Fetches an app action for a merchantId.
+ @param merchantId The identifier for a merchant (e.g. org-xxxxxxxxxxxx).
+ @param completionHandler A block to be executed upon completion.
+
+ @discussion The completion handler takes two parameters
+    - appAction A BTNAppAction instance or nil if no action was found for the provided merchantId.
+    - error An error will be present if a network or server error occurred.
+ 
+ @note Returned actions are NOT cached.
+ */
+- (void)fetchAppActionWithMerchantId:(nonnull NSString *)merchantId
+                          completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
+
 
 ///-------------------------
 /// @name Deep Link Handling

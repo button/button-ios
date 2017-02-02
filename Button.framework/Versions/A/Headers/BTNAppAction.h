@@ -52,14 +52,20 @@ typedef NS_ENUM(NSUInteger, BTNAppInstallState) {
 
 /**
  Invokes the Button commerce card flow or a preview action if one exists.
- @discussion For integrations that only customize the button preview, call 
- this method when a user taps your custom button preview.
- @see @c -invokeActionForListItem: If you've built out your own custom inventory UI.
- 
- @note Users will be sent to the destination application or through the
- Attended Install flow if the destination application is not installed.
+ @warning Deprecated. Use `-invokeAction` instead.
  */
-- (void)invokePreviewAction;
+- (void)invokePreviewAction DEPRECATED_MSG_ATTRIBUTE("Use 'invokeAction' instead.");
+
+
+/**
+ Invokes the default action associated with this AppAction instance.
+ @discussion Call this method when you're ready to invoke this action if:
+ 1. This object was fetched via `-fetchAppActionWithMerchantId:completion:`
+ 2. Your app has a custom Button preview that should display the Button inventory using the UI supplied by the SDK.
+
+ @see @c -invokeActionForListItem: If you've built out your own custom inventory UI.
+ */
+- (void)invokeAction;
 
 
 /**
