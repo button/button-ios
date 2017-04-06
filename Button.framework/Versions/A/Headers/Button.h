@@ -102,6 +102,41 @@
                           completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
 
 
+/**
+ Checks if app action can be fetched for provided url.
+ @param url A merchant or affilate url.
+ return BOOL indicating whether the Button SDK can fetch app action for provided url.
+
+ @discussion Can be used with `- fetchAppActionWithURL:completion:`
+ @code
+ if ([[Button sharedButton] canFetchAppActionWithURL:url]) {
+     [[Button sharedButton] fetchAppActionWithURL:url completion:^(BTNAppAction *appAction, NSError *error) {
+         if (appAction) {
+             [appAction invokeAction];
+         }
+     }];
+ }
+ @endcode
+ */
+- (BOOL)canFetchAppActionWithURL:(nonnull NSURL *)url;
+
+
+/**
+ Fetches an app action for a supported url.
+ @param url A merchant or affilate url.
+ @param completionHandler A block to be executed upon completion.
+
+ @discussion The completion handler takes two parameters
+ - appAction A BTNAppAction instance or nil if no action was found for the provided url.
+ - error An error will be present if an error occurred.
+ 
+ @note Returned actions are NOT cached.
+ @note Returns immidiately if provided url is not supported.
+ */
+- (void)fetchAppActionWithURL:(nonnull NSURL *)url
+                   completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
+
+
 ///-------------------------
 /// @name Deep Link Handling
 ///-------------------------
