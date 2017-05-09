@@ -72,6 +72,7 @@
  Fetches an app action for a buttonId and contextually relevant data.
  @param buttonId The identifier for a button (e.g. btn-xxxxxxxxxxxx).
  @param context A BTNContext object providing context about your user's current activity.
+ @param publisherReference A token to be associated with all downstream orders, transactions and webhooks. (Max 100 chars.)
  @param completionHandler A block to be executed upon completion.
  
  @discussion The completion handler takes two parameters
@@ -84,12 +85,22 @@
  */
 - (void)fetchAppActionWithButtonId:(nonnull NSString *)buttonId
                            context:(nonnull BTNContext *)context
+                publisherReference:(nullable NSString *)publisherReference
+                        completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
+
+
+/**
+ @see -fetchAppActionWithButtonId:context:publisherReference:completion:
+ */
+- (void)fetchAppActionWithButtonId:(nonnull NSString *)buttonId
+                           context:(nonnull BTNContext *)context
                         completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
 
 
 /**
  Fetches an app action for a merchantId.
  @param merchantId The identifier for a merchant (e.g. org-xxxxxxxxxxxx).
+ @param publisherReference A token to be associated with all downstream orders, transactions and webhooks. (Max 100 chars.)
  @param completionHandler A block to be executed upon completion.
 
  @discussion The completion handler takes two parameters
@@ -97,6 +108,14 @@
     - error An error will be present if a network or server error occurred.
  
  @note Returned actions are NOT cached.
+ */
+- (void)fetchAppActionWithMerchantId:(nonnull NSString *)merchantId
+                  publisherReference:(nullable NSString *)publisherReference
+                          completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
+
+
+/**
+ @see -fetchAppActionWithMerchantId:publisherReference:completion:
  */
 - (void)fetchAppActionWithMerchantId:(nonnull NSString *)merchantId
                           completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
@@ -124,6 +143,7 @@
 /**
  Fetches an app action for a supported url.
  @param url A merchant or affilate url.
+ @param publisherReference A token to be associated with all downstream orders, transactions and webhooks. (Max 100 chars.)
  @param completionHandler A block to be executed upon completion.
 
  @discussion The completion handler takes two parameters
@@ -132,6 +152,14 @@
  
  @note Returned actions are NOT cached.
  @note Returns immidiately if provided url is not supported.
+ */
+- (void)fetchAppActionWithURL:(nonnull NSURL *)url
+           publisherReference:(nullable NSString *)publisherReference
+                   completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
+
+
+/**
+ @see -fetchAppActionWithURL:publisherReference:completion:
  */
 - (void)fetchAppActionWithURL:(nonnull NSURL *)url
                    completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
