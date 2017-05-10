@@ -164,6 +164,7 @@
 				TargetAttributes = {
 					DEC2AAD21ADC278900ED8393 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 39F27QYP2C;
 					};
 				};
 			};
@@ -339,6 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BTN_ARBITRARY_LOADS = YES;
+				DEVELOPMENT_TEAM = 39F27QYP2C;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../../../.qa/QA-prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/../../Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -436,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 39F27QYP2C;
 				INFOPLIST_FILE = "$(SRCROOT)/../../Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -451,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 39F27QYP2C;
 				INFOPLIST_FILE = "$(SRCROOT)/../../Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

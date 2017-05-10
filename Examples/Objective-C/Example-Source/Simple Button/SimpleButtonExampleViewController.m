@@ -17,4 +17,9 @@
     }];
 }
 
+
+- (IBAction)logAction:(id)sender {
+    NSLog(@"%@", Button.sharedButton.referrerToken);
+}
+
 @end

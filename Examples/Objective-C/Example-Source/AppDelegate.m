@@ -6,6 +6,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    application.delegate = self;
+    
     /// This is not required if you manage your own permission requesting.
     [Button allowButtonToRequestLocationPermission:YES];
     
@@ -22,14 +24,18 @@
     return YES;
 }
 
-
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    
-    [[Button sharedButton] handleURL:url];
-    
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     return YES;
 }
 
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return YES;
+}
 
 #pragma mark - Button Appearance Proxy Styling
 
