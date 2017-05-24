@@ -1,5 +1,5 @@
 PODS:
-  - Button (5.12.0)
+  - Button (5.12.1)
 
 DEPENDENCIES:
   - Button (from `../../../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../../../
 
 SPEC CHECKSUMS:
-  Button: 596c4bc4f1a3b921474dec6d2d8c3ad4751fb176
+  Button: fb678e714e93875313322e129e4502b47223f1e7
 
 PODFILE CHECKSUM: 293fc3ed68c3abd2dca24349c320c6f18e87dbfc
 
