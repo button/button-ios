@@ -9,8 +9,9 @@
 // Context
 #import "BTNContext.h"
 
-// App Action
+// Actions
 #import "BTNAppAction.h"
+#import "BTNMerchantAction.h"
 
 // Orders
 #import "BTNLineItem.h"

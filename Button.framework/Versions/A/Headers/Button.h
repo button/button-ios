@@ -165,6 +165,19 @@
                    completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
 
 
+
+///-------------------------
+/// @name Presenting Actions
+///-------------------------
+
+
+/**
+ Presents the merchant action after exchanging for a Button attributed action. If the merchant action cannot be exchanged, it will be presented in an in-app web view.
+ @param merchantAction The merchant link url and additional associated data.
+ */
+- (void)presentMerchantAction:(nonnull BTNMerchantAction *)merchantAction;
+
+
 ///-------------------------
 /// @name Deep Link Handling
 ///-------------------------
