@@ -22,7 +22,7 @@
  Using this method in conjunction with -prepareWithAppAction: can lead to undefined behavior.
  */
 - (void)prepareWithContext:(nonnull BTNContext *)context
-                completion:(nullable void(^)(BOOL isDisplayable))completionHandler;
+                completion:(nullable void(^)(BOOL isDisplayable))completionHandler DEPRECATED_MSG_ATTRIBUTE("Use 'prepareWithAppAction:' instead.");
 
 
 /**
@@ -32,6 +32,6 @@
  @note The button will not be ready for display until -prepareWithContext:completion: completes.
  @see -prepareWithContext:completion:
  */
-- (nonnull instancetype)initWithButtonId:(nonnull NSString *)buttonId;
+- (nonnull instancetype)initWithButtonId:(nonnull NSString *)buttonId DEPRECATED_MSG_ATTRIBUTE("Use 'init' and 'prepareWithAppAction:' instead.");
 
 @end

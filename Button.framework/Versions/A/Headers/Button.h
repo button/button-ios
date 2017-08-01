@@ -306,7 +306,7 @@
  @param isAllowed A boolean indicating whether requesting location permission is allowed.
  @note The default value is NO.
  */
-+ (void)allowButtonToRequestLocationPermission:(BOOL)isAllowed;
++ (void)allowButtonToRequestLocationPermission:(BOOL)isAllowed DEPRECATED_MSG_ATTRIBUTE("Please provide location in an instance of BTNContext instead.");
 
 
 ///----------------------
