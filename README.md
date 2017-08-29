@@ -2,7 +2,7 @@
 </p>
 
 <h1 align="center">Button SDK</h1>
-<p align="center"><!--<img align="center" src="https://travis-ci.com/button/button-ios-builds.svg?token=8JzszbFQzEAxm2tqrxeg&branch=master" />--> <img align="center" src="https://img.shields.io/cocoapods/v/Button.svg?style=flat" /> 
+<p align="center"><img align="center" src="https://travis-ci.com/button/button-ios-builds.svg?token=8JzszbFQzEAxm2tqrxeg&branch=master" /> <img align="center" src="https://img.shields.io/cocoapods/v/Button.svg?style=flat" /> 
 </p>
 
 ## Overview
@@ -32,19 +32,19 @@ pod "Button", "~> 4"
 Alternatively, you can download the [latest Button framework](https://github.com/usebutton/button-ios/releases/latest) and follow the [Framework Integration Steps](https://github.com/usebutton/button-ios/wiki/Adding-the-Button-Framework-and-Bundle-to-your-project).
 
 
-
+<br />
 ## Getting Started
 
 1. Get an Application ID by signing up here: [app.usebutton.com](http://app.usebutton.com)
 
 2. Follow the <a href="http://www.usebutton.com/sdk/deep-link-commerce/integration-guide" target="_blank">Button Integration Guide</a> to get Button in your app!
 
-
+<br />
 ## Going Live
 
 Before you submit to the App Store, follow the steps in the Button dashboard to get ready for using Button in production!
 
-
+<br />
 ## Questions?
 
 Ask us! Drop us an email at <a href="mailto:developers@usebutton.com">developers@usebutton.com</a>
