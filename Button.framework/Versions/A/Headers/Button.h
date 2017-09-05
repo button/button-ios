@@ -166,16 +166,53 @@
 
 
 
-///-------------------------
-/// @name Presenting Actions
-///-------------------------
+///----------------------------------
+/// @name Presenting Merchant Actions
+///----------------------------------
 
 
 /**
- Presents the merchant action after exchanging for a Button attributed action. If the merchant action cannot be exchanged, it will be presented in an in-app web view.
+ Pass your URL to Button via BTNMerchantAction.
+ 
+ When starting a BTNMerchantAction, Button will take control and detect whether the URL
+ can be exchanged for a commissioned Checkout Flow including installing the merchant app if necessary.
+ If Button cannot exchange the URL, it will open it in an in-app web view.
+
  @param merchantAction The merchant link url and additional associated data.
  */
 - (void)presentMerchantAction:(nonnull BTNMerchantAction *)merchantAction;
+
+
+/**
+ Similar to -presentMerchantAction:
+ Includes a callback to know when the Button Checkout Flow has completed.
+
+ @param merchantAction The merchant link url and additional associated data.
+ @param completionHandler A block to be executed upon completion.
+ 
+ @discussion The completion handler takes two parameters
+    - result Result code of presentation.
+    - error An error will be present if an error occurred.
+ */
+- (void)presentMerchantAction:(nonnull BTNMerchantAction *)merchantAction
+                   completion:(nonnull void (^)(BTNMerchantActionResult result, NSError * __nullable error))completionHandler;
+
+
+/**
+ Similar to -presentMerchantAction:
+ Includes a BTNMerchantActionSettings to configure whether Button should handle URLs that it cannot commission.
+ 
+ @param merchantAction The merchant link url and additional associated data.
+ @param settings Merchant Action presentation settings.
+ @param completionHandler A block to be executed upon completion.
+ 
+ @discussion The completion handler takes two parameters
+    - result Result code of presentation.
+    - error An error will be present if an error occurred.
+ */
+- (void)presentMerchantAction:(nonnull BTNMerchantAction *)merchantAction
+                     settings:(nonnull BTNMerchantActionSettings *)settings
+                   completion:(nonnull void (^)(BTNMerchantActionResult result, NSError * __nullable error))completionHandler;
 
 
 ///-------------------------

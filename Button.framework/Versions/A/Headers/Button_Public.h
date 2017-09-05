@@ -12,6 +12,7 @@
 // Actions
 #import "BTNAppAction.h"
 #import "BTNMerchantAction.h"
+#import "BTNMerchantActionSettings.h"
 
 // Orders
 #import "BTNLineItem.h"
