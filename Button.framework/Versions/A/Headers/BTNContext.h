@@ -9,6 +9,7 @@
 /**
  All fields are optional and should be populated only if known.
  @see `BTNBaseEntity` for inherited configuration options.
+ @warning Using the same context instance for multiple fetches is not recommended and unexpected results may occur. Please use a new instance for each fetch.
  */
 
 NS_ASSUME_NONNULL_BEGIN
