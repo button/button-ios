@@ -37,6 +37,10 @@
 @property (nullable, nonatomic, copy, readonly) BTNImage *appIcon;
 
 
+/// The date/time the app action request was made.
+@property (nullable, nonatomic, copy, readonly) NSDate *requestTime;
+
+
 /**
  Indicated whether or not the action has expired.
  @return YES is the action is expired, otherwise NO.

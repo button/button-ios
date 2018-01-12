@@ -2,7 +2,7 @@
 </p>
 
 <h1 align="center">Button SDK</h1>
-<p align="center"><img align="center" src="https://img.shields.io/cocoapods/v/Button.svg?style=flat" /> 
+<p align="center"><img align="center" src="https://travis-ci.com/button/button-ios-builds.svg?token=8JzszbFQzEAxm2tqrxeg&branch=master" /> <img align="center" src="https://img.shields.io/cocoapods/v/Button.svg?style=flat" /> 
 </p>
 
 ## Overview
@@ -26,7 +26,7 @@ The best way to get the Button SDK is to use CocoaPods. If you don't already use
 Add Button to your target by adding the following line to your `Podfile`.
 
 ```
-pod "Button", "~> 5"
+pod "Button", "~> 4"
 ```
 
 Alternatively, you can download the [latest Button framework](https://github.com/usebutton/button-ios/releases/latest) and follow the [Framework Integration Steps](https://github.com/usebutton/button-ios/wiki/Adding-the-Button-Framework-and-Bundle-to-your-project).
