@@ -2,7 +2,7 @@
 </p>
 
 <h1 align="center">Button SDK</h1>
-<p align="center"><img align="center" src="https://travis-ci.com/button/button-ios-builds.svg?token=8JzszbFQzEAxm2tqrxeg&branch=master" /> <img align="center" src="https://img.shields.io/cocoapods/v/Button.svg?style=flat" /> 
+<p align="center"><img align="center" src="https://img.shields.io/cocoapods/v/Button.svg?style=flat" /> 
 </p>
 
 ## Overview
