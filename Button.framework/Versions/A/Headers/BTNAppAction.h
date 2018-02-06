@@ -6,6 +6,8 @@
 #import "BTNProduct.h"
 #import "BTNFooter.h"
 
+@protocol BTNCheckoutExtension;
+
 /// Enum represening result of `-appInstallState`.
 typedef NS_ENUM(NSUInteger, BTNAppInstallState) {
     BTNAppInstallStateUnknown = 0,
@@ -59,13 +61,21 @@ typedef NS_ENUM(NSUInteger, BTNAppInstallState) {
 
 /**
  Invokes the default action associated with this AppAction instance.
- @discussion Call this method when you're ready to invoke this action if:
- 1. This object was fetched via `-fetchAppActionWithMerchantId:completion:`
- 2. Your app has a custom Button preview that should display the Button inventory using the UI supplied by the SDK.
+ @discussion Call this method when you're ready to invoke this action.
 
  @see @c -invokeActionForListItem: If you've built out your own custom inventory UI.
+ @see @c -invokeActionWithCheckoutExtension: If you're extending In-App Checkout (e.g. Button's embedded browser).
  */
 - (void)invokeAction;
+
+
+/**
+ Invokes the default action associated with this AppAction instance.
+ @discussion Call this method when you're ready to invoke this action.
+ 
+ @param checkoutExtension Your object conforming to the checkout extension protocol.
+ */
+- (void)invokeActionWithCheckoutExtension:(nonnull id <BTNCheckoutExtension>)checkoutExtension;
 
 
 /**
