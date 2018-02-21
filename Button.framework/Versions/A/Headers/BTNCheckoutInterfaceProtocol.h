@@ -1,6 +1,8 @@
 @import Foundation;
 @import UIKit;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol BTNCheckoutInterface <NSObject>
 
 @required
@@ -68,5 +70,17 @@
  */
 - (void)setBottomBarTintColor:(UIColor *)color;
 
+
+/**
+ A transparent view on top of the In-App Checkout content view for containing arbitrary views.
+ @discussion If you wish to display any additional content to your users, add your views as subviews
+ to this container view. The container responds to chrome position changes and rotation.
+
+ @return A container view on top of the In-App Checkout content view.
+ */
+- (UIView *)viewContainer;
+
 @end
+
+NS_ASSUME_NONNULL_END
 

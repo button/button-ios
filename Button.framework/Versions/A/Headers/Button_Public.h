@@ -14,6 +14,9 @@
 #import "BTNMerchantAction.h"
 #import "BTNMerchantActionSettings.h"
 
+// Checkout
+#import "BTNCheckoutExtensionProtocol.h"
+
 // Orders
 #import "BTNLineItem.h"
 
