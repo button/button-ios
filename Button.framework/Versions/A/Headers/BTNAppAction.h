@@ -3,7 +3,7 @@
 #import "BTNPreview.h"
 #import "BTNHeader.h"
 #import "BTNGroup.h"
-#import "BTNProduct.h"
+#import "BTNProductCardData.h"
 #import "BTNFooter.h"
 
 @protocol BTNCheckoutExtension;
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSUInteger, BTNAppInstallState) {
 
 
 /// A single product representation (note: one of `groups` or `product` will be non-nil).
-@property (nullable, nonatomic, strong, readonly) BTNProduct *product;
+@property (nullable, nonatomic, strong, readonly) BTNProductCardData *product;
 
 
 /// Footer information for the inventory and default action.

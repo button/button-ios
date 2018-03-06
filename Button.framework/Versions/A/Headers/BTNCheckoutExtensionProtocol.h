@@ -1,5 +1,10 @@
 @import Foundation;
 #import "BTNCheckoutInterfaceProtocol.h"
+#import "BTNProduct.h"
+#import "BTNCommission.h"
+
+
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol BTNCheckoutExtension <NSObject>
 
@@ -23,6 +28,25 @@
 
 
 /**
+ Called when the checkout flow navigates to a product. [BETA]
+
+ @param checkout The interface to the checkout object.
+ @param product An object representing the product.
+ @see BTNProduct
+ */
+- (void)checkout:(id <BTNCheckoutInterface>)checkout didNavigateToProduct:(BTNProduct *)product commission:(BTNCommission *)commission;
+
+
+/**
+ Called when a purchase is completed. [BETA]
+ @discussion This is not guaranteed to be called for every purchase as not all merchants are enabled for this feature.
+ 
+ @param checkout The interface to the checkout object.
+ */
+- (void)checkoutDidPurchase:(id <BTNCheckoutInterface>)checkout;
+
+
+/**
  Called when the checkout flow is closed. This does not mean a purchase was completed.
  
  @discussion This can happen when the user dismisses the checkout flow or the user chooses to install the native app.
@@ -30,4 +54,6 @@
 - (void)checkoutDidClose;
 
 @end
+
+NS_ASSUME_NONNULL_END
 
