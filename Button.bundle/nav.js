@@ -6,7 +6,11 @@
  */
 
 (function(history) {
-    
+
+    window.addEventListener("load", function() {
+        window.webkit.messageHandlers.ButtonSDK.postMessage("com.usebutton.webview-loaded");
+    }, false);
+
     function trackNavigateEvent(url) {
         window.webkit.messageHandlers.ButtonSDK.postMessage(url);
     };

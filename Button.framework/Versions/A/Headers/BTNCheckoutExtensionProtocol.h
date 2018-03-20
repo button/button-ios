@@ -1,8 +1,5 @@
 @import Foundation;
 #import "BTNCheckoutInterfaceProtocol.h"
-#import "BTNProduct.h"
-#import "BTNCommission.h"
-
 
 NS_ASSUME_NONNULL_BEGIN
 

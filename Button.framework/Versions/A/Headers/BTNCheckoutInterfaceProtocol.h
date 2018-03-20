@@ -1,7 +1,13 @@
 @import Foundation;
 @import UIKit;
 
+#import "BTNProduct.h"
+#import "BTNCommission.h"
+#import "BTNTextCard.h"
+
 NS_ASSUME_NONNULL_BEGIN
+
+@class BTNCard;
 
 @protocol BTNCheckoutInterface <NSObject>
 
@@ -79,6 +85,26 @@ NS_ASSUME_NONNULL_BEGIN
  @return A container view on top of the In-App Checkout content view.
  */
 - (UIView *)viewContainer;
+
+
+/**
+ Sets the active card in the card system. [BETA]
+ 
+ @param card The card object to set as active, or nil to remove the active card.
+ */
+- (void)setActiveCard:(nullable BTNCard *)card;
+
+
+/**
+ Animates the active card into the checkout view. [BETA]
+ */
+- (void)showActiveCard;
+
+
+/**
+ Animates the active card out of the checkout view. [BETA]
+ */
+- (void)hideActiveCard;
 
 @end
 
