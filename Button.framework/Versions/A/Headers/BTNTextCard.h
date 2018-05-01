@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The title of the card to be displayed in the card's view.
  */
-@property (nullable, nonatomic, readonly, copy) NSString *title;
+@property (nullable, nonatomic, readwrite, copy) NSString *title;
 
 /**
  The color with which the title will be displayed.
@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The body of the card to be displayed in the card's view.
  */
-@property (nullable, nonatomic, readonly, copy) NSString *body;
+@property (nullable, nonatomic, readwrite, copy) NSString *body;
 
 /**
  The color with which the body will be displayed.

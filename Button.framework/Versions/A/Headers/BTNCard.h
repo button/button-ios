@@ -1,5 +1,7 @@
-@import Foundation;
+@import UIKit;
 #import "BTNCardCallToAction.h"
+
+@protocol BTNCheckoutInterface;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -9,9 +11,37 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BTNCard : NSObject
 
 /**
+ A reference to the checkout interface.
+ 
+ @discussion Use this, for example, to make any changes to the top or bottom bars,
+ add, update, or remove cards when a user interacts with a card instance.
+ 
+ @seealso BTNCheckoutInterface
+ */
+@property (nullable, nonatomic, readonly, weak) id <BTNCheckoutInterface> checkout;
+
+
+/**
+ The view instance currently associated with this card.
+
+ @Discussion Returns a non-nil value when a card instance has an associated
+ view representing it. Use this to make any updates to your view,
+ for example, when a user intracts with the view.
+ */
+@property (nullable, nonatomic, readonly, weak) UIView *view;
+
+
+/**
  The call to action object to be displayed when the card is "active".
  */
-@property (nonatomic, strong, readonly) BTNCardCallToAction *cardCTA;
+@property (nonatomic, readonly, strong) BTNCardCallToAction *cardCTA;
+
+
+/**
+ An object that implements the isEqual: method of the NSObject protocol.
+ This can be used to identify a card, and is meant to be unique.
+ */
+@property (nonatomic, readwrite, strong) id <NSObject> key;
 
 
 /**
@@ -21,7 +51,24 @@ NS_ASSUME_NONNULL_BEGIN
  @return returns an instance of a card with a cardCta, or nil if passed nil.
  */
 - (instancetype)initWithCallToAction:(BTNCardCallToAction *)cardCTA;
-- (instancetype)init __attribute__((unavailable("Use -initWithCallToAction:")));
+
+
+/**
+ Called when a card instance needs a view for displaying on screen.
+ Subclasses must override this method and return a new view instance.
+ @seealso -prepareView:
+ */
++ (UIView *)createView;
+
+
+/**
+ Called just before the card's view is displayed on screen.
+ @discussion Subclasses must override this method to prepare the passed
+ card view for display. The passed view will be an instance of the view
+ returned from +createView
+ @seealso +createView
+ */
+- (void)prepareView:(UIView *)cardView;
 
 @end
 

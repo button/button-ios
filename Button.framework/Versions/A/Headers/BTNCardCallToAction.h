@@ -7,19 +7,19 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The icon representing the call to action.
  */
-@property (nonatomic, strong, readonly) UIImage *icon;
+@property (nonatomic, strong, readwrite) UIImage *icon;
 
 
 /**
  The title text for the call to action.
  */
-@property (nonatomic, copy, readonly)   NSString *title;
+@property (nonatomic, copy, readwrite) NSString *title;
 
 
 /**
  The color for the call to action title text.
  */
-@property (nonatomic, strong, readonly) UIColor *titleColor;
+@property (nonatomic, strong, readwrite) UIColor *titleColor;
 
 
 /**

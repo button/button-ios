@@ -3,6 +3,7 @@
 
 #import "BTNProduct.h"
 #import "BTNCommission.h"
+#import "BTNCardListProtocol.h"
 #import "BTNTextCard.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -88,23 +89,32 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- Sets the active card in the card system. [BETA]
+ An object belonging to the checkout interface that maintains the list of cards currently in
+ the card system.
  
- @param card The card object to set as active, or nil to remove the active card.
+ @return The interface to the card list object.
  */
-- (void)setActiveCard:(nullable BTNCard *)card;
+- (id <BTNCardList>)cardList;
 
 
 /**
- Animates the active card into the checkout view. [BETA]
+ Reloads all cards from scratch and re-renders any visible cards.
+ @discussion Call this method when you make changes to cards in the CardList.
  */
-- (void)showActiveCard;
+- (void)reloadCards;
 
 
 /**
- Animates the active card out of the checkout view. [BETA]
+ Animates the top card in the card list into the checkout view.
  */
-- (void)hideActiveCard;
+- (void)showTopCard;
+
+
+/**
+ Animates the top card in the card list out of the checkout view.
+ */
+- (void)hideTopCard;
+
 
 @end
 

@@ -5,6 +5,7 @@
 @import Foundation;
 #import "Button_Public.h"
 
+@protocol BTNCheckoutExtension;
 
 @interface Button : NSObject
 
@@ -163,6 +164,15 @@
  */
 - (void)fetchAppActionWithURL:(nonnull NSURL *)url
                    completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
+
+
+/**
+ Sets a checkout extension to be used during the In-App Checkout experience.
+ @important The passed object will be strongly held by Button.
+
+ @param checkoutExtension your object conforming to the CheckoutExtension protocol.
+ */
+- (void)setCheckoutExtension:(nullable id <BTNCheckoutExtension>)checkoutExtension;
 
 
 
@@ -324,6 +334,7 @@
  @note The default value is NO.
  */
 - (void)setDebugLoggingEnabled:(BOOL)enabled;
+
 
 
 @end

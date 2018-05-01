@@ -71,11 +71,13 @@ typedef NS_ENUM(NSUInteger, BTNAppInstallState) {
 
 /**
  Invokes the default action associated with this AppAction instance.
+ @warning Deprecated. Set your checkout extension via -[Button setCheckoutExtension:].
+ Passing a checkout extension to this method will set/replace the checkout extension on Button.
  @discussion Call this method when you're ready to invoke this action.
  
  @param checkoutExtension Your object conforming to the checkout extension protocol.
  */
-- (void)invokeActionWithCheckoutExtension:(nonnull id <BTNCheckoutExtension>)checkoutExtension;
+- (void)invokeActionWithCheckoutExtension:(nonnull id <BTNCheckoutExtension>)checkoutExtension DEPRECATED_MSG_ATTRIBUTE("Set your checkout extension via -[Button setCheckoutExtension:]");
 
 
 /**
