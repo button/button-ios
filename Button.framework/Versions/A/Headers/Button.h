@@ -348,13 +348,16 @@
 
 
 /**
- Sets whether the Button SDK is allowed to request system level location permission.
- @discussion Button will never ask your users for system level permissions unless you explicitly allow it.
+ @warning
+ This functionality has been removed as of 5.30.0 (deprecated in 5.16.0).
+ If you relied on Button to request location permission for your app,
+ you can replace the functionality following Apple's documentation:
+ https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_when_in_use_authorization
 
- @param isAllowed A boolean indicating whether requesting location permission is allowed.
- @note The default value is NO.
+ @param isAllowed this parameter is ignored as of 5.30.0.
  */
-+ (void)allowButtonToRequestLocationPermission:(BOOL)isAllowed DEPRECATED_MSG_ATTRIBUTE("Please provide location in an instance of BTNContext instead.");
++ (void)allowButtonToRequestLocationPermission:(BOOL)isAllowed DEPRECATED_MSG_ATTRIBUTE("Button's location permission request flow has been removed. Please provide location in an instance of BTNContext instead.");
+
 
 
 ///----------------------
