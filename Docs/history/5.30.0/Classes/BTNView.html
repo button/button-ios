@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BTNView Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Button SDK (5.30.0) </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Button, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/forceOpacity">forceOpacity</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/didAppear">- didAppear</option>
+		
+		<option value="//api/name/didDisappear">- didDisappear</option>
+		
+		<option value="//api/name/initializeView">- initializeView</option>
+		
+		<option value="//api/name/isVisible">- isVisible</option>
+		
+		<option value="//api/name/shouldUpdateConstraints">- shouldUpdateConstraints</option>
+		
+		<option value="//api/name/willAppear">- willAppear</option>
+		
+		<option value="//api/name/willDisappear">- willDisappear</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BTNView Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIView</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BTNView.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/forceOpacity" title="forceOpacity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/forceOpacity">&nbsp;&nbsp;forceOpacity</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates whether the view should ignore a clear color background.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=shouldForceOpacity) BOOL forceOpacity</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates whether the view should ignore a clear color background.</p><p>Default is NO. Set to YES to prevent the background color from being set to clearColor by Apple
+when used as a subview of a highlightable UITableViewCell.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initializeView" title="initializeView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initializeView">&ndash;&nbsp;initializeView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the view. Called from -initWithFrame: and -initWithCoder:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initializeView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes the view. Called from -initWithFrame: and -initWithCoder:</p><p>You should never call this method directly. Subclasses can override this method to initialize subviews.</p><div class="note"><p><strong>Note:</strong> You must call super in your implementation.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shouldUpdateConstraints" title="shouldUpdateConstraints"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shouldUpdateConstraints">&ndash;&nbsp;shouldUpdateConstraints</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates whether the constraints need updating.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)shouldUpdateConstraints</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates whether the constraints need updating.</p><p>Subclasses can override this method to return whether a constraint pass should occur.
+The default implementation returns YES if the views bounds have changed since the last constraint pass.</p><div class="note"><p><strong>Note:</strong> You must call super in your implementation.</p>
+
+<p>@code
+- (BOOL)shouldUpdateConstraints {
+    return [super shouldUpdateConstraints] || self.currentIndicator != self.newIndicator;
+}
+@endcode</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isVisible" title="isVisible"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isVisible">&ndash;&nbsp;isVisible</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates whether the view is currently visible on the screen.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isVisible</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates whether the view is currently visible on the screen.</p><p>This method will return YES if the view&rsquo;s frame, converted to the logical coordinate system of the screen, is contained by the screen bounds and the view and its window have an alpha greater than 0.0 and are not hidden.</p><div class="note"><p><strong>Note:</strong> There are a couple caveats. 1) The method does not take into account any of its ancestors hidden or alpha values. 2) The method does not take into account whether the view is obscured by another view.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/willAppear" title="willAppear"></a>
+	<h3 class="method-title"><code><a href="#//api/name/willAppear">&ndash;&nbsp;willAppear</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the view that it is about to appear in the view heirarchy.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)willAppear</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Notifies the view that it is about to appear in the view heirarchy.</p><p>You should never call this method directly. Subclasses can override this method to be notified
+that the view is about to be added to the view heirarchy.</p><div class="note"><p><strong>Note:</strong> You must call super in your implementation.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didAppear" title="didAppear"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didAppear">&ndash;&nbsp;didAppear</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the view that it has appeared in the view heirarchy.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didAppear</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Notifies the view that it has appeared in the view heirarchy.</p><p>You should never call this method directly. Subclasses can override this method to be notified
+that the view has been added to the view heirarchy.</p><div class="note"><p><strong>Note:</strong> You must call super in your implementation.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/willDisappear" title="willDisappear"></a>
+	<h3 class="method-title"><code><a href="#//api/name/willDisappear">&ndash;&nbsp;willDisappear</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the view that it is about to be removed from a view hierarchy.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)willDisappear</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Notifies the view that it is about to be removed from a view hierarchy.</p><p>You should never call this method directly. Subclasses can override this method to be notified
+that the view is about to be removed from the view heirarchy.</p><div class="note"><p><strong>Note:</strong> You must call super in your implementation.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didDisappear" title="didDisappear"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didDisappear">&ndash;&nbsp;didDisappear</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the view that it has been removed from a view hierarchy.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didDisappear</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Notifies the view that it has been removed from a view hierarchy.</p><p>You should never call this method directly. Subclasses can override this method to be notified
+that the view has been removed from the view heirarchy.</p><div class="note"><p><strong>Note:</strong> You must call super in your implementation.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Button, Inc. All rights reserved. Updated: 2018-05-16</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

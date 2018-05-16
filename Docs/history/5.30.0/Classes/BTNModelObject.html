@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BTNModelObject Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Button SDK (5.30.0) </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Button, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/arrayOfObjectsFromRepresentations:">+ arrayOfObjectsFromRepresentations:</option>
+		
+		<option value="//api/name/arrayOfRepresentationsFromObjects:">+ arrayOfRepresentationsFromObjects:</option>
+		
+		<option value="//api/name/canInitWithDictionary:">+ canInitWithDictionary:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BTNModelObject Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/BTNSerializable.html">BTNSerializable</a><br />NSCopying</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BTNModelObject.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/canInitWithDictionary:" title="canInitWithDictionary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/canInitWithDictionary:">+&nbsp;canInitWithDictionary:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Part of the <a href="../Protocols/BTNSerializable.html">BTNSerializable</a> protocol.
+Provides a required, base implementation to ensure the passed dictionary is in fact an NSDictionary.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)canInitWithDictionary:(nonnull NSDictionary *)<em>dictionary</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Part of the <a href="../Protocols/BTNSerializable.html">BTNSerializable</a> protocol.
+Provides a required, base implementation to ensure the passed dictionary is in fact an NSDictionary.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/BTNSerializable.html">BTNSerializable</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNModelObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Serializing/Deserializing Arrays" name="task_Serializing/Deserializing Arrays"></a>
+						<h2 class="task-title">Serializing/Deserializing Arrays</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/arrayOfObjectsFromRepresentations:" title="arrayOfObjectsFromRepresentations:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/arrayOfObjectsFromRepresentations:">+&nbsp;arrayOfObjectsFromRepresentations:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a new array of objects from an array of dictionaries.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable NSArray *)arrayOfObjectsFromRepresentations:(nullable NSArray&lt;NSDictionary*&gt; *)<em>representations</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>representations</code></th>
+						<td><p>An array of dictionary representations to be converted into objects.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a new array of objects from an array of dictionaries.</p><div class="note"><p><strong>Note:</strong> Non NSDictionary objects will be omitted.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNModelObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/arrayOfRepresentationsFromObjects:" title="arrayOfRepresentationsFromObjects:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/arrayOfRepresentationsFromObjects:">+&nbsp;arrayOfRepresentationsFromObjects:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a serialized array of dictionaries from an array of BTNModelObject objects.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable NSArray&lt;NSDictionary*&gt; *)arrayOfRepresentationsFromObjects:(nullable NSArray&lt;BTNModelObject*&gt; *)<em>objects</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a serialized array of dictionaries from an array of BTNModelObject objects.</p><div class="note"><p><strong>Note:</strong> Objects not conforming to <a href="../Protocols/BTNSerializable.html">BTNSerializable</a> will be omitted.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNModelObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Button, Inc. All rights reserved. Updated: 2018-05-16</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
