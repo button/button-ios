@@ -1,4 +1,4 @@
-#import "BTNView.h"
+@import UIKit;
 #import "BTNDropinButtonAppearanceProtocol.h"
 #import "BTNContext.h"
 #import "BTNDropinButton_Deprecated.h"

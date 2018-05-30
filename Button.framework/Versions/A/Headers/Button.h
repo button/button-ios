@@ -1,6 +1,6 @@
 /*
  Button SDK
- Copyright Button, Inc. 2016
+ Copyright Button, Inc. 2014-2018
  */
 @import Foundation;
 #import "Button_Public.h"
@@ -9,10 +9,10 @@
 
 @interface Button : NSObject
 
-/**
- Version of the Button SDK
- **/
-+ (nonnull NSString *)sdkVersion;
+
+///----------------------------
+/// @name Shared Button Intance
+///----------------------------
 
 
 /**
@@ -27,6 +27,11 @@
 
 @protocol Button <NSObject>
 @required
+
+
+///--------------------
+/// @name Configuration
+///--------------------
 
 
 /**
@@ -58,15 +63,35 @@
                         completion:(nullable void(^)(NSError * __nullable error, NSURL * __nullable targetURL))completionHandler;
 
 
+
+///----------------------
+/// @name User Identifier
+///----------------------
+
+
 /**
- Checks whether Button has an action available for a buttonId and contextually relevant data.
- @param buttonId The identifier for a button (e.g. btn-xxxxxxxxxxxx).
- @param context A BTNContext object providing context about your user's current activity.
- @param completionHandler A block to be executed upon completion.
- */
-- (void)willDisplayButtonWithId:(nonnull NSString *)buttonId
-                        context:(nonnull BTNContext *)context
-                     completion:(nonnull void(^)(BOOL willDisplay))completionHandler;
+ Associate your ID for the current user with the Button session.
+ @param userIdentifier your identifier for the user.
+ @note This is required for attribution.
+
+ @discussion To correctly configure Button for attribution, make sure to:
+ 1. Pass your logged in user's Id when configuring Button (use `-configureWithApplicationId:userId:completion:`).
+ 2. Call this method with your user's id after a user successfully logs into your app.
+
+ If you don't have the Id of your logged in user in at the time you call `-configureWithApplicationId:userId:completion:`
+ (typically in `-application:didFinishLaunchingWithOptions:`), make sure you call this method once you've successfully
+ acquired the Id for your logged in user.
+
+ Note that passing nil here is a noop and will not remove the user Id from the session.
+ If your user is logging out, call `-logOut` to reset the session and user data in Button.
+ **/
+- (void)setUserIdentifier:(nonnull NSString *)userIdentifier;
+
+
+
+///---------------------
+/// @name Button Actions
+///---------------------
 
 
 /**
@@ -99,27 +124,45 @@
 
 
 /**
- Fetches an app action for a merchantId.
- @param merchantId The identifier for a merchant (e.g. org-xxxxxxxxxxxx).
+ Checks whether Button has an action available for a buttonId and contextually relevant data.
+ @param buttonId The identifier for a button (e.g. btn-xxxxxxxxxxxx).
+ @param context A BTNContext object providing context about your user's current activity.
+ @param completionHandler A block to be executed upon completion.
+ */
+- (void)willDisplayButtonWithId:(nonnull NSString *)buttonId
+                        context:(nonnull BTNContext *)context
+                     completion:(nonnull void(^)(BOOL willDisplay))completionHandler;
+
+
+
+///--------------------
+/// @name Purchase Path
+///--------------------
+
+
+/**
+ Fetches an app action for a supported url.
+ @param url A merchant or affilate url.
  @param publisherReference A token to be associated with all downstream orders, transactions and webhooks. (Max 100 chars.)
  @param completionHandler A block to be executed upon completion.
 
  @discussion The completion handler takes two parameters
-    - appAction A BTNAppAction instance or nil if no action was found for the provided merchantId.
-    - error An error will be present if a network or server error occurred.
- 
+ - appAction A BTNAppAction instance or nil if no action was found for the provided url.
+ - error An error will be present if an error occurred.
+
  @note Returned actions are NOT cached.
+ @note Returns immidiately if provided url is not supported.
  */
-- (void)fetchAppActionWithMerchantId:(nonnull NSString *)merchantId
-                  publisherReference:(nullable NSString *)publisherReference
-                          completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
+- (void)fetchAppActionWithURL:(nonnull NSURL *)url
+           publisherReference:(nullable NSString *)publisherReference
+                   completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
 
 
 /**
- @see -fetchAppActionWithMerchantId:publisherReference:completion:
+ @see -fetchAppActionWithURL:publisherReference:completion:
  */
-- (void)fetchAppActionWithMerchantId:(nonnull NSString *)merchantId
-                          completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
+- (void)fetchAppActionWithURL:(nonnull NSURL *)url
+                   completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
 
 
 /**
@@ -142,43 +185,27 @@
 
 
 /**
- Fetches an app action for a supported url.
- @param url A merchant or affilate url.
+ Fetches an app action for a merchantId.
+ @param merchantId The identifier for a merchant (e.g. org-xxxxxxxxxxxx).
  @param publisherReference A token to be associated with all downstream orders, transactions and webhooks. (Max 100 chars.)
  @param completionHandler A block to be executed upon completion.
 
  @discussion The completion handler takes two parameters
- - appAction A BTNAppAction instance or nil if no action was found for the provided url.
- - error An error will be present if an error occurred.
- 
+ - appAction A BTNAppAction instance or nil if no action was found for the provided merchantId.
+ - error An error will be present if a network or server error occurred.
+
  @note Returned actions are NOT cached.
- @note Returns immidiately if provided url is not supported.
  */
-- (void)fetchAppActionWithURL:(nonnull NSURL *)url
-           publisherReference:(nullable NSString *)publisherReference
-                   completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
+- (void)fetchAppActionWithMerchantId:(nonnull NSString *)merchantId
+                  publisherReference:(nullable NSString *)publisherReference
+                          completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
 
 
 /**
- @see -fetchAppActionWithURL:publisherReference:completion:
+ @see -fetchAppActionWithMerchantId:publisherReference:completion:
  */
-- (void)fetchAppActionWithURL:(nonnull NSURL *)url
-                   completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
-
-
-/**
- Sets a checkout extension to be used during the In-App Checkout experience.
- @important The passed object will be strongly held by Button.
-
- @param checkoutExtension your object conforming to the CheckoutExtension protocol.
- */
-- (void)setCheckoutExtension:(nullable id <BTNCheckoutExtension>)checkoutExtension;
-
-
-
-///----------------------------------
-/// @name Presenting Merchant Actions
-///----------------------------------
+- (void)fetchAppActionWithMerchantId:(nonnull NSString *)merchantId
+                          completion:(nonnull void(^)(BTNAppAction * __nullable appAction, NSError * __nullable error))completionHandler;
 
 
 /**
@@ -225,6 +252,36 @@
                    completion:(nonnull void (^)(BTNMerchantActionResult result, NSError * __nullable error))completionHandler;
 
 
+
+///-------------------------
+/// @name Checkout Extension
+///-------------------------
+
+
+/**
+ Sets a checkout extension to be used during the In-App Checkout experience.
+ @important The passed object will be strongly held by Button.
+
+ @param checkoutExtension your object conforming to the CheckoutExtension protocol.
+ */
+- (void)setCheckoutExtension:(nullable id <BTNCheckoutExtension>)checkoutExtension;
+
+
+///------------------------------
+/// @name Reporting Custom Events
+///------------------------------
+
+
+/**
+ Report an event to Button.
+ @param eventName The name of the event.
+ @param properties A dictionary of key-value string pairs for adding detail to the event.
+ */
+- (void)reportEventWithName:(nonnull NSString *)eventName
+                 properties:(nullable NSDictionary <NSString *, NSString *> *)properties;
+
+
+
 ///-------------------------
 /// @name Deep Link Handling
 ///-------------------------
@@ -263,39 +320,6 @@
  @return String value of the last inbound referrerToken
  **/
 - (nullable NSString *)referrerToken;
-
-
-/**
- Associate your ID for the current user with the Button session.
- @param userIdentifier your identifier for the user.
- @note This is required for attribution.
- 
- @discussion To correctly configure Button for attribution, make sure to:
- 1. Pass your logged in user's Id when configuring Button (use `-configureWithApplicationId:userId:completion:`).
- 2. Call this method with your user's id after a user successfully logs into your app.
- 
- If you don't have the Id of your logged in user in at the time you call `-configureWithApplicationId:userId:completion:` 
- (typically in `-application:didFinishLaunchingWithOptions:`), make sure you call this method once you've successfully 
- acquired the Id for your logged in user.
- 
- Note that passing nil here is a noop and will not remove the user Id from the session. 
- If your user is logging out, call `-logOut` to reset the session and user data in Button.
- **/
-- (void)setUserIdentifier:(nonnull NSString *)userIdentifier;
-
-
-
-///------------------------------
-/// @name Reporting Custom Events
-///------------------------------
-
-/**
- Report an event to Button.
- @param eventName The name of the event.
- @param properties A dictionary of key-value string pairs for adding detail to the event.
- */
-- (void)reportEventWithName:(nonnull NSString *)eventName
-                 properties:(nullable NSDictionary <NSString *, NSString *> *)properties;
 
 
 
@@ -348,11 +372,11 @@
 
 
 /**
- @warning
+ @important
  This functionality has been removed as of 5.30.0 (deprecated in 5.16.0).
  If you relied on Button to request location permission for your app,
- you can replace the functionality following Apple's documentation:
- https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_when_in_use_authorization
+ you can replace the functionality following [Apple's documentation)
+ (https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_when_in_use_authorization)
 
  @param isAllowed this parameter is ignored as of 5.30.0.
  */
@@ -393,5 +417,18 @@
  @endcode
  */
 + (void)setAutomaticAttributionEnabled:(BOOL)enabled;
+
+
+
+///--------------
+/// @name Version
+///--------------
+
+
+/**
+ Version of the Button SDK
+ **/
++ (nonnull NSString *)sdkVersion;
+
 
 @end

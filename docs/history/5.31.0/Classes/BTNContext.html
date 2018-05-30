@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BTNContext Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Button SDK (5.31.0) </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Button, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/context">+ context</option>
+		
+		<option value="//api/name/contextWithArtist:">+ contextWithArtist:</option>
+		
+		<option value="//api/name/contextWithEvent:">+ contextWithEvent:</option>
+		
+		<option value="//api/name/contextWithItem:">+ contextWithItem:</option>
+		
+		<option value="//api/name/contextWithItems:">+ contextWithItems:</option>
+		
+		<option value="//api/name/contextWithJourney:">+ contextWithJourney:</option>
+		
+		<option value="//api/name/contextWithSubjectLocation:">+ contextWithSubjectLocation:</option>
+		
+		<option value="//api/name/contextWithURL:">+ contextWithURL:</option>
+		
+		<option value="//api/name/contextWithUserLocation:">+ contextWithUserLocation:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addCustomValue:forContextKey:">- addCustomValue:forContextKey:</option>
+		
+		<option value="//api/name/addItems:">- addItems:</option>
+		
+		<option value="//api/name/setArtist:">- setArtist:</option>
+		
+		<option value="//api/name/setDate:">- setDate:</option>
+		
+		<option value="//api/name/setDateRangeWithStartDate:endDate:">- setDateRangeWithStartDate:endDate:</option>
+		
+		<option value="//api/name/setEvent:">- setEvent:</option>
+		
+		<option value="//api/name/setJourney:">- setJourney:</option>
+		
+		<option value="//api/name/setSubjectLocation:">- setSubjectLocation:</option>
+		
+		<option value="//api/name/setURL:">- setURL:</option>
+		
+		<option value="//api/name/setUserLocation:">- setUserLocation:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BTNContext Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/BTNBaseEntity.html">BTNBaseEntity</a> : BTNModelObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BTNContext.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>All fields are optional and should be populated only if known.</p><div class="warning"><p><strong>Warning:</strong> Using the same <a href="#//api/name/context">context</a> instance for multiple fetches is not recommended and unexpected results may occur. Please use a new instance for each fetch.</p></div>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Initilization" name="task_Initilization"></a>
+						<h2 class="task-title">Initilization</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/context" title="context"></a>
+	<h3 class="method-title"><code><a href="#//api/name/context">+&nbsp;context</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a newly instantiated context object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)context</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a newly instantiated context object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contextWithUserLocation:" title="contextWithUserLocation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contextWithUserLocation:">+&nbsp;contextWithUserLocation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with a userLocation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)contextWithUserLocation:(BTNLocation *)<em>userLocation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userLocation</code></th>
+						<td><p>the current location of the user.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with a userLocation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contextWithSubjectLocation:" title="contextWithSubjectLocation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contextWithSubjectLocation:">+&nbsp;contextWithSubjectLocation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with a subject location.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)contextWithSubjectLocation:(BTNLocation *)<em>subjectLocation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>subjectLocation</code></th>
+						<td><p>a location subject for the current activity or content.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with a subject location.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setSubjectLocation:">- setSubjectLocation:</a> for more info.</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contextWithArtist:" title="contextWithArtist:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contextWithArtist:">+&nbsp;contextWithArtist:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with an artist.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)contextWithArtist:(BTNMusicArtist *)<em>artist</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>artist</code></th>
+						<td><p>a music artist associated with the current <a href="#//api/name/context">context</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with an artist.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setArtist:">- setArtist:</a> for more info.</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contextWithJourney:" title="contextWithJourney:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contextWithJourney:">+&nbsp;contextWithJourney:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with a journey.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)contextWithJourney:(BTNJourney *)<em>journey</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>journey</code></th>
+						<td><p>a journey object which is relevant to the current user <a href="#//api/name/context">context</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with a journey.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setJourney:">- setJourney:</a> for more info.</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contextWithEvent:" title="contextWithEvent:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contextWithEvent:">+&nbsp;contextWithEvent:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with an event.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)contextWithEvent:(BTNEvent *)<em>event</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>event</code></th>
+						<td><p>an event object which is relevant to the current user <a href="#//api/name/context">context</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with an event.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setEvent:">- setEvent:</a> for more info.</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contextWithItem:" title="contextWithItem:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contextWithItem:">+&nbsp;contextWithItem:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with a single item.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)contextWithItem:(BTNItem *)<em>item</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>item</code></th>
+						<td><p>An item that is the subject of the page.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with a single item.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/addItems:">- addItems:</a> for more info.</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contextWithItems:" title="contextWithItems:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contextWithItems:">+&nbsp;contextWithItems:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with an array of items.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)contextWithItems:(NSArray&lt;BTNItem*&gt; *)<em>items</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>items</code></th>
+						<td><p>one or more items that are the subject of the page.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with an array of items.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/addItems:">- addItems:</a> for more info.</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contextWithURL:" title="contextWithURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contextWithURL:">+&nbsp;contextWithURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with a URL.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)contextWithURL:(NSURL *)<em>URL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URL</code></th>
+						<td><p>a URL that specifies the current <a href="#//api/name/context">context</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a newly instantiated <a href="#//api/name/context">context</a> object with a URL.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setURL:">- setURL:</a> for more info.</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Adding Additional Data" name="task_Adding Additional Data"></a>
+						<h2 class="task-title">Adding Additional Data</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setUserLocation:" title="setUserLocation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUserLocation:">&ndash;&nbsp;setUserLocation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the current location of the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setUserLocation:(BTNLocation *)<em>userLocation</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the current location of the user.</p><div class="note"><p><strong>Note:</strong> Provide whatever level of granularity makes sense for the <a href="#//api/name/context">context</a> / that you have access to.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSubjectLocation:" title="setSubjectLocation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSubjectLocation:">&ndash;&nbsp;setSubjectLocation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a location subject for the current activity or content.
+Example: A restaurant on a venue page, point on a map or city in a travel app</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setSubjectLocation:(BTNLocation *)<em>subjectLocation</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets a location subject for the current activity or content.
+Example: A restaurant on a venue page, point on a map or city in a travel app</p><div class="note"><p><strong>Note:</strong> Provide whatever level of granularity makes sense for the <a href="#//api/name/context">context</a>.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDate:" title="setDate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDate:">&ndash;&nbsp;setDate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a relevant date for the user’s <a href="#//api/name/context">context</a>.
+Example: The time of a reservation, date of a hotel reservation etc..</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDate:(NSDate *)<em>date</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets a relevant date for the user’s <a href="#//api/name/context">context</a>.
+Example: The time of a reservation, date of a hotel reservation etc..</p><div class="note"><p><strong>Note:</strong> If date is not relevant, do not provide it.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDateRangeWithStartDate:endDate:" title="setDateRangeWithStartDate:endDate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDateRangeWithStartDate:endDate:">&ndash;&nbsp;setDateRangeWithStartDate:endDate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a date range when the current <a href="#//api/name/context">context</a> represents a discrete period of time with a beginning and an end.
+Example: a return flight, movie showing, sporting event etc..</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDateRangeWithStartDate:(NSDate *)<em>startDate</em> endDate:(NSDate *)<em>endDate</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets a date range when the current <a href="#//api/name/context">context</a> represents a discrete period of time with a beginning and an end.
+Example: a return flight, movie showing, sporting event etc..</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setArtist:" title="setArtist:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setArtist:">&ndash;&nbsp;setArtist:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a music artist associated with the current <a href="#//api/name/context">context</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setArtist:(BTNMusicArtist *)<em>artist</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets a music artist associated with the current <a href="#//api/name/context">context</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><code>BTNMusicArtist</code> <a href="#//api/name/context">+ context</a> object for details.</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setJourney:" title="setJourney:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setJourney:">&ndash;&nbsp;setJourney:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a journey object which is relevant to the current user <a href="#//api/name/context">context</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setJourney:(BTNJourney *)<em>journey</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets a journey object which is relevant to the current user <a href="#//api/name/context">context</a>.</p><div class="note"><p><strong>Note:</strong> Specify a <a href="../Classes/BTNJourney.html"><code>BTNJourney</code></a> only when the current <a href="#//api/name/context">context</a> represents a journey.
+Example: itinerary for a flight, bus, train, interstellar travel etc..</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEvent:" title="setEvent:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEvent:">&ndash;&nbsp;setEvent:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets an event object which is relevant to the current user <a href="#//api/name/context">context</a>.
+Example: A concert, art show, conference etc..</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setEvent:(BTNEvent *)<em>event</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets an event object which is relevant to the current user <a href="#//api/name/context">context</a>.
+Example: A concert, art show, conference etc..</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addItems:" title="addItems:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addItems:">&ndash;&nbsp;addItems:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add one or more items that are the subject of the page.
+Example: a book, iPad etc..</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addItems:(NSArray&lt;BTNItem*&gt; *)<em>items</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Add one or more items that are the subject of the page.
+Example: a book, iPad etc..</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setURL:" title="setURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setURL:">&ndash;&nbsp;setURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a URL that specifies the current <a href="#//api/name/context">context</a>.
+This can either be a Universal Links representation of the page or URL of the canonical crawlable web page.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setURL:(NSURL *)<em>URL</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets a URL that specifies the current <a href="#//api/name/context">context</a>.
+This can either be a Universal Links representation of the page or URL of the canonical crawlable web page.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Custom Context" name="task_Custom Context"></a>
+						<h2 class="task-title">Custom Context</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/addCustomValue:forContextKey:" title="addCustomValue:forContextKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addCustomValue:forContextKey:">&ndash;&nbsp;addCustomValue:forContextKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add custom key-value pairs to further define your users <a href="#//api/name/context">context</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addCustomValue:(id)<em>obj</em> forContextKey:(NSString *)<em>key</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Add custom key-value pairs to further define your users <a href="#//api/name/context">context</a>.</p><div class="note"><p><strong>Note:</strong> you can also use object subscripting (e.g. object[key] = value) @see <a href="../Protocols/BTNSubscriptable.html">BTNSubscriptable</a></p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNContext.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Button, Inc. All rights reserved. Updated: 2018-05-30</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
