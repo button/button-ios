@@ -1,20 +1,21 @@
 @import UIKit;
 
-@class BTNAppAction;
+@class BTNAction;
 
+NS_SWIFT_NAME(InteractiveButton)
 @interface BTNInteractiveButton : UIView
 
-///------------------------------
-/// @name Rendering an App Action
-///------------------------------
+///--------------------------------
+/// @name Rendering a Button Action
+///--------------------------------
 
 
 /**
  Tells the button to render the passed app action.
- @param appAction A BTNAppAction loaded via `-[Button fetchAppActionWithButtonId:context:completion:]`
+ @param buttonAction A BTNAction fetched via `-[Button.actions fetchWithRequest:actionHandler:]`
  @note passing nil will return the button to the loading state.
  */
-- (void)prepareWithAppAction:(BTNAppAction *)appAction;
+- (void)prepareWithButtonAction:(BTNAction *)buttonAction NS_SWIFT_NAME(prepare(action:));
 
 
 

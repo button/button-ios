@@ -7,6 +7,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(MusicArtist)
 @interface BTNMusicArtist : BTNBaseEntity
 
 /**
