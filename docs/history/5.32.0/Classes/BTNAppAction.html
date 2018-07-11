@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BTNAppAction Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Button SDK (5.32.0) </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Button, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/footer">footer</option>
+		
+		<option value="//api/name/groups">groups</option>
+		
+		<option value="//api/name/header">header</option>
+		
+		<option value="//api/name/meta">meta</option>
+		
+		<option value="//api/name/preview">preview</option>
+		
+		<option value="//api/name/product">product</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/appInstallState">- appInstallState</option>
+		
+		<option value="//api/name/fetchPreviewIconImageWithCompletion:">- fetchPreviewIconImageWithCompletion:</option>
+		
+		<option value="//api/name/invokeAction">- invokeAction</option>
+		
+		<option value="//api/name/invokeActionForListItem:">- invokeActionForListItem:</option>
+		
+		<option value="//api/name/invokeActionWithCheckoutExtension:">- invokeActionWithCheckoutExtension:</option>
+		
+		<option value="//api/name/invokeFooterAction">- invokeFooterAction</option>
+		
+		<option value="//api/name/invokePreviewAction">- invokePreviewAction</option>
+		
+		<option value="//api/name/trackButtonViewed">- trackButtonViewed</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BTNAppAction Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>BTNModelObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BTNAppAction.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An App Action represents a button (i.e. “preview”) and inventory typically rendered as a “commerce card”.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/meta" title="meta"></a>
+	<h3 class="method-title"><code><a href="#//api/name/meta">&nbsp;&nbsp;meta</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>App action metadata (id, source token, expiry, etc).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, copy, readonly) BTNAppActionMeta *meta</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>App action metadata (id, source token, expiry, etc).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/preview" title="preview"></a>
+	<h3 class="method-title"><code><a href="#//api/name/preview">&nbsp;&nbsp;preview</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The button preview data.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, copy, readonly) BTNPreview *preview</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The button preview data.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/header" title="header"></a>
+	<h3 class="method-title"><code><a href="#//api/name/header">&nbsp;&nbsp;header</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Heading information for the inventory.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) BTNHeader *header</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Heading information for the inventory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/groups" title="groups"></a>
+	<h3 class="method-title"><code><a href="#//api/name/groups">&nbsp;&nbsp;groups</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Grouped inventory (note: one of <code>groups</code> or <a href="#//api/name/product"><code>product</code></a> will be non-nil).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSArray&lt;BTNGroup*&gt; *groups</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Grouped inventory (note: one of <code>groups</code> or <a href="#//api/name/product"><code>product</code></a> will be non-nil).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/product" title="product"></a>
+	<h3 class="method-title"><code><a href="#//api/name/product">&nbsp;&nbsp;product</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A single product representation (note: one of <a href="#//api/name/groups"><code>groups</code></a> or <code>product</code> will be non-nil).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) BTNProductCardData *product</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A single product representation (note: one of <a href="#//api/name/groups"><code>groups</code></a> or <code>product</code> will be non-nil).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/footer" title="footer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/footer">&nbsp;&nbsp;footer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Footer information for the inventory and default action.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) BTNFooter *footer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Footer information for the inventory and default action.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Invoking Actions" name="task_Invoking Actions"></a>
+						<h2 class="task-title">Invoking Actions</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/invokePreviewAction" title="invokePreviewAction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invokePreviewAction">&ndash;&nbsp;invokePreviewAction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invokes the <a href="../Classes/Button.html">Button</a> commerce card flow or a <a href="#//api/name/preview">preview</a> action if one exists.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)invokePreviewAction</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invokes the <a href="../Classes/Button.html">Button</a> commerce card flow or a <a href="#//api/name/preview">preview</a> action if one exists.</p><div class="warning"><p><strong>Warning:</strong> Deprecated. Use <a href="#//api/name/invokeAction"><code>invokeAction</code></a> instead.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invokeAction" title="invokeAction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invokeAction">&ndash;&nbsp;invokeAction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invokes the default action associated with this AppAction instance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)invokeAction</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invokes the default action associated with this AppAction instance.</p><p>Call this method when you&rsquo;re ready to invoke this action.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p>@c <a href="#//api/name/invokeActionForListItem:">- invokeActionForListItem:</a> If you&rsquo;ve built out your own custom inventory UI.</p></code></li>
+					
+					<li><code><p>@c <a href="#//api/name/invokeActionWithCheckoutExtension:">- invokeActionWithCheckoutExtension:</a> If you&rsquo;re extending In-App Checkout (e.g. Button&rsquo;s embedded browser).</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invokeActionWithCheckoutExtension:" title="invokeActionWithCheckoutExtension:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invokeActionWithCheckoutExtension:">&ndash;&nbsp;invokeActionWithCheckoutExtension:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invokes the default action associated with this AppAction instance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)invokeActionWithCheckoutExtension:(nonnull id&lt;BTNCheckoutExtension&gt;)<em>checkoutExtension</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>checkoutExtension</code></th>
+						<td><p>Your object conforming to the checkout extension protocol.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invokes the default action associated with this AppAction instance.</p><div class="warning"><p><strong>Warning:</strong> Deprecated. Set your checkout extension via <a href="../Classes/Button.html#//api/name/setCheckoutExtension:">[Button setCheckoutExtension:]</a>.
+Passing a checkout extension to this method will set/replace the checkout extension on <a href="../Classes/Button.html">Button</a>.</p></div><p>Call this method when you&rsquo;re ready to invoke this action.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invokeActionForListItem:" title="invokeActionForListItem:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invokeActionForListItem:">&ndash;&nbsp;invokeActionForListItem:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invokes the action of a specific inventory list item.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)invokeActionForListItem:(nonnull BTNListItem *)<em>listItem</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invokes the action of a specific inventory list item.</p><p>If you&rsquo;ve built out your own custom inventory UI, call this
+method when a user taps a specific inventory item.</p><div class="note"><p><strong>Note:</strong> Users will be sent to the destination application or through the
+Attended Install flow if the destination application is not installed.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invokeFooterAction" title="invokeFooterAction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invokeFooterAction">&ndash;&nbsp;invokeFooterAction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invokes the <a href="#//api/name/footer">footer</a> action (i.e. default action).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)invokeFooterAction</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invokes the <a href="#//api/name/footer">footer</a> action (i.e. default action).</p><p>If your custom inventory UI includes <a href="../Classes/BTNFooter.html">BTNFooter</a> data, call this
+method when you user taps on your custom <a href="#//api/name/footer">footer</a> view.</p><div class="note"><p><strong>Note:</strong> Users will be sent to the destination application or through the
+Attended Install flow if the destination application is not installed.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Fetching Preview Image" name="task_Fetching Preview Image"></a>
+						<h2 class="task-title">Fetching Preview Image</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/fetchPreviewIconImageWithCompletion:" title="fetchPreviewIconImageWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchPreviewIconImageWithCompletion:">&ndash;&nbsp;fetchPreviewIconImageWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches the <a href="#//api/name/preview">preview</a> icon image data from the <code></code>preview<code>.iconImage.URL</code> or the local cache.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchPreviewIconImageWithCompletion:(nonnull void ( ^ ) ( UIImage *__nullable image ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block to be executed once the image data has loaded.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetches the <a href="#//api/name/preview">preview</a> icon image data from the <code></code>preview<code>.iconImage.URL</code> or the local cache.</p><div class="note"><p><strong>Note:</strong> The completionHandler takes one argument, a UIImage or nil if an error occurred.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="App Install State" name="task_App Install State"></a>
+						<h2 class="task-title">App Install State</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/appInstallState" title="appInstallState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/appInstallState">&ndash;&nbsp;appInstallState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Determines whether the target app is installed, not installed or not queryable.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BTNAppInstallState)appInstallState</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>BTNInstallStateNotInstalled if target application is NOT installed.
+         BTNInstallStateInstalled    if target application is installed.
+         BTNInstallStateNotQueryable if app scheme was not declared in LSApplicationQueriesSchemes of Info.plist (>= iOS9).</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Determines whether the target app is installed, not installed or not queryable.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Event Tracking" name="task_Event Tracking"></a>
+						<h2 class="task-title">Event Tracking</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/trackButtonViewed" title="trackButtonViewed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackButtonViewed">&ndash;&nbsp;trackButtonViewed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks a &ldquo;button viewed&rdquo; event each time this method is called.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackButtonViewed</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Tracks a &ldquo;button viewed&rdquo; event each time this method is called.</p><div class="note"><p><strong>Note:</strong> Invoke this method when your custom button is displayed to the user.</p></div><p>Used to measure performance so make sure you report at the same
+             interval across iOS and Android. We suggest that you report this
+             right after you&rsquo;ve configured your UI with the AppAction if those
+             views will be visible.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNAppAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Button, Inc. All rights reserved. Updated: 2018-07-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
