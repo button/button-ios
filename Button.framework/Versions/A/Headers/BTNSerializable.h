@@ -1,5 +1,6 @@
 @import Foundation;
 
+NS_SWIFT_NAME(Serializable)
 @protocol BTNSerializable <NSObject>
 
 @required

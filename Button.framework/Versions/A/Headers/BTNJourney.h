@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, BTNTransportType) {
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(Journey)
 @interface BTNJourney : BTNBaseEntity
 
 /// Sets the starting location of the journey.

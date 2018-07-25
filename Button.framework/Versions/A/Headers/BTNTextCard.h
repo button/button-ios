@@ -5,6 +5,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  This is a concrete card class that can display a title and body text.
  */
+NS_SWIFT_NAME(TextCard)
 @interface BTNTextCard : BTNCard
 
 /**

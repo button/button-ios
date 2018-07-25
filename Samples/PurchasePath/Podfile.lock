@@ -1,0 +1,21 @@
+PODS:
+  - Button (6.0.0)
+  - Sourcery (0.13.1)
+
+DEPENDENCIES:
+  - Button
+  - Sourcery
+
+SPEC REPOS:
+  "git@github.com:button/podspecs.git":
+    - Button
+  https://github.com/cocoapods/specs.git:
+    - Sourcery
+
+SPEC CHECKSUMS:
+  Button: f5fc2f81e0059fa693623d5de8187888574a311f
+  Sourcery: 9ef51b8777516f204d82996441f293813158d0d7
+
+PODFILE CHECKSUM: 507879d23eff7a197a9bbbb079e82d94f029b928
+
+COCOAPODS: 1.5.3

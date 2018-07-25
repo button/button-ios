@@ -1,24 +1,25 @@
 @import UIKit;
 #import "BTNCardCallToAction.h"
 
-@protocol BTNCheckoutInterface;
+@protocol BTNBrowserInterface;
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  This is an abstract class upon which to build concrete card implementations.
  */
+NS_SWIFT_NAME(Card)
 @interface BTNCard : NSObject
 
 /**
- A reference to the checkout interface.
+ A reference to the browser interface.
  
  @discussion Use this, for example, to make any changes to the top or bottom bars,
  add, update, or remove cards when a user interacts with a card instance.
  
- @seealso BTNCheckoutInterface
+ @seealso BTNBrowserInterface
  */
-@property (nullable, nonatomic, readonly, weak) id <BTNCheckoutInterface> checkout;
+@property (nullable, nonatomic, readonly, weak) id <BTNBrowserInterface> browser;
 
 
 /**

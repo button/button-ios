@@ -1,6 +1,7 @@
 @import Foundation;
 #import "BTNDropinButtonConstants.h"
 
+NS_SWIFT_NAME(DropinButtonAppearance)
 @protocol BTNDropinButtonAppearance <NSObject>
 
 @optional

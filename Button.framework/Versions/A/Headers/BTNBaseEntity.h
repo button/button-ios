@@ -7,6 +7,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(BaseEntity)
 @interface BTNBaseEntity : BTNModelObject <BTNSubscriptable>
 
 /**
@@ -17,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- A URL that specifies the current context. 
+ Sets a URL that specifies the current user context.
  @note: This can either be a Universal Links representation of the page or URL of the canonical crawlable web page.
  */
 - (void)setURL:(NSURL *)URL;
@@ -38,15 +39,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-///---------------------
-/// @name Custom Context
-///---------------------
+///--------------------
+/// @name Custom Values
+///--------------------
 
 /**
- Add custom key-value pairs to further define your users context.
+ Add custom key-value pairs to further define the current user context.
  @note you can also use object subscripting (e.g. object[key] = value) @see BTNSubscriptable
  */
-- (void)addCustomValue:(id)obj forContextKey:(NSString *)key;
+- (void)addCustomValue:(id)obj forKey:(NSString *)key;
 
 @end
 

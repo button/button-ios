@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, BTNCommissionType) {
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(Commission)
 @interface BTNCommission : BTNModelObject
 
 /**

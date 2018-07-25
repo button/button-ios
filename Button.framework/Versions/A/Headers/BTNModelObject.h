@@ -1,6 +1,7 @@
 @import Foundation;
 #import "BTNSerializable.h"
 
+NS_SWIFT_NAME(ModelObject)
 @interface BTNModelObject : NSObject <BTNSerializable, NSCopying>
 
 /**

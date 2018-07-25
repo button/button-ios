@@ -8,6 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(Event)
 @interface BTNEvent : BTNBaseEntity
 
 /**

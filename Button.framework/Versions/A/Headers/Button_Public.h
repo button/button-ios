@@ -1,28 +1,7 @@
-// Session
-#import "BTNSession.h"
-
-// UI Components
-#import "BTNDropinButton.h"
-#import "BTNDropinButtonCell.h"
-#import "BTNInteractiveButton.h"
-
-// Context
-#import "BTNContext.h"
-
-// Actions
-#import "BTNAppAction.h"
-#import "BTNMerchantAction.h"
-#import "BTNMerchantActionSettings.h"
-
-// Checkout
-#import "BTNCheckoutExtensionProtocol.h"
-
-// Orders
-#import "BTNLineItem.h"
-
-// Deprecations
-#import "Button_Deprecated.h"
-
+#import "BTNPurchasePathInterfaceProtocol.h"
+#import "BTNButtonActionsInterfaceProtocol.h"
+#import "BTNDebugInterfaceProtocol.h"
+#import "BTNUserProtocol.h"
 
 // System
 @import SystemConfiguration;

@@ -1,11 +1,10 @@
 @import UIKit;
 #import "BTNDropinButtonAppearanceProtocol.h"
-#import "BTNContext.h"
-#import "BTNDropinButton_Deprecated.h"
 
-@class BTNAppAction;
+@class BTNAction;
 
-@interface BTNDropinButton : UIControl <BTNDropinButtonDeprecated, BTNDropinButtonAppearance>
+NS_SWIFT_NAME(DropinButton)
+@interface BTNDropinButton : UIControl <BTNDropinButtonAppearance>
 
 ///------------------------------
 /// @name Rendering an App Action
@@ -14,10 +13,10 @@
 
 /**
  Tells the button to render the passed app action.
- @param appAction A BTNAppAction loaded via `-[Button fetchAppActionWithButtonId:context:completion:]`
+ @param buttonAction A BTNAction fetched via `-[Button.actions fetchWithRequest:actionHandler:]`
  @note passing nil will return the button to the loading state.
  */
-- (void)prepareWithAppAction:(nullable BTNAppAction *)appAction;
+- (void)prepareWithButtonAction:(nullable BTNAction *)buttonAction NS_SWIFT_NAME(prepare(action:));
 
 
 ///-----------------
