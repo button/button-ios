@@ -20,7 +20,7 @@ The best way to get the Button SDK is to use CocoaPods. If you don't already use
 Add Button to your target by adding the following line to your `Podfile`.
 
 ```
-pod "Button", "~> 5"
+pod "Button", "~> 6"
 ```
 
 Alternatively, you can download the [latest Button framework](https://github.com/usebutton/button-ios/releases/latest) and follow the [Framework Integration Steps](https://github.com/usebutton/button-ios/wiki/Adding-the-Button-Framework-and-Bundle-to-your-project).
@@ -30,7 +30,7 @@ Alternatively, you can download the [latest Button framework](https://github.com
 
 1. Get an Application ID by signing up here: [app.usebutton.com](http://app.usebutton.com)
 
-2. Follow the <a href="https://developer.usebutton.com/guides/publishers/ios/get-started" target="_blank">Getting Started Guide</a>.
+2. Follow the <a href="https://developer.usebutton.com/guides/publishers/ios/button-publisher-integration-guide" target="_blank">Integration Guide</a>.
 
 ## Going Live
 
