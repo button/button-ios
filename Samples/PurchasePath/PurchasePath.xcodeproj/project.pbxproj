@@ -289,7 +289,7 @@
 				DE31D16B202BEB95004A29D6 /* Sources */,
 				DE31D16C202BEB95004A29D6 /* Frameworks */,
 				DE31D16D202BEB95004A29D6 /* Resources */,
-				4C6DD1AE37D1C36E8076A8F5 /* [CP] Copy Pods Resources */,
+				4FF47A5D4C09EFAF4BB5A884 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -366,22 +366,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4C6DD1AE37D1C36E8076A8F5 /* [CP] Copy Pods Resources */ = {
+		4FF47A5D4C09EFAF4BB5A884 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh",
-				"${PODS_ROOT}/Button/Button.bundle",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Button-framework/Button.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Button.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Button.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		71E15E49A421411D71ED8CB6 /* [CP] Check Pods Manifest.lock */ = {
@@ -409,7 +409,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ObjC-Demo/Pods-ObjC-Demo-resources.sh",
-				"${PODS_ROOT}/Button/Button.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Button-library/Button.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
