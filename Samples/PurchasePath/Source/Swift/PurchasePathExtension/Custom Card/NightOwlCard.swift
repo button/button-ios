@@ -1,7 +1,7 @@
 import UIKit
 import Button
 
-class NightOwlCard: BTNCard {
+class NightOwlCard: Card {
     
     static let redeemedImageURL = URL(string: "https://developer.usebutton.com/assets/guides/publishers/checkout-extensions/custom-cards/img_owl-redeemed.png")!
     

@@ -4,7 +4,7 @@ import Button
 class MainController: UITableViewController {
     
     /// Edit this URL to be any approved merchant in order to test the Checkout flow with or without the extension.
-    private var yourExampleMerchantUrl = URL(string: "http://jet.com")!
+    private var yourExampleMerchantUrl = URL(string: "https://jet.com")!
 
     override func viewDidLoad() {
         super.viewDidLoad()

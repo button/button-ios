@@ -7,3 +7,5 @@ xcuserdata
 *.xcworkspacedata
 *.pbxuser
 Pods/
+ApplicationId.generated.swift
+.env-vars.sh

@@ -72,7 +72,6 @@
 		DADE9098209A46910073144B /* NightOwlCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NightOwlCardView.xib; sourceTree = "<group>"; };
 		DADE909A209A59A40073144B /* UIImage+Resizing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizing.h"; sourceTree = "<group>"; };
 		DADE909B209A59A40073144B /* UIImage+Resizing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizing.m"; sourceTree = "<group>"; };
-		DE1E713C203CE113001DC608 /* README */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README; sourceTree = "<group>"; };
 		DE31D16F202BEB95004A29D6 /* Swift-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE31D172202BEB95004A29D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE31D177202BEB95004A29D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -208,7 +207,6 @@
 		DE31D166202BEB95004A29D6 = {
 			isa = PBXGroup;
 			children = (
-				DE1E713C203CE113001DC608 /* README */,
 				DADE90892098E1640073144B /* Shared */,
 				DEF421E020E6C79800CADBC5 /* Source */,
 				DE31D170202BEB95004A29D6 /* Products */,
@@ -270,6 +268,7 @@
 				9E6A99EB203CC0FA0095C47E /* Frameworks */,
 				9E6A99EC203CC0FA0095C47E /* Resources */,
 				84D7BBFB7A8E8FB350BBC378 /* [CP] Copy Pods Resources */,
+				5F9AA371AB889D6A543371F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,7 +288,8 @@
 				DE31D16B202BEB95004A29D6 /* Sources */,
 				DE31D16C202BEB95004A29D6 /* Frameworks */,
 				DE31D16D202BEB95004A29D6 /* Resources */,
-				4FF47A5D4C09EFAF4BB5A884 /* [CP] Embed Pods Frameworks */,
+				9B66CF6AB46310ECD30FC4CF /* [CP] Copy Pods Resources */,
+				EBB37570EA2C0C40C4756522 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -366,22 +366,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4FF47A5D4C09EFAF4BB5A884 /* [CP] Embed Pods Frameworks */ = {
+		5F9AA371AB889D6A543371F9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Button-framework/Button.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Button.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjC-Demo/Pods-ObjC-Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		71E15E49A421411D71ED8CB6 /* [CP] Check Pods Manifest.lock */ = {
@@ -399,7 +396,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		84D7BBFB7A8E8FB350BBC378 /* [CP] Copy Pods Resources */ = {
@@ -409,7 +406,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ObjC-Demo/Pods-ObjC-Demo-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Button-library/Button.bundle",
+				"${PODS_ROOT}/Button/Button.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -418,6 +415,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjC-Demo/Pods-ObjC-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B66CF6AB46310ECD30FC4CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh",
+				"${PODS_ROOT}/Button/Button.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Button.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE29BFD0BAE678EF228551CF /* [CP] Check Pods Manifest.lock */ = {
@@ -435,7 +450,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DEF421E620E6E2A700CADBC5 /* Environment Vars */ = {
@@ -450,8 +465,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ -f ${SRCROOT}/.env-vars.sh ] ; then\n    source ${SRCROOT}/.env-vars.sh\nfi\n\n$PODS_ROOT/Sourcery/bin/sourcery --templates .templates/ApplicationId.stencil --sources . --output ${SRCROOT}/Shared --args application_id=$APPLICATION_ID";
-			showEnvVarsInLog = 0;
+			shellScript = "if [ -f ${SRCROOT}/../../.env-vars.sh ] ; then\n  source ${SRCROOT}/../../.env-vars.sh\nfi\n\n$PODS_ROOT/Sourcery/bin/sourcery --templates .templates/ApplicationId.stencil --sources . --output ${SRCROOT}/Shared --args application_id=$APPLICATION_ID";
 		};
 		DEF421E720E6E2FC00CADBC5 /* Environment Vars */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -465,7 +479,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ -f ${SRCROOT}/.env-vars.sh ] ; then\nsource ${SRCROOT}/.env-vars.sh\nfi\n\n$PODS_ROOT/Sourcery/bin/sourcery --templates .templates/ApplicationId.stencil --sources . --output ${SRCROOT}/Shared --args application_id=$APPLICATION_ID";
+			shellScript = "if [ -f ${SRCROOT}/../../.env-vars.sh ] ; then\n  source ${SRCROOT}/../../.env-vars.sh\nfi\n\n$PODS_ROOT/Sourcery/bin/sourcery --templates .templates/ApplicationId.stencil --sources . --output ${SRCROOT}/Shared --args application_id=$APPLICATION_ID";
+		};
+		EBB37570EA2C0C40C4756522 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -548,7 +576,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Shared/ObjC-Demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -566,7 +594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.button.purchasePathObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Shared/ObjC-Demo-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
