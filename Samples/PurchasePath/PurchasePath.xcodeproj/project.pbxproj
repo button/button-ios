@@ -287,7 +287,7 @@
 				DE31D16B202BEB95004A29D6 /* Sources */,
 				DE31D16C202BEB95004A29D6 /* Frameworks */,
 				DE31D16D202BEB95004A29D6 /* Resources */,
-				E43C5880EDDCA2791A3164FC /* [CP] Copy Pods Resources */,
+				EC030EE93F848F492E7C1943 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -446,7 +446,7 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ -f ${SRCROOT}/../../.env-vars.sh ] ; then\n  source ${SRCROOT}/../../.env-vars.sh\nfi\n\n$PODS_ROOT/Sourcery/bin/sourcery --templates .templates/ApplicationId.stencil --sources . --output ${SRCROOT}/Shared --args application_id=$APPLICATION_ID";
 		};
-		E43C5880EDDCA2791A3164FC /* [CP] Copy Pods Resources */ = {
+		EC030EE93F848F492E7C1943 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

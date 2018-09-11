@@ -1,0 +1,1 @@
+var btnsdk=function(e){"use strict";function t(e){if(e&&e.fields){const{fields:fields}=e,t=fields.length;for(let e=0;e<t;e+=1){const t=fields[e],n=document.getElementById(t.id);n&&(n.value=t.value)}}}return e.fillFields=t,e}({});
