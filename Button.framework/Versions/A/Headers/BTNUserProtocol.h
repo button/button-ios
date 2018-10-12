@@ -8,6 +8,7 @@ NS_SWIFT_NAME(User)
 @required
 
 - (void)setIdentifier:(NSString *)identifier;
+- (void)setAutofillEnabled:(BOOL)autofillEnabled;
 - (void)setFirstName:(NSString *)firstName;
 - (void)setLastName:(NSString *)lastName;
 - (void)setEmail:(NSString *)email;

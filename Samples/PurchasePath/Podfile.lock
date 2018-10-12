@@ -1,5 +1,5 @@
 PODS:
-  - Button (6.2.0)
+  - Button (6.3.0)
   - Sourcery (0.13.1)
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  Button: 8d1a57c31c9f4de5038ac512c377f4980c1914f6
+  Button: e0fa95babf75e6869239db5fcf4b1ef3dde269fd
   Sourcery: 9ef51b8777516f204d82996441f293813158d0d7
 
 PODFILE CHECKSUM: cfe49ec404de013101464b212c5af9e01a870d7d
