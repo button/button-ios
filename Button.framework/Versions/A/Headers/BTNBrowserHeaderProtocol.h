@@ -28,6 +28,14 @@ NS_SWIFT_NAME(BrowserHeader)
  */
 @property (nullable, nonatomic, strong) UIColor *backgroundColor;
 
+/**
+ Specifies a view to be placed in the browser's rightBarButtonItem,
+ or nil to remove an existing one. User interaction with
+ the view will be relayed via the BTNBrowserChromeDelegate.
+ */
+@property (nullable, nonatomic, strong) __kindof UIView *customActionView;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

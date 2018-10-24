@@ -7,6 +7,7 @@
 #import "BTNTextCard.h"
 #import "BTNBrowserHeaderProtocol.h"
 #import "BTNBrowserFooterProtocol.h"
+#import "BTNBrowserChromeDelegateProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,6 +20,7 @@ NS_SWIFT_NAME(BrowserInterface)
 
 @property (nonatomic, strong, readonly) id <BTNBrowserHeader> header;
 @property (nonatomic, strong, readonly) id <BTNBrowserFooter> footer;
+@property (nullable, nonatomic, weak) id <BTNBrowserChromeDelegate> chromeDelegate;
 
 
 /**
@@ -57,7 +59,6 @@ NS_SWIFT_NAME(BrowserInterface)
  Animates the top card in the card list out of the browser view.
  */
 - (void)hideTopCard;
-
 
 @end
 
