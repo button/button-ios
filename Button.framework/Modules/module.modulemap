@@ -1,6 +1,12 @@
 framework module Button {
-	umbrella header "Button.h"
+  umbrella header "Button.h"
+
+  export *
+  module * { export * }
+}
+
+explicit module Button.Private {
+	header "BTNPurchasePathPrivate.h"
 
 	export *
-	module * { export * }
 }
