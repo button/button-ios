@@ -1,5 +1,5 @@
 import Foundation
 
 @objc public class ApplicationId: NSObject {
-    static let stringValue: String? = {% if argument.application_id != 1 %}"{{ argument.application_id }}"{% else %}nil{% endif %}
+    @objc static let stringValue: String? = {% if argument.application_id != 1 %}"{{ argument.application_id }}"{% else %}nil{% endif %}
 }
