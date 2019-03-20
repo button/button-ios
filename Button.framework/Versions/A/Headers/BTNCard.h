@@ -25,7 +25,7 @@ NS_SWIFT_NAME(Card)
 /**
  The view instance currently associated with this card.
 
- @Discussion Returns a non-nil value when a card instance has an associated
+ @discussion Returns a non-nil value when a card instance has an associated
  view representing it. Use this to make any updates to your view,
  for example, when a user intracts with the view.
  */
@@ -48,7 +48,7 @@ NS_SWIFT_NAME(Card)
 /**
  Designated initializer for concrete subclass usage.
 
- @param cardCTA The call to action object to be displayed when the card is "active".
+ @param cardCTA The call to action object to be displayed when the card is on the top of the list.
  @return returns an instance of a card with a cardCta, or nil if passed nil.
  */
 - (instancetype)initWithCallToAction:(BTNCardCallToAction *)cardCTA;

@@ -28,7 +28,7 @@ NS_SWIFT_NAME(User)
 
 
 /**
- Sets a first name for the user's auto fill profile.
+ Sets a first name for the user's autofill profile.
 
  @param firstName The user's first name.
  */
@@ -36,7 +36,7 @@ NS_SWIFT_NAME(User)
 
 
 /**
- Sets a last name for the user's auto fill profile.
+ Sets a last name for the user's autofill profile.
 
  @param lastName The user's last name.
  */
@@ -44,7 +44,7 @@ NS_SWIFT_NAME(User)
 
 
 /**
- Sets an email for the user's auto fill profile.
+ Sets an email for the user's autofill profile.
 
  @param email The user's email.
  */
@@ -52,7 +52,7 @@ NS_SWIFT_NAME(User)
 
 
 /**
- Sets a phone number for the user's auto fill profile.
+ Sets a phone number for the user's autofill profile.
  
  @param phoneNumber The user's phone number.
  */
@@ -60,7 +60,7 @@ NS_SWIFT_NAME(User)
 
 
 /**
- Sets an address one for the user's auto fill profile.
+ Sets an address one for the user's autofill profile.
 
  @param addressLineOne The user's main address line.
  */
@@ -69,7 +69,7 @@ NS_SWIFT_NAME(User)
 
 
 /**
- Sets an address two for the user's auto fill profile.
+ Sets an address two for the user's autofill profile.
 
  @param addressLineTwo The user's second address line.
  */
@@ -77,7 +77,7 @@ NS_SWIFT_NAME(User)
 
 
 /**
- Sets a city for the user's auto fill profile.
+ Sets a city for the user's autofill profile.
 
  @param city The user's city.
  */
@@ -85,7 +85,7 @@ NS_SWIFT_NAME(User)
 
 
 /**
- Sets a state for the user's auto fill profile.
+ Sets a state for the user's autofill profile.
 
  @param state The user's state.
  */

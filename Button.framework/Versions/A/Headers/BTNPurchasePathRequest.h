@@ -23,6 +23,12 @@ NS_SWIFT_NAME(PurchasePathRequest)
 
 
 /**
+ An optional description of the instance of a button that triggers this request.
+ */
+@property (nullable, nonatomic, copy) NSString *placementId;
+
+
+/**
  Initializes a Purchase Path request for a given merchant URL.
 
  @param url A merchant URL to a product, category or just the homepage.
