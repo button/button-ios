@@ -1,6 +1,6 @@
 /*
  Button SDK
- Copyright Button, Inc. 2014-2018
+ Copyright Button, Inc. 2014-2019
  */
 @import Foundation;
 #import "Button_Public.h"
@@ -77,6 +77,18 @@ NS_ASSUME_NONNULL_BEGIN
  @endcode
  */
 @property (class, readonly) id <BTNButtonActionsInterface> actions;
+
+
+
+///--------------------------------
+/// @name Fetching a Boost Response
+///--------------------------------
+
+
+/**
+ Boost is a private beta product. If you're interested in Boost, reach out to your Button contact.
+ */
+@property (class, readonly) id <BTNBoostInterface> boost;
 
 
 
