@@ -389,7 +389,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ObjC-Demo/Pods-ObjC-Demo-resources.sh",
-				"${PODS_ROOT}/../../../Button.bundle",
+				"${PODS_ROOT}/Button/Button.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -409,7 +409,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh",
-				"${PODS_ROOT}/../../../Button.bundle",
+				"${PODS_ROOT}/Button/Button.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
