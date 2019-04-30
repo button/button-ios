@@ -24,7 +24,7 @@ NS_SWIFT_NAME(User)
 
  @param autofillEnabled YES or NO
  */
-- (void)setAutofillEnabled:(BOOL)autofillEnabled;
+- (void)setAutofillEnabled:(BOOL)autofillEnabled DEPRECATED_MSG_ATTRIBUTE("Use '[Button.configuration setAutofillEnabled:]' instead.");
 
 
 /**

@@ -112,6 +112,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+///-----------------------
+/// @name Feature Configuration
+///-----------------------
+
+/**
+ Button SDK feature configuration.
+ */
+@property (class, readonly) id <BTNConfigurationInterface> configuration;
+
+
+
 ///----------------
 /// @name Debugging
 ///----------------
