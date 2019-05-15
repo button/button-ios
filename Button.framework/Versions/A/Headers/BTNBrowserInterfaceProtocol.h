@@ -60,6 +60,15 @@ NS_SWIFT_NAME(BrowserInterface)
  */
 - (void)hideTopCard;
 
+
+/**
+ Indicates whether or not cards can be shown.
+
+ @discussion Call this method before attempting a call to showTopCard or hideTopCard.
+ @return YES if cards can be shown, NO otherwise.
+ */
+- (BOOL)canShowCards;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BTNImpressionView Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Button SDK (6.14.0) </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Button, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/creativeType">creativeType</option>
+		
+		<option value="//api/name/offerId">offerId</option>
+		
+		<option value="//api/name/url">url</option>
+		
+		<option value="//api/name/visibleRate">visibleRate</option>
+		
+		<option value="//api/name/visibleRateType">visibleRateType</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithCreativeType:">- initWithCreativeType:</option>
+		
+		<option value="//api/name/trackWithURL:visibleRateType:visibleRate:">- trackWithURL:visibleRateType:visibleRate:</option>
+		
+		<option value="//api/name/trackWithURL:visibleRateType:visibleRate:offerId:">- trackWithURL:visibleRateType:visibleRate:offerId:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BTNImpressionView Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIView</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BTNImpressionView.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/creativeType" title="creativeType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/creativeType">&nbsp;&nbsp;creativeType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An enum value representing the creative type of the offer associated with this impression view.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) BTNCreativeType creativeType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An enum value representing the creative type of the offer associated with this impression view.</p><p>Default is BTNCreativeTypeOther. The BTNImpressionView can either be initialized with a
+value or it can be set (as a string) in InterfaceBuilder.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/initWithCreativeType:">- initWithCreativeType:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNImpressionView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/url" title="url"></a>
+	<h3 class="method-title"><code><a href="#//api/name/url">&nbsp;&nbsp;url</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The URL that is associated with the offer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *url</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The URL that is associated with the offer.</p><p>This value must be set, and can only be updated simultaneously with the <a href="#//api/name/visibleRateType">visibleRateType</a>
+and <a href="#//api/name/visibleRate">visibleRate</a> properties.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/trackWithURL:visibleRateType:visibleRate:">- trackWithURL:visibleRateType:visibleRate:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/trackWithURL:visibleRateType:visibleRate:offerId:">- trackWithURL:visibleRateType:visibleRate:offerId:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNImpressionView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visibleRateType" title="visibleRateType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visibleRateType">&nbsp;&nbsp;visibleRateType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An enum value representing type of the <a href="#//api/name/visibleRate">visibleRate</a> for the offer that is displayed to the user,
+either <code>percent</code> or <code>fixed</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) BTNVisibleRateType visibleRateType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An enum value representing type of the <a href="#//api/name/visibleRate">visibleRate</a> for the offer that is displayed to the user,
+either <code>percent</code> or <code>fixed</code>.</p><p>Default value <code>unknown</code>, but that should be updated one of the two concrete enum values. This can
+only be updated simultaneously with the <a href="#//api/name/url">url</a> and <a href="#//api/name/visibleRate">visibleRate</a> properties.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/trackWithURL:visibleRateType:visibleRate:">- trackWithURL:visibleRateType:visibleRate:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/trackWithURL:visibleRateType:visibleRate:offerId:">- trackWithURL:visibleRateType:visibleRate:offerId:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNImpressionView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visibleRate" title="visibleRate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visibleRate">&nbsp;&nbsp;visibleRate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The rate visible to the user. If the <a href="#//api/name/visibleRateType">visibleRateType</a> is <code>fixed</code>, this value represents the amount in the
+currency of the offer. If it is <code>percent</code>, this will be a value ranging from 0.0 to 100.0.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) double visibleRate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The rate visible to the user. If the <a href="#//api/name/visibleRateType">visibleRateType</a> is <code>fixed</code>, this value represents the amount in the
+currency of the offer. If it is <code>percent</code>, this will be a value ranging from 0.0 to 100.0.</p><p>Default value is 0.0. This can only be updated simultaneously with the <a href="#//api/name/url">url</a> and
+<a href="#//api/name/visibleRateType">visibleRateType</a> properties.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/trackWithURL:visibleRateType:visibleRate:">- trackWithURL:visibleRateType:visibleRate:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/trackWithURL:visibleRateType:visibleRate:offerId:">- trackWithURL:visibleRateType:visibleRate:offerId:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNImpressionView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/offerId" title="offerId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/offerId">&nbsp;&nbsp;offerId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The optional Button-provided value that identifies the rate of the served offer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, readonly, copy) NSString *offerId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The optional Button-provided value that identifies the rate of the served offer.</p><p>This value is not required, and it can only be updated simultaneously with the <a href="#//api/name/url">url</a>,
+<a href="#//api/name/visibleRateType">visibleRateType</a>, and <a href="#//api/name/visibleRate">visibleRate</a> properties.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/trackWithURL:visibleRateType:visibleRate:offerId:">- trackWithURL:visibleRateType:visibleRate:offerId:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNImpressionView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithCreativeType:" title="initWithCreativeType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithCreativeType:">&ndash;&nbsp;initWithCreativeType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The initializer to be used when creating an impression view programmatically.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithCreativeType:(BTNCreativeType)<em>creativeType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>creativeType</code></th>
+						<td><p>The <a href="../Constants/BTNCreativeType.html">BTNCreativeType</a> value of the underlying offer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The initializer to be used when creating an impression view programmatically.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNImpressionView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackWithURL:visibleRateType:visibleRate:" title="trackWithURL:visibleRateType:visibleRate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackWithURL:visibleRateType:visibleRate:">&ndash;&nbsp;trackWithURL:visibleRateType:visibleRate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Track the impression view with a new parameters. To be used when the underlying offer has
+changed, such as a cell being dequeued for reuse in a collection or table view.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackWithURL:(NSString *)<em>url</em> visibleRateType:(BTNVisibleRateType)<em>visibleRateType</em> visibleRate:(double)<em>visibleRate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The new URL of the served offer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>visibleRateType</code></th>
+						<td><p>The new <a href="#//api/name/visibleRateType">visibleRateType</a> of the served offer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>visibleRate</code></th>
+						<td><p>The new <a href="#//api/name/visibleRate">visibleRate</a> of the served offer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Track the impression view with a new parameters. To be used when the underlying offer has
+changed, such as a cell being dequeued for reuse in a collection or table view.</p>
+
+<p>@code
+// If the offer displayed to the user is valued at 3%, the following should be passed.
+[impressionView trackWithURL:<a href="#//api/name/url">url</a> visibleRateType:BTNVisibleRateTypePercent visibleRate:3.0];</p>
+
+<p>// If the offer displayed to the user is valued at $5.00, the following should be passed.
+[impressionView trackWithURL:<a href="#//api/name/url">url</a> visibleRateType:BTNVisibleRateTypeFixed visibleRate:5.0];
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNImpressionView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackWithURL:visibleRateType:visibleRate:offerId:" title="trackWithURL:visibleRateType:visibleRate:offerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackWithURL:visibleRateType:visibleRate:offerId:">&ndash;&nbsp;trackWithURL:visibleRateType:visibleRate:offerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Track the impression view with a new parameters. To be used the underlying offer has
+changed, such as a cell being dequeued for reuse in a collection or table view.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackWithURL:(NSString *)<em>url</em> visibleRateType:(BTNVisibleRateType)<em>visibleRateType</em> visibleRate:(double)<em>visibleRate</em> offerId:(nullable NSString *)<em>offerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The new URL of the served offer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>visibleRateType</code></th>
+						<td><p>The new <a href="#//api/name/visibleRateType">visibleRateType</a> of the served offer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>visibleRate</code></th>
+						<td><p>The new <a href="#//api/name/visibleRate">visibleRate</a> of the served offer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>offerId</code></th>
+						<td><p>The (optional) new <a href="#//api/name/offerId">offerId</a> of the served offer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Track the impression view with a new parameters. To be used the underlying offer has
+changed, such as a cell being dequeued for reuse in a collection or table view.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNImpressionView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Button, Inc. All rights reserved. Updated: 2019-05-14</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
