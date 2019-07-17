@@ -9,13 +9,13 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.usebutton.sdk</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.14.0</string>
+	<string>6.15.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>273</string>
+	<string>294</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>

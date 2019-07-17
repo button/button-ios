@@ -32,7 +32,7 @@ NS_SWIFT_NAME(PurchasePath)
  @param completion If the error is nil, the Purchase Path can start successfully, otherwise
  it will not start and you must handle the error.
  */
-- (void)startWithCompletion:(void(^)(NSError * nullable))completion;
+- (void)startWithCompletion:(void(^)(NSError * __nullable error))completion;
 
 @end
 
