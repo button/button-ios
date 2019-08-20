@@ -4,6 +4,7 @@
 #import "BTNDebugInterfaceProtocol.h"
 #import "BTNUserProtocol.h"
 #import "BTNConfigurationInterfaceProtocol.h"
+#import "BTNPaymentMethodProviderProtocol.h"
 #import "BTNImpressionView.h"
 
 // System

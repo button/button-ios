@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>18B75</string>
+	<string>18A391</string>
 	<key>CFBundleDisplayName</key>
 	<string>Button</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.usebutton.sdk</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.15.0</string>
+	<string>6.16.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>294</string>
+	<string>319</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
