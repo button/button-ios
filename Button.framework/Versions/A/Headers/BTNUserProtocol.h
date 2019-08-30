@@ -1,4 +1,5 @@
 @import Foundation;
+#import "BTNPaymentMethodProviderProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -98,6 +99,14 @@ NS_SWIFT_NAME(User)
  @param postalCode The user's postal code.
  */
 - (void)setPostalCode:(NSString *)postalCode;
+
+
+/**
+ Sets the payment method provider for the user.
+
+ @param paymentMethodProvider The object responsibile for providing the user's payment details.
+ */
+- (void)setPaymentMethodProvider:(id <BTNPaymentMethodProvider>)paymentMethodProvider;
 
 @end
 

@@ -31,6 +31,13 @@ NS_SWIFT_NAME(PurchasePathInterface)
 @property (nullable, nonatomic, strong) id <BTNPurchasePathExtension> extension;
 
 
+/**
+ Indicates if all urls would be opened in the webview.
+ Returns YES if enabled.
+ */
+@property (nonatomic, assign, readonly, getter=isBrowserEnabled) BOOL browserEnabled;
+
+
 
 /**
  Fetches a Purchase Path with a Purchase Path request.
