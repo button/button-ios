@@ -287,7 +287,7 @@
 				DE31D16B202BEB95004A29D6 /* Sources */,
 				DE31D16C202BEB95004A29D6 /* Frameworks */,
 				DE31D16D202BEB95004A29D6 /* Resources */,
-				1EB6A8E9DB6B2DE494FE6F8B /* [CP] Copy Pods Resources */,
+				EEE0AC5810D10736E70C5E05 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -364,24 +364,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1EB6A8E9DB6B2DE494FE6F8B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh",
-				"${PODS_ROOT}/../../../Button.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Button.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		71E15E49A421411D71ED8CB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,6 +445,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ -f ${SRCROOT}/../../.env-vars.sh ] ; then\n  source ${SRCROOT}/../../.env-vars.sh\nfi\n\n$PODS_ROOT/Sourcery/bin/sourcery --templates .templates/ApplicationId.stencil --sources . --output ${SRCROOT}/Shared --args application_id=$APPLICATION_ID";
+		};
+		EEE0AC5810D10736E70C5E05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh",
+				"${PODS_ROOT}/../../../Button.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Button.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
