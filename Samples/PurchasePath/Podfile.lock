@@ -1,20 +1,23 @@
 PODS:
-  - Button (6.18.0)
+  - Button (6.18.1-build.372)
   - Sourcery (0.13.1)
 
 DEPENDENCIES:
-  - Button (= 6.18.0)
+  - Button (from `../../`)
   - Sourcery
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Button
     - Sourcery
 
+EXTERNAL SOURCES:
+  Button:
+    :path: "../../"
+
 SPEC CHECKSUMS:
-  Button: f623652dc3b86fc9a670c7597ce09967bda4dfc9
+  Button: 0e4afbcbc5af9f9e5955f83979966a5ac6285e6e
   Sourcery: 9ef51b8777516f204d82996441f293813158d0d7
 
-PODFILE CHECKSUM: 62257d412ed51e6d9e00b153baa0336a7e971dca
+PODFILE CHECKSUM: cfe49ec404de013101464b212c5af9e01a870d7d
 
 COCOAPODS: 1.7.5
