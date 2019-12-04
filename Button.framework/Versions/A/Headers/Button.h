@@ -32,6 +32,23 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)configureWithApplicationId:(NSString *)applicationId
                         completion:(nullable void(^)(NSError * __nullable error))completionHandler NS_SWIFT_NAME(configure(applicationId:completion:));
 
+///-----------------------
+/// @name Opening a URL
+///-----------------------
+
+/**
+ Opens a URL in the Browser. Works with direct and non-direct partnerships.
+ 
+ @param url The URL to open (required)
+ @param title A title to set on the browser (optional)
+ @param subtitle A subtitle to set on the browser (optional)
+ @param completionHandler A completion that is invoked after opening the URL (optional)
+ */
++ (void)openURL:(NSURL *)url
+          title:(nullable NSString *)title
+       subtitle:(nullable NSString *)subtitle
+     completion:(nullable void(^)(NSError * __nullable error))completionHandler NS_SWIFT_NAME(open(url:title:subtitle:completion:));
+
 
 
 ///-------------------------------
