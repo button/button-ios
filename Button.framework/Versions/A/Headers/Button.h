@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Button : NSObject
 
 /**
- The current SDK version (e.g. @"6.0.0")
+ The current SDK version (e.g. @"6.0.0").
  */
 @property (class, readonly) NSString *version;
 
@@ -24,13 +24,16 @@ NS_ASSUME_NONNULL_BEGIN
  Configures Button with your `applicationId`.
 
  @note
- Get your application Id from from the [Button Dashboard](https://app.usebutton.com)
+ Get your application Id from from the [Button Dashboard](https://app.usebutton.com).
 
- @params applicationId Your applicationId (required)
+ @params applicationId Your applicationId (required).
  @param completionHandler A block to be executed upon completion (optional).
  */
 + (void)configureWithApplicationId:(NSString *)applicationId
-                        completion:(nullable void(^)(NSError * __nullable error))completionHandler NS_SWIFT_NAME(configure(applicationId:completion:));
+                        completion:(nullable void(^)(NSError * __nullable error))completionHandler
+NS_SWIFT_NAME(configure(applicationId:completion:));
+
+
 
 ///-----------------------
 /// @name Opening a URL
@@ -39,15 +42,62 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Opens a URL in the Browser. Works with direct and non-direct partnerships.
  
- @param url The URL to open (required)
- @param title A title to set on the browser (optional)
- @param subtitle A subtitle to set on the browser (optional)
- @param completionHandler A completion that is invoked after opening the URL (optional)
+ @param url The URL to open (required).
+ */
++ (void)openURL:(NSURL *)url
+NS_SWIFT_NAME(open(url:));
+
+
+/**
+ Opens a URL in the Browser with a configuration object. Works with direct and non-direct partnerships.
+ 
+ @param url The URL to open (required).
+ @param config An object used to configure the Browser (optional).
+ */
++ (void)openURL:(NSURL *)url
+         config:(nullable BTNBrowserConfig *)config
+NS_SWIFT_NAME(open(url:config:));
+
+
+/**
+ Opens a URL in the Browser with a completion handler. Works with direct and non-direct partnerships.
+ 
+ @param url The URL to open (required).
+ @param completionHandler A block that is invoked after opening the URL (optional).
+ */
++ (void)openURL:(NSURL *)url
+         completion:(nullable void(^)(NSError * __nullable error))completionHandler
+NS_SWIFT_NAME(open(url:completion:));
+
+
+/**
+ Opens a URL in the Browser with a configuration object and a completion handler.
+ Works with direct and non-direct partnerships.
+ 
+ @param url The URL to open (required).
+ @param config An object used to configure the Browser (optional).
+ @param completionHandler A block that is invoked after opening the URL (optional).
+ */
++ (void)openURL:(NSURL *)url
+         config:(nullable BTNBrowserConfig *)config
+         completion:(nullable void(^)(NSError * __nullable error))completionHandler
+NS_SWIFT_NAME(open(url:config:completion:));
+
+
+/**
+ Opens a URL in the Browser. Works with direct and non-direct partnerships.
+ 
+ @param url The URL to open (required).
+ @param title A title to set on the Browser (optional).
+ @param subtitle A subtitle to set on the Browser (optional).
+ @param completionHandler A block that is invoked after opening the URL (optional).
  */
 + (void)openURL:(NSURL *)url
           title:(nullable NSString *)title
        subtitle:(nullable NSString *)subtitle
-     completion:(nullable void(^)(NSError * __nullable error))completionHandler NS_SWIFT_NAME(open(url:title:subtitle:completion:));
+     completion:(nullable void(^)(NSError * __nullable error))completionHandler
+NS_SWIFT_NAME(open(url:title:subtitle:completion:))
+DEPRECATED_MSG_ATTRIBUTE("Use '[Button openURL:]' or any of the other method signatures instead.");
 
 
 

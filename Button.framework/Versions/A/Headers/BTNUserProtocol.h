@@ -92,6 +92,13 @@ NS_SWIFT_NAME(User)
  */
 - (void)setState:(NSString *)state;
 
+/**
+ Sets a country for the user's autofill profile
+
+ @param country The user's country.
+ */
+- (void)setCountry:(NSString *)country;
+
 
 /**
  Sets a postal code for the user's autofill profile.

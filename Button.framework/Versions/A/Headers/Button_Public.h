@@ -6,6 +6,7 @@
 #import "BTNConfigurationInterfaceProtocol.h"
 #import "BTNPaymentMethodProviderProtocol.h"
 #import "BTNImpressionView.h"
+#import "BTNBrowserConfig.h"
 
 // System
 @import SystemConfiguration;
