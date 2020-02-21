@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BTNPurchasePathExtension Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Button SDK (6.20.0) </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Button, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/browser:didNavigateToPage:">- browser:didNavigateToPage:</option>
+		
+		<option value="//api/name/browser:didNavigateToProduct:">- browser:didNavigateToProduct:</option>
+		
+		<option value="//api/name/browser:didNavigateToPurchase:">- browser:didNavigateToPurchase:</option>
+		
+		<option value="//api/name/browserDidClose">- browserDidClose</option>
+		
+		<option value="//api/name/browserDidInitialize:">- browserDidInitialize:</option>
+		
+		<option value="//api/name/browserWillNavigate:">- browserWillNavigate:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BTNPurchasePathExtension Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BTNPurchasePathExtensionProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/browserDidInitialize:" title="browserDidInitialize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/browserDidInitialize:">&ndash;&nbsp;browserDidInitialize:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the browser initializes and before anything is displayed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)browserDidInitialize:(id&lt;BTNBrowserInterface&gt;)<em>browser</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>browser</code></th>
+						<td><p>The interface to the browser object that can be used to customize the display.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when the browser initializes and before anything is displayed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNPurchasePathExtensionProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/browserWillNavigate:" title="browserWillNavigate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/browserWillNavigate:">&ndash;&nbsp;browserWillNavigate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the browser prepares for navigation to a new page.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)browserWillNavigate:(id&lt;BTNBrowserInterface&gt;)<em>browser</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>browser</code></th>
+						<td><p>The interface to the browser object that can be used to customize the display.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when the browser prepares for navigation to a new page.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNPurchasePathExtensionProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/browser:didNavigateToPage:" title="browser:didNavigateToPage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/browser:didNavigateToPage:">&ndash;&nbsp;browser:didNavigateToPage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the browser navigates to a new page that is neither a product nor a purchase.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)browser:(id&lt;BTNBrowserInterface&gt;)<em>browser</em> didNavigateToPage:(id&lt;BTNBrowserPage&gt;)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>browser</code></th>
+						<td><p>The interface to the browser object that can be used to customize the display.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The object representing the information about the page to which the browser did navigate.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when the browser navigates to a new page that is neither a product nor a purchase.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNPurchasePathExtensionProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/browser:didNavigateToProduct:" title="browser:didNavigateToProduct:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/browser:didNavigateToProduct:">&ndash;&nbsp;browser:didNavigateToProduct:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the browser navigates to a product page.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)browser:(id&lt;BTNBrowserInterface&gt;)<em>browser</em> didNavigateToProduct:(id&lt;BTNProductPage&gt;)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>browser</code></th>
+						<td><p>The interface to the browser object that can be used to customize the display.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The object representing the information about the product to which the browser did navigate.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when the browser navigates to a product page.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNPurchasePathExtensionProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/browser:didNavigateToPurchase:" title="browser:didNavigateToPurchase:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/browser:didNavigateToPurchase:">&ndash;&nbsp;browser:didNavigateToPurchase:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the browser navigates to a purchase page.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)browser:(id&lt;BTNBrowserInterface&gt;)<em>browser</em> didNavigateToPurchase:(id&lt;BTNPurchasePage&gt;)<em>page</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>browser</code></th>
+						<td><p>The interface to the browser object that can be used to customize the display.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>page</code></th>
+						<td><p>The object representing the information about the purchase to which the browser did navigate.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when the browser navigates to a purchase page.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNPurchasePathExtensionProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/browserDidClose" title="browserDidClose"></a>
+	<h3 class="method-title"><code><a href="#//api/name/browserDidClose">&ndash;&nbsp;browserDidClose</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the browser is closed. This does not mean a purchase was completed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)browserDidClose</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when the browser is closed. This does not mean a purchase was completed.</p><p>This can happen when the user dismisses the browser or chooses to install the native app.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNPurchasePathExtensionProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Button, Inc. All rights reserved. Updated: 2020-01-06</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
