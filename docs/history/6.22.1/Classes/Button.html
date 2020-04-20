@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Button Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Button SDK (6.22.1) </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Button, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/actions">actions</option>
+		
+		<option value="//api/name/boost">boost</option>
+		
+		<option value="//api/name/configuration">configuration</option>
+		
+		<option value="//api/name/debug">debug</option>
+		
+		<option value="//api/name/purchasePath">purchasePath</option>
+		
+		<option value="//api/name/user">user</option>
+		
+		<option value="//api/name/version">version</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/clearAllData">+ clearAllData</option>
+		
+		<option value="//api/name/configureWithApplicationId:completion:">+ configureWithApplicationId:completion:</option>
+		
+		<option value="//api/name/openURL:">+ openURL:</option>
+		
+		<option value="//api/name/openURL:completion:">+ openURL:completion:</option>
+		
+		<option value="//api/name/openURL:config:">+ openURL:config:</option>
+		
+		<option value="//api/name/openURL:config:completion:">+ openURL:config:completion:</option>
+		
+		<option value="//api/name/openURL:title:subtitle:completion:">+ openURL:title:subtitle:completion:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">Button Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>Button.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/version" title="version"></a>
+	<h3 class="method-title"><code><a href="#//api/name/version">&nbsp;&nbsp;version</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current SDK version (e.g. @&ldquo;6.0.0&rdquo;).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (class, readonly) NSString *version</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The current SDK version (e.g. @&ldquo;6.0.0&rdquo;).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Starting the SDK" name="task_Starting the SDK"></a>
+						<h2 class="task-title">Starting the SDK</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/configureWithApplicationId:completion:" title="configureWithApplicationId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureWithApplicationId:completion:">+&nbsp;configureWithApplicationId:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures Button with your <code>applicationId</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)configureWithApplicationId:(NSString *)<em>applicationId</em> completion:(nullable void ( ^ ) ( NSError *__nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block to be executed upon completion (optional).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures Button with your <code>applicationId</code>.</p>
+
+<p>@note
+Get your application Id from from the <a href="https://app.usebutton.com">Button Dashboard</a>.</p>
+
+<p>@params applicationId Your applicationId (required).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Opening a URL" name="task_Opening a URL"></a>
+						<h2 class="task-title">Opening a URL</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/openURL:" title="openURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openURL:">+&nbsp;openURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Opens a URL in the Browser. Works with direct and non-direct partnerships.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)openURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The URL to open (required).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Opens a URL in the Browser. Works with direct and non-direct partnerships.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openURL:config:" title="openURL:config:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openURL:config:">+&nbsp;openURL:config:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Opens a URL in the Browser with a <a href="#//api/name/configuration">configuration</a> object. Works with direct and non-direct partnerships.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)openURL:(NSURL *)<em>url</em> config:(nullable BTNBrowserConfig *)<em>config</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The URL to open (required).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>config</code></th>
+						<td><p>An object used to configure the Browser (optional).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Opens a URL in the Browser with a <a href="#//api/name/configuration">configuration</a> object. Works with direct and non-direct partnerships.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openURL:completion:" title="openURL:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openURL:completion:">+&nbsp;openURL:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Opens a URL in the Browser with a completion handler. Works with direct and non-direct partnerships.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)openURL:(NSURL *)<em>url</em> completion:(nullable void ( ^ ) ( NSError *__nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The URL to open (required).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block that is invoked after opening the URL (optional).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Opens a URL in the Browser with a completion handler. Works with direct and non-direct partnerships.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openURL:config:completion:" title="openURL:config:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openURL:config:completion:">+&nbsp;openURL:config:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Opens a URL in the Browser with a <a href="#//api/name/configuration">configuration</a> object and a completion handler.
+Works with direct and non-direct partnerships.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)openURL:(NSURL *)<em>url</em> config:(nullable BTNBrowserConfig *)<em>config</em> completion:(nullable void ( ^ ) ( NSError *__nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The URL to open (required).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>config</code></th>
+						<td><p>An object used to configure the Browser (optional).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block that is invoked after opening the URL (optional).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Opens a URL in the Browser with a <a href="#//api/name/configuration">configuration</a> object and a completion handler.
+Works with direct and non-direct partnerships.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openURL:title:subtitle:completion:" title="openURL:title:subtitle:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openURL:title:subtitle:completion:">+&nbsp;openURL:title:subtitle:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Opens a URL in the Browser. Works with direct and non-direct partnerships.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)openURL:(NSURL *)<em>url</em> title:(nullable NSString *)<em>title</em> subtitle:(nullable NSString *)<em>subtitle</em> completion:(nullable void ( ^ ) ( NSError *__nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The URL to open (required).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>A title to set on the Browser (optional).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>subtitle</code></th>
+						<td><p>A subtitle to set on the Browser (optional).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block that is invoked after opening the URL (optional).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Opens a URL in the Browser. Works with direct and non-direct partnerships.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Fetching a Purchase Path" name="task_Fetching a Purchase Path"></a>
+						<h2 class="task-title">Fetching a Purchase Path</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/purchasePath" title="purchasePath"></a>
+	<h3 class="method-title"><code><a href="#//api/name/purchasePath">&nbsp;&nbsp;purchasePath</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Button Purchase Path takes regular Merchant URLs to products, categories or just the homepage and replaces
+them with a fully attributed Button Purchase Path, optimized for both conversion and user experience.
+<a href="https://developer.usebutton.com/guides/publishers/ios/create-a-button-purchase-path">https://developer.usebutton.com/guides/publishers/ios/create-a-button-purchase-path</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (class, readonly) id&lt;BTNPurchasePathInterface&gt; purchasePath</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Button Purchase Path takes regular Merchant URLs to products, categories or just the homepage and replaces
+them with a fully attributed Button Purchase Path, optimized for both conversion and user experience.
+<a href="https://developer.usebutton.com/guides/publishers/ios/create-a-button-purchase-path">https://developer.usebutton.com/guides/publishers/ios/create-a-button-purchase-path</a></p>
+
+<p>Example usage:</p>
+
+<p>@code
+<a href="../Classes/BTNPurchasePathRequest.html">BTNPurchasePathRequest</a> <em>request = [BTNPurchasePathRequest requestWithURL:merchantURL];
+[Button.purchasePath fetchWithRequest:request purchasePathHandler:^(<a href="../Classes/BTNPurchasePath.html">BTNPurchasePath</a> </em>purchasePath, NSError *error) {
+    [purchasePath start];
+}];
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Fetching Button Actions" name="task_Fetching Button Actions"></a>
+						<h2 class="task-title">Fetching Button Actions</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/actions" title="actions"></a>
+	<h3 class="method-title"><code><a href="#//api/name/actions">&nbsp;&nbsp;actions</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Buttons provide relevant actions to your users, complete with a corresponding UI. Buttons can be configured
+with one or more Merchants that they can offer to your users.
+<a href="https://developer.usebutton.com/guides/publishers/ios/using-button-actions">https://developer.usebutton.com/guides/publishers/ios/using-button-actions</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (class, readonly) id&lt;BTNButtonActionsInterface&gt; actions</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Buttons provide relevant actions to your users, complete with a corresponding UI. Buttons can be configured
+with one or more Merchants that they can offer to your users.
+<a href="https://developer.usebutton.com/guides/publishers/ios/using-button-actions">https://developer.usebutton.com/guides/publishers/ios/using-button-actions</a></p>
+
+<p>Example usage:</p>
+
+<p>@code
+<a href="../Classes/BTNLocation.html">BTNLocation</a> <em>subjectLocation = [<a href="../Classes/BTNLocation.html">BTNLocation</a> locationWithLatitude:40.71 longitude:74.0];
+<a href="../Classes/BTNActionQuery.html">BTNActionQuery</a> </em>query = [BTNActionQuery queryWithSubjectLocation:subjectLocation];
+<a href="../Classes/BTNActionRequest.html">BTNActionRequest</a> <em>request = [<a href="../Classes/BTNActionRequest.html">BTNActionRequest</a> requestWithButtonId:@&ldquo;btn-abc123&rdquo; query:query];
+[Button.actions fetchWithRequest:request actionhandler:^(<a href="../Classes/BTNAction.html">BTNAction</a> </em>buttonAction, NSError *error) {
+    [buttonAction start];
+}];
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Fetching a Boost Response" name="task_Fetching a Boost Response"></a>
+						<h2 class="task-title">Fetching a Boost Response</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/boost" title="boost"></a>
+	<h3 class="method-title"><code><a href="#//api/name/boost">&nbsp;&nbsp;boost</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Boost is a private beta product. If you&rsquo;re interested in Boost, reach out to your Button contact.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (class, readonly) id&lt;BTNBoostInterface&gt; boost</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Boost is a private beta product. If you&rsquo;re interested in Boost, reach out to your Button contact.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="User Association" name="task_User Association"></a>
+						<h2 class="task-title">User Association</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/user" title="user"></a>
+	<h3 class="method-title"><code><a href="#//api/name/user">&nbsp;&nbsp;user</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Associate your user with a Button session.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (class, readonly) id&lt;BTNUser&gt; user</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Associate your user with a Button session.</p>
+
+<p>@discussion
+You can associate all Button activity with one of your users by setting their User Identifier.
+This can be your user ID, email or a stable hash of one. You can use this later to look up orders,
+activity and identify the user in <a href="https://developer.usebutton.com/guides/publishers/configure-webhooks">Webhooks</a>.</p>
+
+<p>@code
+Button.user.setIdentifier(myLoggedInUser.identifier);
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Feature Configuration" name="task_Feature Configuration"></a>
+						<h2 class="task-title">Feature Configuration</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/configuration" title="configuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configuration">&nbsp;&nbsp;configuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Button SDK feature configuration.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (class, readonly) id&lt;BTNConfigurationInterface&gt; configuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Button SDK feature configuration.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Debugging" name="task_Debugging"></a>
+						<h2 class="task-title">Debugging</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/debug" title="debug"></a>
+	<h3 class="method-title"><code><a href="#//api/name/debug">&nbsp;&nbsp;debug</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Debug the Button SDK.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (class, readonly) id&lt;BTNDebugInterface&gt; debug</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Debug the Button SDK.</p>
+
+<p>@discussion
+Enable debug logging during integration for more visibility.</p>
+
+<p>@code
+Button.debug.loggingEnabled = YES;
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Clearing Data" name="task_Clearing Data"></a>
+						<h2 class="task-title">Clearing Data</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/clearAllData" title="clearAllData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearAllData">+&nbsp;clearAllData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Discards the current session and all persisted data.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)clearAllData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Discards the current session and all persisted data.</p>
+
+<p>@discussion
+Call this method in your log out handler if/when your <a href="#//api/name/user">user</a> logs out of your app.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Button.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Button, Inc. All rights reserved. Updated: 2020-04-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

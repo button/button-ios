@@ -29,6 +29,12 @@ NS_SWIFT_NAME(PurchasePathRequest)
 
 
 /**
+ The Button-provided identifier for the offer backing this Purchase Path request.
+ */
+@property (nullable, nonatomic, copy) NSString *offerId;
+
+
+/**
  Initializes a Purchase Path request for a given merchant URL.
 
  @param url A merchant URL to a product, category or just the homepage.

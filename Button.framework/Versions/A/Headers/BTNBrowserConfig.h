@@ -15,6 +15,12 @@ NS_SWIFT_NAME(BrowserConfig)
 
 
 /**
+ The Button-provided identifier for the offer backing the Purchase Path this may begin.
+ */
+@property (nullable, nonatomic, copy) NSString *offerId;
+
+
+/**
  The title to show in the Browser header chrome.
  */
 @property (nullable, nonatomic, readwrite, copy) NSString *title;
