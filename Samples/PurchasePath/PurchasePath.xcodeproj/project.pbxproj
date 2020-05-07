@@ -287,7 +287,7 @@
 				DE31D16B202BEB95004A29D6 /* Sources */,
 				DE31D16C202BEB95004A29D6 /* Frameworks */,
 				DE31D16D202BEB95004A29D6 /* Resources */,
-				2A1D7CBF46C3985004459635 /* [CP] Copy Pods Resources */,
+				972B3491C6EF5298CC9A0DAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -364,24 +364,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A1D7CBF46C3985004459635 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh",
-				"${PODS_ROOT}/../../../Button.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Button.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		71E15E49A421411D71ED8CB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +398,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjC-Demo/Pods-ObjC-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		972B3491C6EF5298CC9A0DAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh",
+				"${PODS_ROOT}/../../../Button.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Button.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift-Demo/Pods-Swift-Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE29BFD0BAE678EF228551CF /* [CP] Check Pods Manifest.lock */ = {
