@@ -287,7 +287,7 @@
 				DE31D16B202BEB95004A29D6 /* Sources */,
 				DE31D16C202BEB95004A29D6 /* Frameworks */,
 				DE31D16D202BEB95004A29D6 /* Resources */,
-				972B3491C6EF5298CC9A0DAD /* [CP] Copy Pods Resources */,
+				87995762D0F90B0FE4411A00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,7 +400,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjC-Demo/Pods-ObjC-Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		972B3491C6EF5298CC9A0DAD /* [CP] Copy Pods Resources */ = {
+		87995762D0F90B0FE4411A00 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
