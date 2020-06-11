@@ -1,24 +1,10 @@
 @import UIKit;
-
-typedef NS_ENUM(NSInteger, BTNCreativeType) {
-    BTNCreativeTypeOther,    // "other"
-    BTNCreativeTypeHero,     // "hero"
-    BTNCreativeTypeCarousel, // "carousel"
-    BTNCreativeTypeList,     // "list"
-    BTNCreativeTypeGrid,     // "grid"
-    BTNCreativeTypeDetail    // "detail"
-};
-
-
-typedef NS_ENUM(NSInteger, BTNVisibleRateType) {
-    BTNVisibleRateTypeUnknown,
-    BTNVisibleRateTypePercent,
-    BTNVisibleRateTypeFixed
-};
+#import "BTNImpressionTrackingTypes.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(ImpressionView)
+
 @interface BTNImpressionView : UIView
 
 

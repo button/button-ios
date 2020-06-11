@@ -190,6 +190,17 @@ DEPRECATED_MSG_ATTRIBUTE("Use '[Button openURL:]' or any of the other method sig
 
 
 
+///-----------------------
+/// @name Personalization
+///-----------------------
+
+/**
+ Personalize your user's experience.
+ */
+@property (class, readonly) id <BTNPersonalizationInterface> personalization;
+
+
+
 ///----------------
 /// @name Debugging
 ///----------------
