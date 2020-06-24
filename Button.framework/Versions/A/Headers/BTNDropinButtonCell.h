@@ -1,6 +1,9 @@
 @import UIKit;
 #import "BTNDropinButton.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 NS_SWIFT_NAME(DropinButtonCell)
 @interface BTNDropinButtonCell : UITableViewCell <BTNDropinButtonAppearance>
 
@@ -18,8 +21,10 @@ NS_SWIFT_NAME(DropinButtonCell)
  Tells the cell to render the passed app action.
  @param buttonAction A BTNAction fetched via `-[Button.actions fetchWithRequest:actionHandler:]`
  @note passing nil will return the button to the loading state.
+ @note Deprecated.
  */
-- (void)prepareWithButtonAction:(nullable BTNAction *)buttonAction NS_SWIFT_NAME(prepare(action:));;
+- (void)prepareWithButtonAction:(nullable BTNAction *)buttonAction NS_SWIFT_NAME(prepare(action:))
+DEPRECATED_MSG_ATTRIBUTE("Button Actions has been deprecated. Please contact Button to update your integration.");
 
 
 ///-----------------
@@ -32,3 +37,5 @@ NS_SWIFT_NAME(DropinButtonCell)
  */
 
 @end
+
+#pragma clang diagnostic pop

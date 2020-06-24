@@ -2,6 +2,9 @@
 
 @class BTNAction;
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 NS_SWIFT_NAME(InteractiveButton)
 @interface BTNInteractiveButton : UIView
 
@@ -14,8 +17,10 @@ NS_SWIFT_NAME(InteractiveButton)
  Tells the button to render the passed app action.
  @param buttonAction A BTNAction fetched via `-[Button.actions fetchWithRequest:actionHandler:]`
  @note passing nil will return the button to the loading state.
+ @note Deprecated.
  */
-- (void)prepareWithButtonAction:(BTNAction *)buttonAction NS_SWIFT_NAME(prepare(action:));
+- (void)prepareWithButtonAction:(BTNAction *)buttonAction NS_SWIFT_NAME(prepare(action:))
+DEPRECATED_MSG_ATTRIBUTE("Button Actions has been deprecated. Please contact Button to update your integration.");
 
 
 
@@ -66,3 +71,5 @@ NS_SWIFT_NAME(InteractiveButton)
 @property (nonatomic, assign) NSInteger relativeFontPointSize;
 
 @end
+
+#pragma clang diagnostic pop

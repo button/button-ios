@@ -8,7 +8,9 @@ NS_ASSUME_NONNULL_BEGIN
  A Button Action request defines the parameters for fetching an action.
 
  @see ButtonActionsInterface
+ @note Deprecated.
  */
+DEPRECATED_MSG_ATTRIBUTE("Button Actions has been deprecated. Please contact Button to update your integration.")
 NS_SWIFT_NAME(ActionRequest)
 @interface BTNActionRequest : NSObject
 

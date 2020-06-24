@@ -32,9 +32,11 @@ NS_SWIFT_NAME(ButtonActionsInterface)
  @param request A Button Action request.
  @param actionHandler A block to be called upon completion of the Button Action fetch.
                       The block passes a `buttonAction` on success or an `error` if one occurred.
+ @note Deprecated.
  */
 - (void)fetchWithRequest:(BTNActionRequest *)request
-           actionHandler:(void(^)(BTNAction * __nullable buttonAction, NSError * __nullable error))actionHandler NS_SWIFT_NAME(fetch(request:completion:));
+           actionHandler:(void(^)(BTNAction * __nullable buttonAction, NSError * __nullable error))actionHandler NS_SWIFT_NAME(fetch(request:completion:))
+DEPRECATED_MSG_ATTRIBUTE("Button Actions has been deprecated. Please contact Button to update your integration.");
 
 @end
 
