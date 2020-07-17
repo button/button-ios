@@ -4,6 +4,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+DEPRECATED_MSG_ATTRIBUTE("Autofill has been deprecated.")
 NS_SWIFT_NAME(PaymentMethodProvider)
 @protocol BTNPaymentMethodProvider <NSObject>
 

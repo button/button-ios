@@ -6,6 +6,8 @@ NS_SWIFT_NAME(DebugInterface)
 
 @property (nonatomic, assign, getter=isLoggingEnabled) BOOL loggingEnabled;
 
+@property (nonatomic, assign, getter=isVisualDebuggingEnabled) BOOL visualDebuggingEnabled;
+
 @end
 
 
