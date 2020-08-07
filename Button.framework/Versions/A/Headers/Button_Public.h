@@ -1,5 +1,4 @@
 #import "BTNPurchasePathInterfaceProtocol.h"
-#import "BTNButtonActionsInterfaceProtocol.h"
 #import "BTNBoostInterfaceProtocol.h"
 #import "BTNDebugInterfaceProtocol.h"
 #import "BTNUserProtocol.h"
@@ -8,6 +7,7 @@
 #import "BTNPersonalizationInterfaceProtocol.h"
 #import "BTNImpressionView.h"
 #import "BTNBrowserConfig.h"
+#import "ButtonActionsDeprecationProtocol.h"
 
 // System
 @import SystemConfiguration;

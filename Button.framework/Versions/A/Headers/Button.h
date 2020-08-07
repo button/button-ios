@@ -123,30 +123,6 @@ DEPRECATED_MSG_ATTRIBUTE("Use '[Button openURL:]' or any of the other method sig
 
 
 
-///------------------------------
-/// @name Fetching Button Actions
-///------------------------------
-
-/**
- Buttons provide relevant actions to your users, complete with a corresponding UI. Buttons can be configured
- with one or more Merchants that they can offer to your users.
- https://developer.usebutton.com/guides/publishers/ios/using-button-actions
-
- Example usage:
-
- @code
- BTNLocation *subjectLocation = [BTNLocation locationWithLatitude:40.71 longitude:74.0];
- BTNActionQuery *query = [BTNActionQuery queryWithSubjectLocation:subjectLocation];
- BTNActionRequest *request = [BTNActionRequest requestWithButtonId:@"btn-abc123" query:query];
- [Button.actions fetchWithRequest:request actionhandler:^(BTNAction *buttonAction, NSError *error) {
-    [buttonAction start];
- }];
- @endcode
- */
-@property (class, readonly) id <BTNButtonActionsInterface> actions;
-
-
-
 ///--------------------------------
 /// @name Fetching a Boost Response
 ///--------------------------------
@@ -233,4 +209,14 @@ DEPRECATED_MSG_ATTRIBUTE("Use '[Button openURL:]' or any of the other method sig
 
 @end
 
+
+///--------------------
+/// @name DEPRECATIONS
+///--------------------
+
+@interface Button (Deprecations) <ButtonActionsDeprecation>
+
+@end
+
 NS_ASSUME_NONNULL_END
+

@@ -9,29 +9,29 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.usebutton.sdk</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.25.0</string>
+	<string>6.26.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>473</string>
+	<string>480</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>17A820</string>
+	<string>17B102</string>
 	<key>DTPlatformName</key>
 	<string>iphoneos</string>
 	<key>DTPlatformVersion</key>
-	<string>13.1</string>
+	<string>13.2</string>
 	<key>DTSDKBuild</key>
-	<string>17A820</string>
+	<string>17B102</string>
 	<key>DTSDKName</key>
-	<string>iphoneos13.1</string>
+	<string>iphoneos13.2</string>
 	<key>DTXcode</key>
-	<string>1110</string>
+	<string>1121</string>
 	<key>DTXcodeBuild</key>
-	<string>11A1027</string>
+	<string>11B500</string>
 	<key>MinimumOSVersion</key>
 	<string>9.0</string>
 	<key>UIAppFonts</key>
