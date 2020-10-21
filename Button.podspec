@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name    = "Button"
-  s.version = "6.27.0"
+  s.version = "6.28.0"
   s.summary = "Button iOS SDK."
 
   s.description = <<-DESC
@@ -21,23 +21,9 @@ Pod::Spec.new do |s|
   s.requires_arc   = true
   s.compiler_flags = '-w'
 
-  s.preserve_paths      = 'Button.framework'
-  s.public_header_files = 'Button.framework/Versions/A/Headers/*.h'
-  s.source_files        = 'Button.framework/Versions/A/Headers/*.h'
-  s.vendored_frameworks = 'Button.framework'
-  s.resource            = 'Button.bundle'
-  s.framework           = "AdSupport"
+  s.vendored_frameworks = 'Button.xcframework'
   s.swift_version       = '5.0'
 
-  #
-  # A workaound to trigger CocoaPods to link Swift libraries when linting.
-  # See: https://github.com/CocoaPods/CocoaPods/issues/8649#issuecomment-535590208
-  #
-  # The deploy step runs `pod truk push --skip-tests`
-  # Note: Tests specs are not downloaded when consuming the pod.
-  #
-  s.test_spec 'Tests' do |spec|
-    spec.dependency 'ButtonMerchant', '~> 1.0'
-  end  
+  s.cocoapods_version = '>= 1.10.0.rc.1'
 
 end
