@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name    = "Button"
-  s.version = "6.28.0"
+  s.version = "6.29.0"
   s.summary = "Button iOS SDK."
 
   s.description = <<-DESC
@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'Button.xcframework'
   s.swift_version       = '5.0'
 
-  s.cocoapods_version = '>= 1.10.0.rc.1'
+  s.cocoapods_version = '>= 1.10.0'
 
 end
