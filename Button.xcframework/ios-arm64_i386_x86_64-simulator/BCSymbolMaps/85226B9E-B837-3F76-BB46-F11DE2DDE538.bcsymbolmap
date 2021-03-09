@@ -819,7 +819,6 @@ __OBJC_CLASS_RO_$_BTNProduct
 Button/Model/Product/BTNProduct.m
 Button/Model/Product/BTNProduct.h
 +[BTNInstallViewController setStoreClass:]
-+[BTNInstallViewController visibleInstallViewController]
 -[BTNInstallViewController dealloc]
 -[BTNInstallViewController initWithMetadata:resources:]
 -[BTNInstallViewController loadView]
@@ -831,7 +830,7 @@ ___48-[BTNInstallViewController configureContentView]_block_invoke
 -[BTNInstallViewController showWithCompletion:]
 ___47-[BTNInstallViewController showWithCompletion:]_block_invoke
 ___47-[BTNInstallViewController showWithCompletion:]_block_invoke_2
-___47-[BTNInstallViewController showWithCompletion:]_block_invoke.110
+___47-[BTNInstallViewController showWithCompletion:]_block_invoke.92
 ___copy_helper_block_e8_32s40b
 -[BTNInstallViewController dismissWithCompletion:]
 ___50-[BTNInstallViewController dismissWithCompletion:]_block_invoke
@@ -846,7 +845,7 @@ ___48-[BTNInstallViewController handleAppStoreCancel]_block_invoke
 ___55-[BTNInstallViewController loadAppStoreWithCompletion:]_block_invoke
 -[BTNInstallViewController presentAppStoreSheetWithCompletion:]
 ___63-[BTNInstallViewController presentAppStoreSheetWithCompletion:]_block_invoke
-___63-[BTNInstallViewController presentAppStoreSheetWithCompletion:]_block_invoke.177
+___63-[BTNInstallViewController presentAppStoreSheetWithCompletion:]_block_invoke.163
 -[BTNInstallViewController dismissAppStoreWithCompletion:]
 -[BTNInstallViewController productViewControllerDidFinish:]
 -[BTNInstallViewController resources]
@@ -873,41 +872,34 @@ _BTNStoreClass
 _OBJC_IVAR_$_BTNInstallViewController._storeController
 _OBJC_IVAR_$_BTNInstallViewController._resources
 _OBJC_IVAR_$_BTNInstallViewController._meta
-_OBJC_CLASSLIST_REFERENCES_$_.26
-_OBJC_CLASSLIST_REFERENCES_$_.27
-_OBJC_CLASSLIST_REFERENCES_$_.34
 ___block_descriptor_40_e8_32w_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.58
-_OBJC_CLASSLIST_REFERENCES_$_.67
-_OBJC_SELECTOR_REFERENCES_.81
+_OBJC_CLASSLIST_REFERENCES_$_.49
 _OBJC_IVAR_$_BTNInstallViewController._contentView
-_OBJC_CLASSLIST_REFERENCES_$_.84
+_OBJC_CLASSLIST_REFERENCES_$_.66
+_OBJC_CLASSLIST_REFERENCES_$_.87
 ___block_descriptor_40_e8_32s_e5_v8?0l
 ___block_descriptor_40_e8_32bs_e8_v12?0B8l
-_OBJC_SELECTOR_REFERENCES_.113
 ___block_descriptor_48_e8_32s40bs_e5_v8?0l
-_OBJC_SELECTOR_REFERENCES_.117
-_OBJC_SELECTOR_REFERENCES_.123
-_OBJC_SELECTOR_REFERENCES_.125
-_OBJC_SELECTOR_REFERENCES_.127
-_OBJC_SELECTOR_REFERENCES_.129
-_OBJC_CLASSLIST_REFERENCES_$_.130
-_OBJC_CLASSLIST_REFERENCES_$_.137
+_OBJC_SELECTOR_REFERENCES_.113
+_OBJC_CLASSLIST_REFERENCES_$_.114
+_OBJC_SELECTOR_REFERENCES_.118
+_OBJC_CLASSLIST_REFERENCES_$_.121
+_OBJC_CLASSLIST_REFERENCES_$_.124
+_OBJC_CLASSLIST_REFERENCES_$_.129
+_OBJC_SELECTOR_REFERENCES_.131
+_OBJC_SELECTOR_REFERENCES_.133
+_OBJC_SELECTOR_REFERENCES_.135
+_OBJC_SELECTOR_REFERENCES_.137
+_OBJC_SELECTOR_REFERENCES_.139
 _OBJC_CLASSLIST_REFERENCES_$_.140
-_OBJC_CLASSLIST_REFERENCES_$_.145
-_OBJC_SELECTOR_REFERENCES_.147
-_OBJC_SELECTOR_REFERENCES_.149
-_OBJC_SELECTOR_REFERENCES_.151
+___block_descriptor_48_e8_32s40bs_e20_v20?0B8"NSError"12l
 _OBJC_SELECTOR_REFERENCES_.153
 _OBJC_SELECTOR_REFERENCES_.155
 _OBJC_CLASSLIST_REFERENCES_$_.156
 _OBJC_SELECTOR_REFERENCES_.158
 _OBJC_SELECTOR_REFERENCES_.160
-_OBJC_SELECTOR_REFERENCES_.162
-___block_descriptor_48_e8_32s40bs_e20_v20?0B8"NSError"12l
-_OBJC_SELECTOR_REFERENCES_.172
 ___block_descriptor_40_e8_32w_e8_v12?0B8l
-_OBJC_SELECTOR_REFERENCES_.176
+_OBJC_SELECTOR_REFERENCES_.162
 _OBJC_IVAR_$_BTNInstallViewController._blurView
 _OBJC_IVAR_$_BTNInstallViewController._installView
 _OBJC_IVAR_$_BTNInstallViewController._simulatorView
@@ -929,7 +921,7 @@ __OBJC_CLASS_RO_$_BTNInstallViewController
 /Users/build-agent-2/buildAgent/work/e6468a5fbe866a6c/Button/ResourceProvider/ExternalActions/InstallViewController/BTNInstallViewController.m
 Button/ResourceProvider/ExternalActions/InstallViewController/BTNInstallViewController.m
 Button/ResourceProvider/ExternalActions/InstallViewController/BTNInstallViewController.h
-__63-[BTNInstallViewController presentAppStoreSheetWithCompletion:]_block_invoke.177
+__63-[BTNInstallViewController presentAppStoreSheetWithCompletion:]_block_invoke.163
 __63-[BTNInstallViewController presentAppStoreSheetWithCompletion:]_block_invoke
 __55-[BTNInstallViewController loadAppStoreWithCompletion:]_block_invoke
 __48-[BTNInstallViewController handleAppStoreCancel]_block_invoke
@@ -938,7 +930,7 @@ __58-[BTNInstallViewController dismissViewOnlyWithCompletion:]_block_invoke_2
 __58-[BTNInstallViewController dismissViewOnlyWithCompletion:]_block_invoke
 __50-[BTNInstallViewController dismissWithCompletion:]_block_invoke
 __copy_helper_block_e8_32s40b
-__47-[BTNInstallViewController showWithCompletion:]_block_invoke.110
+__47-[BTNInstallViewController showWithCompletion:]_block_invoke.92
 __47-[BTNInstallViewController showWithCompletion:]_block_invoke_2
 __47-[BTNInstallViewController showWithCompletion:]_block_invoke
 __48-[BTNInstallViewController configureContentView]_block_invoke
@@ -1049,12 +1041,11 @@ _OBJC_IVAR_$_BTNInstallOperation._policy
 _OBJC_IVAR_$_BTNInstallOperation._isExecuting
 _OBJC_IVAR_$_BTNInstallOperation._isFinished
 ___block_descriptor_48_e8_32s40bs_e17_v16?0"NSError"8l
-_OBJC_CLASSLIST_REFERENCES_$_.114
 _OBJC_CLASSLIST_REFERENCES_$_.117
-_OBJC_SELECTOR_REFERENCES_.131
-_OBJC_SELECTOR_REFERENCES_.133
-_OBJC_SELECTOR_REFERENCES_.135
-_OBJC_SELECTOR_REFERENCES_.139
+_OBJC_SELECTOR_REFERENCES_.123
+_OBJC_SELECTOR_REFERENCES_.125
+_OBJC_SELECTOR_REFERENCES_.127
+_OBJC_SELECTOR_REFERENCES_.129
 _OBJC_SELECTOR_REFERENCES_.141
 _OBJC_SELECTOR_REFERENCES_.145
 _OBJC_CLASSLIST_REFERENCES_$_.148
@@ -1144,8 +1135,11 @@ ___destroy_helper_block_e8_32s40r
 _OBJC_CLASSLIST_REFERENCES_$_.50
 _OBJC_CLASSLIST_REFERENCES_$_.60
 _OBJC_CLASSLIST_REFERENCES_$_.79
+_OBJC_SELECTOR_REFERENCES_.81
 _OBJC_SELECTOR_REFERENCES_.93
+_OBJC_SELECTOR_REFERENCES_.117
 _OBJC_CLASSLIST_REFERENCES_$_.132
+_OBJC_CLASSLIST_REFERENCES_$_.137
 _OBJC_SELECTOR_REFERENCES_.143
 _OBJC_CLASSLIST_REFERENCES_$_.144
 _OBJC_SELECTOR_REFERENCES_.152
@@ -1270,101 +1264,6 @@ __OBJC_$_CATEGORY_INSTANCE_METHODS_NSObject_$_BTNPerformBlock
 __OBJC_$_CATEGORY_NSObject_$_BTNPerformBlock
 /Users/build-agent-2/buildAgent/work/e6468a5fbe866a6c/Button/Categories/NSObject+BTNPerformBlock.m
 Button/Categories/NSObject+BTNPerformBlock.m
-+[BTNAutomaticURLHandler clearConfigureOnceToken]
-+[BTNAutomaticURLHandler clearOriginalFunctions]
-+[BTNAutomaticURLHandler replacementApplicationSetDelegate]
-_BTNApplicationSetDelegate
-+[BTNAutomaticURLHandler replacementApplicationHandleOpenURL]
-_BTNApplicationHandleOpenURL
-+[BTNAutomaticURLHandler replacementApplicationOpenURLSourceApplicationAnnotation]
-_BTNApplicationOpenURLSourceApplicationAnnotation
-+[BTNAutomaticURLHandler replacementApplicationOpenURLOptions]
-_BTNApplicationOpenURLOptions
-+[BTNAutomaticURLHandler replacementApplicationContinueUserActivityRestorationHandler]
-_BTNApplicationContinueUserActivityRestorationHandler
-+[BTNAutomaticURLHandler originalApplicationHandleOpenURL]
-+[BTNAutomaticURLHandler setOriginalApplicationHandleOpenURL:]
-+[BTNAutomaticURLHandler originalApplicationOpenURLSourceApplicationAnnotation]
-+[BTNAutomaticURLHandler setOriginalApplicationOpenURLSourceApplicationAnnotation:]
-+[BTNAutomaticURLHandler originalApplicationOpenURLOptions]
-+[BTNAutomaticURLHandler setOriginalApplicationOpenURLOptions:]
-+[BTNAutomaticURLHandler originalApplicationContinueUserActivityRestorationHandler]
-+[BTNAutomaticURLHandler setOriginalApplicationContinueUserActivityRestorationHandler:]
-+[BTNAutomaticURLHandler load]
-___30+[BTNAutomaticURLHandler load]_block_invoke
-___copy_helper_block_e8_
-___destroy_helper_block_e8_
-+[BTNAutomaticURLHandler isEnabled]
-+[BTNAutomaticURLHandler setEnabled:]
-+[BTNAutomaticURLHandler replaceSetAppDelegateForApplicationClass:]
-+[BTNAutomaticURLHandler configureAutomaticAttributionForAppDelegate:]
-___70+[BTNAutomaticURLHandler configureAutomaticAttributionForAppDelegate:]_block_invoke
-___copy_helper_block_e8_40s
-___destroy_helper_block_e8_40s
-+[BTNAutomaticURLHandler replaceApplicationHandleOpenURLForAppDelegateClass:]
-+[BTNAutomaticURLHandler replaceApplicationOpenURLSourceApplicationAnnotationForAppDelegateClass:]
-+[BTNAutomaticURLHandler replaceApplicationOpenURLOptionsForAppDelegateClass:]
-+[BTNAutomaticURLHandler replaceApplicationContinueUserActivityRestorationHandlerForAppDelegateClass:]
-+[BTNAutomaticURLHandler addMethodToAppDelegateClass:selector:imp:]
-+[BTNAutomaticURLHandler notificationCenter]
-+[BTNAutomaticURLHandler setNotificationCenter:]
-+[BTNAutomaticURLHandler postNotificationWithReceivedURL:]
-+[BTNAutomaticURLHandler captureURL:]
-+[BTNAutomaticURLHandler cachedURL]
-_BTNConfigureAutomaticURLHandlingOnceToken
-_BTNOriginalApplicationHandleOpenURL
-_BTNOriginalApplicationOpenURLSourceApplicationAnnotation
-_BTNOriginalApplicationOpenURLOptions
-_BTNOriginalApplicationContinueUserActivityRestorationHandler
-_load.onceToken
-___block_descriptor_40_e8__e5_v8?0l
-_BTNAutomaticURLHandlingEnabled
-_BTNOriginalApplicationSetDelegate
-__OBJC_$_PROTOCOL_REFS_UIApplicationDelegate
-__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIApplicationDelegate
-__OBJC_$_PROP_LIST_UIApplicationDelegate
-__OBJC_$_PROTOCOL_METHOD_TYPES_UIApplicationDelegate
-__OBJC_PROTOCOL_$_UIApplicationDelegate
-__OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
-__OBJC_PROTOCOL_REFERENCE_$_UIApplicationDelegate
-_OBJC_SELECTOR_REFERENCES_.178
-___block_descriptor_48_e8_40s_e5_v8?0l
-_OBJC_SELECTOR_REFERENCES_.182
-_OBJC_SELECTOR_REFERENCES_.184
-_OBJC_SELECTOR_REFERENCES_.186
-_OBJC_SELECTOR_REFERENCES_.188
-_OBJC_SELECTOR_REFERENCES_.190
-_BTNNotificationCenter
-_OBJC_CLASSLIST_REFERENCES_$_.193
-_OBJC_SELECTOR_REFERENCES_.197
-_OBJC_CLASSLIST_REFERENCES_$_.198
-_OBJC_SELECTOR_REFERENCES_.200
-_BTNCapturedURL
-_OBJC_SELECTOR_REFERENCES_.204
-__OBJC_$_CLASS_METHODS_BTNAutomaticURLHandler
-__OBJC_METACLASS_RO_$_BTNAutomaticURLHandler
-__OBJC_CLASS_RO_$_BTNAutomaticURLHandler
-_OBJC_CLASSLIST_REFERENCES_$_.227
-_OBJC_SELECTOR_REFERENCES_.228
-_OBJC_SELECTOR_REFERENCES_.229
-_OBJC_SELECTOR_REFERENCES_.230
-_OBJC_SELECTOR_REFERENCES_.231
-_OBJC_SELECTOR_REFERENCES_.232
-_OBJC_SELECTOR_REFERENCES_.234
-_OBJC_SELECTOR_REFERENCES_.235
-/Users/build-agent-2/buildAgent/work/e6468a5fbe866a6c/Button/Attribution/BTNAutomaticURLHandler.m
-Button/Attribution/BTNAutomaticURLHandler.m
-__destroy_helper_block_e8_40s
-__copy_helper_block_e8_40s
-__70+[BTNAutomaticURLHandler configureAutomaticAttributionForAppDelegate:]_block_invoke
-__destroy_helper_block_e8_
-__copy_helper_block_e8_
-__30+[BTNAutomaticURLHandler load]_block_invoke
-BTNApplicationContinueUserActivityRestorationHandler
-BTNApplicationOpenURLOptions
-BTNApplicationOpenURLSourceApplicationAnnotation
-BTNApplicationHandleOpenURL
-BTNApplicationSetDelegate
 -[BTNView init]
 -[BTNView initWithFrame:]
 -[BTNView initWithCoder:]
@@ -1457,7 +1356,6 @@ ___27-[BTNKeychain reportError:]_block_invoke
 -[BTNKeychain setKeychainStoreSerialQueue:]
 -[BTNKeychain .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.42
-_OBJC_CLASSLIST_REFERENCES_$_.66
 ___block_descriptor_56_e8_32s40s48r_e5_v8?0l
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_NSCoding
 __OBJC_$_PROTOCOL_METHOD_TYPES_NSCoding
@@ -1468,7 +1366,6 @@ ___block_descriptor_64_e8_32s40s48s56bs_e5_v8?0l
 ___block_descriptor_56_e8_32s40s48bs_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.120
 _OBJC_CLASSLIST_REFERENCES_$_.131
-_OBJC_SELECTOR_REFERENCES_.137
 _OBJC_CLASSLIST_REFERENCES_$_.138
 ___block_descriptor_56_e8_32s40s48s_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.158
@@ -1478,6 +1375,8 @@ _OBJC_CLASSLIST_REFERENCES_$_.163
 _OBJC_SELECTOR_REFERENCES_.165
 _OBJC_CLASSLIST_REFERENCES_$_.190
 _OBJC_SELECTOR_REFERENCES_.192
+_OBJC_SELECTOR_REFERENCES_.200
+_OBJC_SELECTOR_REFERENCES_.204
 _OBJC_SELECTOR_REFERENCES_.206
 _OBJC_SELECTOR_REFERENCES_.216
 _OBJC_SELECTOR_REFERENCES_.218
@@ -1643,7 +1542,6 @@ __OBJC_$_PROTOCOL_METHOD_TYPES_UIViewControllerTransitionCoordinator
 __OBJC_PROTOCOL_$_UIViewControllerTransitionCoordinator
 __OBJC_LABEL_PROTOCOL_$_UIViewControllerTransitionCoordinator
 __OBJC_PROTOCOL_REFERENCE_$_UIViewControllerTransitionCoordinator
-_OBJC_SELECTOR_REFERENCES_.118
 __OBJC_$_PROTOCOL_REFS_BTNMutableResourceConsumer
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_BTNMutableResourceConsumer
 __OBJC_$_PROP_LIST_BTNMutableResourceConsumer
@@ -1746,6 +1644,7 @@ ___51-[BTNCardCollectionViewCell configureWithCardView:]_block_invoke
 _OBJC_IVAR_$_BTNCardCollectionViewCell._shadowView
 _OBJC_IVAR_$_BTNCardCollectionViewCell._containerView
 _OBJC_CLASSLIST_REFERENCES_$_.28
+_OBJC_CLASSLIST_REFERENCES_$_.34
 _OBJC_IVAR_$_BTNCardCollectionViewCell._cardView
 _OBJC_CLASSLIST_REFERENCES_$_.55
 __OBJC_METACLASS_RO_$_BTNCardCollectionViewCell
@@ -1834,11 +1733,11 @@ __64-[BTNInjectableScriptRequest executeRequestWithSuccess:failure:]_block_invok
 -[BTNCore configureWithApplicationId:completion:]
 -[BTNCore configureWithApplicationId:resourceProvider:completion:]
 ___66-[BTNCore configureWithApplicationId:resourceProvider:completion:]_block_invoke
-___66-[BTNCore configureWithApplicationId:resourceProvider:completion:]_block_invoke.106
+___66-[BTNCore configureWithApplicationId:resourceProvider:completion:]_block_invoke.101
 -[BTNCore isConfigured]
 -[BTNCore createNewSessionWithApplicationId:completion:]
 ___56-[BTNCore createNewSessionWithApplicationId:completion:]_block_invoke
-___56-[BTNCore createNewSessionWithApplicationId:completion:]_block_invoke.126
+___56-[BTNCore createNewSessionWithApplicationId:completion:]_block_invoke.121
 -[BTNCore handleNewSessionWithCompletedRequests:completion:]
 -[BTNCore openLink:withAppAction:completion:]
 ___45-[BTNCore openLink:withAppAction:completion:]_block_invoke
@@ -1862,7 +1761,6 @@ ___37-[BTNCore openURL:config:completion:]_block_invoke
 -[BTNCore handleApplicationDidEnterBackgroundNotification:]
 -[BTNCore handleNetworkBecameAvailableNotification:]
 -[BTNCore handleClientNotAuthorizedNotification:]
--[BTNCore handleApplicationDidReceiveIncomingURLNotification:]
 -[BTNCore extension]
 -[BTNCore setExtension:]
 -[BTNCore isBrowserEnabled]
@@ -1902,58 +1800,60 @@ ___37-[BTNCore openURL:config:completion:]_block_invoke
 -[BTNCore launchState]
 -[BTNCore .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.21
-_OBJC_CLASSLIST_REFERENCES_$_.107
-_OBJC_CLASSLIST_REFERENCES_$_.113
-_OBJC_CLASSLIST_REFERENCES_$_.116
+_OBJC_CLASSLIST_REFERENCES_$_.26
+_OBJC_CLASSLIST_REFERENCES_$_.102
+_OBJC_CLASSLIST_REFERENCES_$_.103
+_OBJC_CLASSLIST_REFERENCES_$_.111
 ___block_descriptor_40_e8_32s_e32_v24?0"BTNSession"8"NSError"16l
 ___block_descriptor_48_e8_32s40bs_e29_v24?0"NSArray"8"NSArray"16l
-_OBJC_CLASSLIST_REFERENCES_$_.142
 ___block_descriptor_64_e8_32s40bs48s56s_e20_v20?0B8"NSError"12l
-_OBJC_CLASSLIST_REFERENCES_$_.159
+_OBJC_CLASSLIST_REFERENCES_$_.154
+_OBJC_SELECTOR_REFERENCES_.176
+_OBJC_CLASSLIST_REFERENCES_$_.177
 _OBJC_CLASSLIST_REFERENCES_$_.182
-_OBJC_CLASSLIST_REFERENCES_$_.187
-_OBJC_SELECTOR_REFERENCES_.210
+_OBJC_SELECTOR_REFERENCES_.184
+_OBJC_SELECTOR_REFERENCES_.186
+_OBJC_SELECTOR_REFERENCES_.188
+_OBJC_SELECTOR_REFERENCES_.190
+_OBJC_CLASSLIST_REFERENCES_$_.193
+_OBJC_SELECTOR_REFERENCES_.197
 ___block_descriptor_40_e8_32bs_e37_v24?0"BTNPurchasePath"8"NSError"16l
-_OBJC_SELECTOR_REFERENCES_.217
-_OBJC_SELECTOR_REFERENCES_.223
-_OBJC_SELECTOR_REFERENCES_.225
-_OBJC_SELECTOR_REFERENCES_.233
+_OBJC_SELECTOR_REFERENCES_.220
+_OBJC_SELECTOR_REFERENCES_.226
+_OBJC_SELECTOR_REFERENCES_.228
+_OBJC_SELECTOR_REFERENCES_.230
+_OBJC_SELECTOR_REFERENCES_.234
+_OBJC_CLASSLIST_REFERENCES_$_.237
 _OBJC_SELECTOR_REFERENCES_.239
-_OBJC_CLASSLIST_REFERENCES_$_.242
-_OBJC_SELECTOR_REFERENCES_.244
-_OBJC_SELECTOR_REFERENCES_.252
-_OBJC_SELECTOR_REFERENCES_.254
-_OBJC_SELECTOR_REFERENCES_.256
-_OBJC_SELECTOR_REFERENCES_.258
-_OBJC_SELECTOR_REFERENCES_.260
-_OBJC_SELECTOR_REFERENCES_.262
-_OBJC_SELECTOR_REFERENCES_.264
-_OBJC_SELECTOR_REFERENCES_.266
-_OBJC_SELECTOR_REFERENCES_.268
-_OBJC_SELECTOR_REFERENCES_.270
-_OBJC_SELECTOR_REFERENCES_.272
-_OBJC_SELECTOR_REFERENCES_.274
-_OBJC_SELECTOR_REFERENCES_.276
-_OBJC_SELECTOR_REFERENCES_.278
-_OBJC_SELECTOR_REFERENCES_.280
-_OBJC_SELECTOR_REFERENCES_.282
-_OBJC_SELECTOR_REFERENCES_.284
-_OBJC_SELECTOR_REFERENCES_.286
-_OBJC_SELECTOR_REFERENCES_.288
-_OBJC_SELECTOR_REFERENCES_.290
-_OBJC_SELECTOR_REFERENCES_.292
-_OBJC_SELECTOR_REFERENCES_.294
-_OBJC_SELECTOR_REFERENCES_.296
-_OBJC_SELECTOR_REFERENCES_.298
+_OBJC_SELECTOR_REFERENCES_.247
+_OBJC_SELECTOR_REFERENCES_.249
+_OBJC_SELECTOR_REFERENCES_.251
+_OBJC_SELECTOR_REFERENCES_.253
+_OBJC_SELECTOR_REFERENCES_.255
+_OBJC_SELECTOR_REFERENCES_.257
+_OBJC_SELECTOR_REFERENCES_.259
+_OBJC_SELECTOR_REFERENCES_.261
+_OBJC_SELECTOR_REFERENCES_.263
+_OBJC_SELECTOR_REFERENCES_.265
+_OBJC_SELECTOR_REFERENCES_.267
+_OBJC_SELECTOR_REFERENCES_.269
+_OBJC_SELECTOR_REFERENCES_.271
+_OBJC_SELECTOR_REFERENCES_.273
+_OBJC_SELECTOR_REFERENCES_.275
+_OBJC_SELECTOR_REFERENCES_.277
+_OBJC_SELECTOR_REFERENCES_.279
+_OBJC_SELECTOR_REFERENCES_.281
+_OBJC_SELECTOR_REFERENCES_.283
 __OBJC_PROTOCOL_REFERENCE_$_BTNPurchasePathExtension
-_OBJC_SELECTOR_REFERENCES_.349
-_OBJC_SELECTOR_REFERENCES_.351
-_OBJC_SELECTOR_REFERENCES_.355
-_OBJC_SELECTOR_REFERENCES_.357
-_OBJC_SELECTOR_REFERENCES_.361
-_OBJC_SELECTOR_REFERENCES_.363
-_OBJC_SELECTOR_REFERENCES_.365
-_OBJC_SELECTOR_REFERENCES_.367
+_OBJC_SELECTOR_REFERENCES_.334
+_OBJC_SELECTOR_REFERENCES_.336
+_OBJC_SELECTOR_REFERENCES_.340
+_OBJC_SELECTOR_REFERENCES_.342
+_OBJC_SELECTOR_REFERENCES_.344
+_OBJC_SELECTOR_REFERENCES_.348
+_OBJC_SELECTOR_REFERENCES_.350
+_OBJC_SELECTOR_REFERENCES_.352
+_OBJC_SELECTOR_REFERENCES_.354
 __OBJC_$_PROTOCOL_REFS_BTNPurchasePathInterface
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_BTNPurchasePathInterface
 __OBJC_$_PROP_LIST_BTNPurchasePathInterface
@@ -2006,9 +1906,9 @@ __37-[BTNCore openURL:config:completion:]_block_invoke
 __43-[BTNCore handleLink:appAction:completion:]_block_invoke
 __copy_helper_block_e8_32s40b48s56s
 __45-[BTNCore openLink:withAppAction:completion:]_block_invoke
-__56-[BTNCore createNewSessionWithApplicationId:completion:]_block_invoke.126
+__56-[BTNCore createNewSessionWithApplicationId:completion:]_block_invoke.121
 __56-[BTNCore createNewSessionWithApplicationId:completion:]_block_invoke
-__66-[BTNCore configureWithApplicationId:resourceProvider:completion:]_block_invoke.106
+__66-[BTNCore configureWithApplicationId:resourceProvider:completion:]_block_invoke.101
 __66-[BTNCore configureWithApplicationId:resourceProvider:completion:]_block_invoke
 -[BTNCore(Network) fetchPurchasePathRequest:purchasePathHandler:]
 ___65-[BTNCore(Network) fetchPurchasePathRequest:purchasePathHandler:]_block_invoke
@@ -2246,6 +2146,7 @@ ___block_descriptor_56_e8_32s40s48w_e17_v16?0"NSArray"8l
 _OBJC_CLASSLIST_REFERENCES_$_.98
 _OBJC_CLASSLIST_REFERENCES_$_.119
 _OBJC_CLASSLIST_REFERENCES_$_.147
+_OBJC_SELECTOR_REFERENCES_.151
 _appStateKeyComponentForInstallState:.appStateTypeToString
 _OBJC_CLASSLIST_REFERENCES_$_.172
 _OBJC_CLASSLIST_REFERENCES_$_.188
@@ -2467,6 +2368,7 @@ ___48-[BTNNetworkReachabilityManager startMonitoring]_block_invoke_2
 ___BTNNetworkReachabilityCallback_block_invoke
 ___block_descriptor_40_e8_32w_e8_v16?0q8l
 ___block_descriptor_48_e8_32bs_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.67
 __OBJC_$_CLASS_METHODS_BTNNetworkReachabilityManager
 __OBJC_METACLASS_RO_$_BTNNetworkReachabilityManager
 __OBJC_$_INSTANCE_METHODS_BTNNetworkReachabilityManager
@@ -2771,7 +2673,6 @@ _OBJC_CLASSLIST_REFERENCES_$_.82
 _OBJC_IVAR_$_BTNWebViewController._proxy
 _OBJC_IVAR_$_BTNWebViewController._trackingOptions
 _OBJC_CLASSLIST_REFERENCES_$_.93
-_OBJC_CLASSLIST_REFERENCES_$_.102
 _OBJC_CLASSLIST_REFERENCES_$_.109
 _OBJC_IVAR_$_BTNWebViewController._widgetActionHandler
 _OBJC_IVAR_$_BTNWebViewController._fullscreenWidget
@@ -2788,33 +2689,34 @@ _OBJC_IVAR_$_BTNWebViewController._privateDataSource
 _OBJC_IVAR_$_BTNWebViewController._persistentDataSource
 _OBJC_IVAR_$_BTNWebViewController._panGestureRecognizer
 _OBJC_IVAR_$_BTNWebViewController._ourPresentingViewController
+_OBJC_SELECTOR_REFERENCES_.147
 _OBJC_IVAR_$_BTNWebViewController._scripts
+_OBJC_SELECTOR_REFERENCES_.149
 _OBJC_SELECTOR_REFERENCES_.177
 _OBJC_CLASSLIST_REFERENCES_$_.191
 _OBJC_SELECTOR_REFERENCES_.215
+_OBJC_SELECTOR_REFERENCES_.217
 _OBJC_SELECTOR_REFERENCES_.219
+_OBJC_SELECTOR_REFERENCES_.223
 _OBJC_CLASSLIST_REFERENCES_$_.224
-_OBJC_SELECTOR_REFERENCES_.226
+_OBJC_SELECTOR_REFERENCES_.232
 _OBJC_IVAR_$_BTNWebViewController._container
 _OBJC_SELECTOR_REFERENCES_.236
 _OBJC_SELECTOR_REFERENCES_.238
 _OBJC_SELECTOR_REFERENCES_.240
 _OBJC_SELECTOR_REFERENCES_.242
+_OBJC_SELECTOR_REFERENCES_.244
 _OBJC_SELECTOR_REFERENCES_.246
 _OBJC_SELECTOR_REFERENCES_.248
 _OBJC_SELECTOR_REFERENCES_.250
+_OBJC_SELECTOR_REFERENCES_.252
+_OBJC_SELECTOR_REFERENCES_.254
 _OBJC_IVAR_$_BTNWebViewController._widgetVisibilityConstraint
-_OBJC_SELECTOR_REFERENCES_.265
-_OBJC_SELECTOR_REFERENCES_.267
-_OBJC_SELECTOR_REFERENCES_.269
+_OBJC_SELECTOR_REFERENCES_.256
+_OBJC_SELECTOR_REFERENCES_.258
+_OBJC_SELECTOR_REFERENCES_.260
+_OBJC_SELECTOR_REFERENCES_.262
 _OBJC_IVAR_$_BTNWebViewController._transitionCancelled
-_OBJC_SELECTOR_REFERENCES_.271
-_OBJC_SELECTOR_REFERENCES_.273
-_OBJC_SELECTOR_REFERENCES_.275
-_OBJC_SELECTOR_REFERENCES_.277
-_OBJC_SELECTOR_REFERENCES_.279
-_OBJC_SELECTOR_REFERENCES_.281
-_OBJC_SELECTOR_REFERENCES_.283
 _OBJC_SELECTOR_REFERENCES_.285
 _OBJC_SELECTOR_REFERENCES_.287
 _OBJC_SELECTOR_REFERENCES_.289
@@ -2843,17 +2745,14 @@ _OBJC_SELECTOR_REFERENCES_.327
 _OBJC_SELECTOR_REFERENCES_.329
 _OBJC_SELECTOR_REFERENCES_.331
 _OBJC_CLASSLIST_REFERENCES_$_.332
-_OBJC_SELECTOR_REFERENCES_.336
 _OBJC_SELECTOR_REFERENCES_.338
-_OBJC_SELECTOR_REFERENCES_.340
-_OBJC_SELECTOR_REFERENCES_.342
-_OBJC_SELECTOR_REFERENCES_.344
 _OBJC_SELECTOR_REFERENCES_.346
-_OBJC_SELECTOR_REFERENCES_.348
-_OBJC_SELECTOR_REFERENCES_.350
-_OBJC_SELECTOR_REFERENCES_.352
 _OBJC_CLASSLIST_REFERENCES_$_.353
+_OBJC_SELECTOR_REFERENCES_.357
 _OBJC_SELECTOR_REFERENCES_.359
+_OBJC_SELECTOR_REFERENCES_.363
+_OBJC_SELECTOR_REFERENCES_.365
+_OBJC_SELECTOR_REFERENCES_.367
 _OBJC_SELECTOR_REFERENCES_.369
 _OBJC_SELECTOR_REFERENCES_.371
 _OBJC_SELECTOR_REFERENCES_.373
@@ -3195,7 +3094,6 @@ ___58-[BTNInternalRewardsExtension scheduleDismissalInBrowser:]_block_invoke
 -[BTNInternalRewardsExtension setBrowserCardDisplayed:]
 -[BTNInternalRewardsExtension autoDismissDelay]
 -[BTNInternalRewardsExtension .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.87
 _OBJC_CLASSLIST_REFERENCES_$_.94
 _OBJC_CLASSLIST_REFERENCES_$_.101
 __OBJC_CLASS_PROTOCOLS_$_BTNInternalRewardsExtension
@@ -3393,10 +3291,10 @@ _OBJC_IVAR_$_BTNWebViewSheetController._viewModel
 _OBJC_IVAR_$_BTNWebViewSheetController._proxy
 _OBJC_IVAR_$_BTNWebViewSheetController._resources
 ___block_descriptor_48_e8_32s40bs_e8_v12?0B8l
-_OBJC_CLASSLIST_REFERENCES_$_.124
 ___block_descriptor_32_e8_v12?0B8l
 ___block_descriptor_40_e8_32s_e17_v16?0"UIImage"8l
 _OBJC_SELECTOR_REFERENCES_.164
+_OBJC_SELECTOR_REFERENCES_.172
 _OBJC_CLASSLIST_REFERENCES_$_.175
 ___block_descriptor_41_e8_32s_e8_v12?0B8l
 _OBJC_IVAR_$_BTNWebViewSheetController._progressBar
@@ -3478,6 +3376,7 @@ _OBJC_IVAR_$_BTNAppActionMeta._campaignId
 _OBJC_IVAR_$_BTNAppActionMeta._merchantId
 _OBJC_IVAR_$_BTNAppActionMeta._deepLinkScheme
 _OBJC_IVAR_$_BTNAppActionMeta._appDisplayName
+_OBJC_CLASSLIST_REFERENCES_$_.27
 _OBJC_IVAR_$_BTNAppActionMeta._preferredAction
 _OBJC_IVAR_$_BTNAppActionMeta._appIcon
 _OBJC_IVAR_$_BTNAppActionMeta._requestTime
@@ -3754,8 +3653,12 @@ _OBJC_IVAR_$_BTNPopupWebViewController._dismissButton
 _OBJC_CLASSLIST_REFERENCES_$_.81
 _OBJC_IVAR_$_BTNPopupWebViewController._blurView
 _OBJC_CLASSLIST_REFERENCES_$_.153
+_OBJC_SELECTOR_REFERENCES_.178
+_OBJC_SELECTOR_REFERENCES_.182
 _OBJC_IVAR_$_BTNPopupWebViewController._appAction
 _OBJC_CLASSLIST_REFERENCES_$_.203
+_OBJC_CLASSLIST_REFERENCES_$_.204
+_OBJC_SELECTOR_REFERENCES_.210
 _OBJC_IVAR_$_BTNPopupWebViewController._contentViewTopConstraint
 _OBJC_IVAR_$_BTNPopupWebViewController._dismissButtonBottomConstraint
 _OBJC_IVAR_$_BTNPopupWebViewController._dismissHandler
@@ -3881,7 +3784,6 @@ __75-[BTNStorePresentationController dismissViewControllerAnimated:completion:]_
 -[BTNRequestSerializer setSessionRateLimitExpirationTimeInterval:]
 -[BTNRequestSerializer .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.44
-_OBJC_CLASSLIST_REFERENCES_$_.49
 _OBJC_CLASSLIST_REFERENCES_$_.83
 _OBJC_CLASSLIST_REFERENCES_$_.115
 __OBJC_$_CLASS_METHODS_BTNRequestSerializer
@@ -4027,7 +3929,6 @@ ___71-[BTNCardPresenter viewWillTransitionToSize:withTransitionCoordinator:]_blo
 -[BTNCardPresenter setShowingAllCardsFromUserTap:]
 -[BTNCardPresenter .cxx_destruct]
 ___block_descriptor_56_e8_32s40s48s_e56_v16?0"<UIViewControllerTransitionCoordinatorContext>"8l
-_OBJC_CLASSLIST_REFERENCES_$_.111
 __OBJC_$_PROTOCOL_REFS_UIGestureRecognizerDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIGestureRecognizerDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_UIGestureRecognizerDelegate
@@ -4591,6 +4492,8 @@ __OBJC_CLASS_RO_$_BTNPassThroughView
 Button/UserInterface/BaseViews/BTNPassThroughView.m
 +[BTNDebugLogger sharedLogger]
 ___30+[BTNDebugLogger sharedLogger]_block_invoke
+___copy_helper_block_e8_
+___destroy_helper_block_e8_
 -[BTNDebugLogger initWithUserDefaults:]
 -[BTNDebugLogger logPublicMessage:]
 -[BTNDebugLogger logInfoMessage:]
@@ -4607,8 +4510,10 @@ ___38-[BTNDebugLogger logLevelStringToType]_block_invoke
 -[BTNDebugLogger .cxx_destruct]
 _sharedLogger._logger
 _sharedLogger.onceToken
+___block_descriptor_40_e8__e5_v8?0l
 _logLevelStringToType.stringToType
 _logLevelStringToType.onceToken
+_OBJC_CLASSLIST_REFERENCES_$_.58
 __OBJC_$_CLASS_METHODS_BTNDebugLogger
 __OBJC_METACLASS_RO_$_BTNDebugLogger
 __OBJC_$_INSTANCE_METHODS_BTNDebugLogger
@@ -4622,6 +4527,8 @@ Button/ResourceProvider/Logger/BTNDebugLogger.m
 Button/ResourceProvider/Logger/BTNDebugLogger_Private.h
 Button/ResourceProvider/Logger/BTNDebugLogger.h
 __38-[BTNDebugLogger logLevelStringToType]_block_invoke
+__destroy_helper_block_e8_
+__copy_helper_block_e8_
 __30+[BTNDebugLogger sharedLogger]_block_invoke
 -[BTNCore(NetworkAvailability) setupNetworkReachability]
 ___56-[BTNCore(NetworkAvailability) setupNetworkReachability]_block_invoke
@@ -5098,23 +5005,28 @@ __48-[BTNCardDataSource replaceCardForKey:withCard:]_block_invoke
 -[BTNResourceProvider setAdIdProvider:]
 -[BTNResourceProvider .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.77
+_OBJC_CLASSLIST_REFERENCES_$_.84
 _OBJC_CLASSLIST_REFERENCES_$_.89
 _OBJC_CLASSLIST_REFERENCES_$_.90
 _OBJC_CLASSLIST_REFERENCES_$_.91
 _OBJC_CLASSLIST_REFERENCES_$_.106
-_OBJC_CLASSLIST_REFERENCES_$_.121
+_OBJC_CLASSLIST_REFERENCES_$_.107
+_OBJC_CLASSLIST_REFERENCES_$_.116
 _OBJC_CLASSLIST_REFERENCES_$_.126
 _OBJC_CLASSLIST_REFERENCES_$_.150
+_OBJC_CLASSLIST_REFERENCES_$_.159
+_OBJC_SELECTOR_REFERENCES_.225
 _OBJC_SELECTOR_REFERENCES_.227
+_OBJC_SELECTOR_REFERENCES_.229
+_OBJC_SELECTOR_REFERENCES_.231
+_OBJC_SELECTOR_REFERENCES_.233
+_OBJC_SELECTOR_REFERENCES_.235
 _OBJC_SELECTOR_REFERENCES_.237
 _OBJC_SELECTOR_REFERENCES_.241
 _OBJC_SELECTOR_REFERENCES_.243
 _OBJC_SELECTOR_REFERENCES_.245
-_OBJC_SELECTOR_REFERENCES_.247
-_OBJC_SELECTOR_REFERENCES_.249
 _OBJC_CLASSLIST_REFERENCES_$_.250
 _OBJC_CLASSLIST_REFERENCES_$_.261
-_OBJC_SELECTOR_REFERENCES_.263
 __OBJC_METACLASS_RO_$_BTNResourceProvider
 __OBJC_$_INSTANCE_METHODS_BTNResourceProvider
 _OBJC_IVAR_$_BTNResourceProvider._rootViewController
@@ -5443,10 +5355,10 @@ ___49+[BTNBrowserNavigationHelper validNetworkSchemes]_block_invoke
 -[BTNBrowserNavigationHelper pageViewRequestHelper]
 -[BTNBrowserNavigationHelper setPageViewRequestHelper:]
 -[BTNBrowserNavigationHelper .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.86
 _OBJC_CLASSLIST_REFERENCES_$_.135
 _validNetworkSchemes.validNetworkSchemes
 _validNetworkSchemes.onceToken
+_OBJC_CLASSLIST_REFERENCES_$_.168
 __OBJC_$_CLASS_METHODS_BTNBrowserNavigationHelper
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_BTNPageViewResponseDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_BTNPageViewResponseDelegate
@@ -6649,15 +6561,18 @@ Button/UserInterface/WebView/Transitions/BTNBrowserRightTransition.m
 Button/UserInterface/WebView/Transitions/BTNBrowserRightTransition.h
 __47-[BTNBrowserRightTransition animateTransition:]_block_invoke.33
 __47-[BTNBrowserRightTransition animateTransition:]_block_invoke
-+[BTNBrowserUserAgent userAgentFromDefaultUserAgentString:]
--[BTNBrowserUserAgent initWithDefaultUserAgentString:]
++[BTNBrowserUserAgent userAgentFromDefaultUserAgentString:osMajorVersion:]
+-[BTNBrowserUserAgent initWithDefaultUserAgentString:osMajorVersion:]
 -[BTNBrowserUserAgent userAgentStringFromDefaultUserAgentString:]
+-[BTNBrowserUserAgent safariVersion]
 -[BTNBrowserUserAgent userAgentString]
+-[BTNBrowserUserAgent osMajorVersion]
 -[BTNBrowserUserAgent .cxx_destruct]
 __OBJC_$_CLASS_METHODS_BTNBrowserUserAgent
 __OBJC_METACLASS_RO_$_BTNBrowserUserAgent
 __OBJC_$_INSTANCE_METHODS_BTNBrowserUserAgent
 _OBJC_IVAR_$_BTNBrowserUserAgent._userAgentString
+_OBJC_IVAR_$_BTNBrowserUserAgent._osMajorVersion
 __OBJC_$_INSTANCE_VARIABLES_BTNBrowserUserAgent
 __OBJC_$_PROP_LIST_BTNBrowserUserAgent
 __OBJC_CLASS_RO_$_BTNBrowserUserAgent

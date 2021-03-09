@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name    = "ButtonStatic"
-  s.version = "6.29.0"
+  s.version = "6.29.1"
   s.summary = "Button iOS SDK."
 
   s.description = <<-DESC
@@ -20,9 +20,11 @@ Pod::Spec.new do |s|
 
   s.requires_arc   = true
   s.compiler_flags = '-w'
+  s.static_framework = true
 
+  s.resource = '.static/Button.xcframework/Button.bundle'
   s.vendored_frameworks = '.static/Button.xcframework'
-  s.swift_version       = '5.0'
+  s.swift_version = '5.0'
 
   s.cocoapods_version = '>= 1.10.0'
 
