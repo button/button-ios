@@ -2044,7 +2044,7 @@ __destroy_helper_block_e8_32s40w
 __copy_helper_block_e8_32s40w
 __50-[BTNReliableRequestCoordinator prepareOperation:]_block_invoke
 -[BTNWindow makeKeyAndVisible]
--[BTNWindow resignKeyWindow]
+-[BTNWindow cleanupWindow]
 -[BTNWindow resources]
 -[BTNWindow setResources:]
 -[BTNWindow originalKeyWindow]
