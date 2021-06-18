@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BTNOfferDetails Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Button SDK (6.29.3) </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Button, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/offerId">offerId</option>
+		
+		<option value="//api/name/url">url</option>
+		
+		<option value="//api/name/visibleRate">visibleRate</option>
+		
+		<option value="//api/name/visibleRateType">visibleRateType</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithURL:offerId:visibleRate:rateType:">- initWithURL:offerId:visibleRate:rateType:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BTNOfferDetails Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BTNOfferDetails.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Defines the interface for creating OfferDetails objects for use in configuring ImpressionViews.</p>
+
+<p>Note: You may either create an instance of the concrete class OfferDetails or implement this protocol on one of your own classes.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/url" title="url"></a>
+	<h3 class="method-title"><code><a href="#//api/name/url">&nbsp;&nbsp;url</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The URL that is associated with the offer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *url</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The URL that is associated with the offer.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNOfferDetails.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/offerId" title="offerId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/offerId">&nbsp;&nbsp;offerId</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The Button-provided value that identifies the served offer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *offerId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The Button-provided value that identifies the served offer.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNOfferDetails.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visibleRate" title="visibleRate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visibleRate">&nbsp;&nbsp;visibleRate</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The rate visible to the user. If the <a href="#//api/name/visibleRateType">visibleRateType</a> is <code>fixed</code>, this value represents the amount in the
+currency of the offer. If it is <code>percent</code>, this will be a value ranging from 0.0 to 100.0.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) double visibleRate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The rate visible to the user. If the <a href="#//api/name/visibleRateType">visibleRateType</a> is <code>fixed</code>, this value represents the amount in the
+currency of the offer. If it is <code>percent</code>, this will be a value ranging from 0.0 to 100.0.</p><p>Default value is <code>0.0</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNOfferDetails.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visibleRateType" title="visibleRateType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visibleRateType">&nbsp;&nbsp;visibleRateType</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An enum value representing type of the <a href="#//api/name/visibleRate">visibleRate</a> for the offer that is displayed to the user,
+either <code>percent</code> or <code>fixed</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) BTNVisibleRateType visibleRateType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An enum value representing type of the <a href="#//api/name/visibleRate">visibleRate</a> for the offer that is displayed to the user,
+either <code>percent</code> or <code>fixed</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNOfferDetails.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Initialization" name="task_Initialization"></a>
+						<h2 class="task-title">Initialization</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithURL:offerId:visibleRate:rateType:" title="initWithURL:offerId:visibleRate:rateType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithURL:offerId:visibleRate:rateType:">&ndash;&nbsp;initWithURL:offerId:visibleRate:rateType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new instance with the details of an impression to be passed to an ImpressionView&rsquo;s <code>configureWith(details:)</code> method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithURL:(NSString *)<em>url</em> offerId:(NSString *)<em>offerId</em> visibleRate:(double)<em>visibleRate</em> rateType:(BTNVisibleRateType)<em>rateType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The URL string of the served offer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>offerId</code></th>
+						<td><p>The Button-provided value that identifies the rate of the served offer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>visibleRate</code></th>
+						<td><p>The new <a href="#//api/name/visibleRateType">visibleRateType</a> of the served offer (or zero when not applicable).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rateType</code></th>
+						<td><p>The new <a href="#//api/name/visibleRate">visibleRate</a> of the served offer (or <code>unknown</code> when not applicable).</p>
+
+<p>If the offer displayed is valued at 3%, pass 3 for <a href="#//api/name/visibleRate">visibleRate</a> and a rateType of .percent</p>
+
+<p><code>
+impressionView.configureWith(details: ImpressionDetails(url: url, offerId: offerId, visibleRate: 3.0, rateType: .percent))
+</code></p>
+
+<p>If the offer displayed is valued at $5, pass 5.0 for <a href="#//api/name/visibleRate">visibleRate</a> and a rateType of .fixed</p>
+
+<p>@code
+impressionView.configureWith(details: ImpressionDetails(url: <a href="#//api/name/url">url</a>, offerId: <a href="#//api/name/offerId">offerId</a>, visibleRate: 5.0, rateType: .fixed))
+@endcode</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a new instance with the details of an impression to be passed to an ImpressionView&rsquo;s <code>configureWith(details:)</code> method.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BTNOfferDetails.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Button, Inc. All rights reserved. Updated: 2021-06-18</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
