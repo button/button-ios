@@ -6,43 +6,43 @@
 	<dict>
 		<key>Button.bundle/BTNImpressionDebugDetailController.nib/objects-11.0+.nib</key>
 		<data>
-		MSWlEXO2sSHVHkjMLrO3Wk2s8/s=
+		mRuLvGHN0pYfY027l+pJB5xPmGg=
 		</data>
 		<key>Button.bundle/BTNImpressionDebugDetailController.nib/runtime.nib</key>
 		<data>
-		hjJ9ebZajm213y9Ez8onAMY0wu4=
+		OT/TC9dtr+x7JD9JypeqaMszqYo=
 		</data>
 		<key>Button.bundle/BTNInstallCardView.nib</key>
 		<data>
-		8SPltufKKtJUBQ45DlEoc3w+xdo=
+		GYaKnkecQg9w0tE/d8fjbate9JI=
 		</data>
 		<key>Button.bundle/BTNNavigationHeaderView.nib</key>
 		<data>
-		4Z1RGTF6tx/oKap4cBGhG8xCYMc=
+		pEmDRFkxoZFaFyiCLceM3m0VOjo=
 		</data>
 		<key>Button.bundle/BTNSimulatorInstallView.nib</key>
 		<data>
-		HuolnjDMo4Mq6bH9ZyOmTIPu5po=
+		7Axudeqm7VK01kUX+gpZvPDd7KA=
 		</data>
 		<key>Button.bundle/BTNTextCardView.nib</key>
 		<data>
-		4lRoaJv6ccLL0b9U99n/qEw4AGw=
+		PVMIzYzm+xaSZOeGp6BcZOrt2Q0=
 		</data>
 		<key>Button.bundle/BTNToolbarView.nib/objects-11.0+.nib</key>
 		<data>
-		/4PQRotthHuBiOSekg9jaAwzmqw=
+		zvc5jOJMK8CS0hufg3kFuqydeTs=
 		</data>
 		<key>Button.bundle/BTNToolbarView.nib/runtime.nib</key>
 		<data>
-		9Q7o8yL2YrdiErOoBNaPnu2zZF0=
+		ISd1IVlFD7PABSvhxTkdU9pZFRs=
 		</data>
 		<key>Button.bundle/BTNWebViewSheetController.nib</key>
 		<data>
-		S2aqTxbKMarbBHDo1dSfntAdmzg=
+		Jq/NUeEAnvoltngHEnZcCa4tp8k=
 		</data>
 		<key>Button.bundle/Info.plist</key>
 		<data>
-		xEo297sVUPdQNdQWUP0YpX0GEfA=
+		hGAt5Hh2wrJpXd3gjCVDRnf76GY=
 		</data>
 		<key>Button.bundle/LICENSE</key>
 		<data>
@@ -234,23 +234,23 @@
 		</data>
 		<key>Headers/BTNBoostInterfaceProtocol.h</key>
 		<data>
-		/S7HQJ3uo46D1IDX6nCaFLxJBoA=
+		NkMAEW1N93yWQ+Y9MfkBsnxXGDQ=
 		</data>
 		<key>Headers/BTNBoostRequest.h</key>
 		<data>
-		zUge5qWtJ+KEOmfBOa9qJRxQKII=
+		m45MRERM3Nkfqv8p2tkThPqipUI=
 		</data>
 		<key>Headers/BTNBoostResponse.h</key>
 		<data>
-		IkM7Vb8mMf4wIde4lSScfPGMWrM=
+		TB9/tQak+6T01lzwVnHKt+VO9YQ=
 		</data>
 		<key>Headers/BTNBoostView.h</key>
 		<data>
-		EyiDEW2SPUFIGYjjosSV1QmjNQk=
+		2MSB1E/jHGkzX8AkWsL9coJYK3A=
 		</data>
 		<key>Headers/BTNBoostViewDelegateProtocol.h</key>
 		<data>
-		1Sus8gweJmcFhvBKIz7Q9IZofPI=
+		GQVr95glBIpo4qQkAmBQRLGxyAY=
 		</data>
 		<key>Headers/BTNBrowserChromeDelegateProtocol.h</key>
 		<data>
@@ -270,7 +270,7 @@
 		</data>
 		<key>Headers/BTNBrowserInterfaceProtocol.h</key>
 		<data>
-		jsMiPSUeCi62yXYCARNRbwMKLqg=
+		+ICEXRV2ZT6Ql9aj4OrZOn9wkAI=
 		</data>
 		<key>Headers/BTNBrowserPageProtocol.h</key>
 		<data>
@@ -386,7 +386,11 @@
 		</data>
 		<key>Headers/BTNPurchasePath.h</key>
 		<data>
-		t8maaIWeEr6lmzs5uS15knkrqBY=
+		J0MsnICDsuE+R1ghvDrMacnnXsE=
+		</data>
+		<key>Headers/BTNPurchasePathError.h</key>
+		<data>
+		ZLMvu0lueBwq4i2triTFk2HRePg=
 		</data>
 		<key>Headers/BTNPurchasePathExtensionProtocol.h</key>
 		<data>
@@ -394,7 +398,7 @@
 		</data>
 		<key>Headers/BTNPurchasePathInterfaceProtocol.h</key>
 		<data>
-		L28tc4vXMm0/yGW2mPdTE4XeaLY=
+		jkEy3/54emWhZ7x0ZilF6jGN9OM=
 		</data>
 		<key>Headers/BTNPurchasePathPrivate.h</key>
 		<data>
@@ -434,11 +438,11 @@
 		</data>
 		<key>Headers/Button.h</key>
 		<data>
-		ZFF/RZeFYGuPSxJVlDAUna+6kPg=
+		e0BPicm+uJzR5i/u1eWBkjN+YXU=
 		</data>
-		<key>Headers/ButtonActionsDeprecationProtocol.h</key>
+		<key>Headers/ButtonDeprecationsProtocol.h</key>
 		<data>
-		QNPC/NRBmm8LKi9YO83vQOmXPtM=
+		/HE0mAL2iSztPHiyteDLqyLsRYA=
 		</data>
 		<key>Headers/ButtonSDK.h</key>
 		<data>
@@ -446,11 +450,11 @@
 		</data>
 		<key>Headers/Button_Public.h</key>
 		<data>
-		h7+HuDoxhtNHDn+TBUs9MA6i8Ak=
+		R20uF802rUnU3hpSxf2nMgtOVGA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tR5jI37RSYzXd1GQy1614S4N4TA=
+		PmLETxvSNIrPA77mvQndh5t3Y28=
 		</data>
 		<key>Modules/Button.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -523,110 +527,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MSWlEXO2sSHVHkjMLrO3Wk2s8/s=
+			mRuLvGHN0pYfY027l+pJB5xPmGg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ooyEhcs8RXI/Dwq4Xzy1FbiPyN6Q/0r+M5G47KNaX0Q=
+			MrHRkubpit1asqBN95BOCtFZ353+OGhrBke+rWSqzQM=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNImpressionDebugDetailController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hjJ9ebZajm213y9Ez8onAMY0wu4=
+			OT/TC9dtr+x7JD9JypeqaMszqYo=
 			</data>
 			<key>hash2</key>
 			<data>
-			N0cZAbszKLRWN9NHba8rk03XsXC+lYpOMF3HfSUqsg8=
+			VgwFesKQvHiovdRGzBYMv6IEEyJaONGc//WHfDlxOnI=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNInstallCardView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8SPltufKKtJUBQ45DlEoc3w+xdo=
+			GYaKnkecQg9w0tE/d8fjbate9JI=
 			</data>
 			<key>hash2</key>
 			<data>
-			9L7GbPIBzvOHoYht2zFquDyEyVH7xBDDnbdl67GDDBg=
+			ler3sF4DKYjfw/iTN95uTO3h9dS1x148ddXsd9ohpGA=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNNavigationHeaderView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4Z1RGTF6tx/oKap4cBGhG8xCYMc=
+			pEmDRFkxoZFaFyiCLceM3m0VOjo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ouJ571lmdDyPgEblUoOeXua8/GWR1xo7NrpihGq4x94=
+			/w9JwjC0C4s+s447XwB7eIdsC3pcZMLDPZVGogvB3n4=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNSimulatorInstallView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HuolnjDMo4Mq6bH9ZyOmTIPu5po=
+			7Axudeqm7VK01kUX+gpZvPDd7KA=
 			</data>
 			<key>hash2</key>
 			<data>
-			adAUT0UdTBDnH56pLCmrS8GpnRaIxKZm9Ib38GKg0Ko=
+			llUl1vhOxfl5y47YqwpGLIDrVB8P7Yb9H4bQRVv7kSk=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNTextCardView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4lRoaJv6ccLL0b9U99n/qEw4AGw=
+			PVMIzYzm+xaSZOeGp6BcZOrt2Q0=
 			</data>
 			<key>hash2</key>
 			<data>
-			UeuAthEZdrCQbxZsruUNbilUTqE6AJlKrYkMzPKVdCU=
+			oFM3ZdqFD8qrOzvrNoyuJKLnYSK5fpNAwm1W4w7Wb/Y=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNToolbarView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/4PQRotthHuBiOSekg9jaAwzmqw=
+			zvc5jOJMK8CS0hufg3kFuqydeTs=
 			</data>
 			<key>hash2</key>
 			<data>
-			/e8RN1vBMBmISJ6erm9FeE4laJqtm6U/2zkbLED/LRo=
+			YAcT3P+nE2XvOpaM7pqCzmJ8wLJm8gieMJAKv+IRaIE=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNToolbarView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9Q7o8yL2YrdiErOoBNaPnu2zZF0=
+			ISd1IVlFD7PABSvhxTkdU9pZFRs=
 			</data>
 			<key>hash2</key>
 			<data>
-			svlvxIoCfgcvKYnEgGrvdzra2ComysQ6xsYLYFQBDPY=
+			9MlK4XVTVNaKGkXu07hQXo6n3xN7GAmXQdZr+QrHEfA=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNWebViewSheetController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S2aqTxbKMarbBHDo1dSfntAdmzg=
+			Jq/NUeEAnvoltngHEnZcCa4tp8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			KK325bAhwjUyAAQHllYOzJtAgaL1JVhCnWR+J9FUxAI=
+			2VWDjaYFqin8jINFXiFKfI0ap4oHfPi56pV+TOSbuXU=
 			</data>
 		</dict>
 		<key>Button.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xEo297sVUPdQNdQWUP0YpX0GEfA=
+			hGAt5Hh2wrJpXd3gjCVDRnf76GY=
 			</data>
 			<key>hash2</key>
 			<data>
-			EEz1Ej727AUmUoi7U5LLq2HZJfcVVRCYCV352yrkV5M=
+			NIcRilTRhRHBti+fx7va2aGZcIUUEIVS/CQ9OZfL/E8=
 			</data>
 		</dict>
 		<key>Button.bundle/LICENSE</key>
@@ -1150,55 +1154,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/S7HQJ3uo46D1IDX6nCaFLxJBoA=
+			NkMAEW1N93yWQ+Y9MfkBsnxXGDQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vktdliz0bPlf+uBxRaMG7bYBjFz7WSqb6NAw4Ghjr08=
+			yoVKTy/Og9xt/+mn5xu5biPCHbWJdHc+/uN3GLUYtdA=
 			</data>
 		</dict>
 		<key>Headers/BTNBoostRequest.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zUge5qWtJ+KEOmfBOa9qJRxQKII=
+			m45MRERM3Nkfqv8p2tkThPqipUI=
 			</data>
 			<key>hash2</key>
 			<data>
-			6RJqZr7HlAY0C/g45ZSaQILRo/hFd/hzDHK3R8p0eCU=
+			o4Zx70jJ8doKke5eBrcUMSsgGqfAQqiDqY+yujIXHCc=
 			</data>
 		</dict>
 		<key>Headers/BTNBoostResponse.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IkM7Vb8mMf4wIde4lSScfPGMWrM=
+			TB9/tQak+6T01lzwVnHKt+VO9YQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			r8h0yNrBGOzGpvQkE0lu/fVcPV5xqr49s9zJ7vfrBnA=
+			ewC9max6Ftd7hU7yN3EkGQO02zSQS7g6WTF9dxv/+uo=
 			</data>
 		</dict>
 		<key>Headers/BTNBoostView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EyiDEW2SPUFIGYjjosSV1QmjNQk=
+			2MSB1E/jHGkzX8AkWsL9coJYK3A=
 			</data>
 			<key>hash2</key>
 			<data>
-			D1gTAcZegPp6CQo2H1GkYqDw1OQc39yv/iQp8QhRkXg=
+			s7o49JKln5XDECbn9dHcd7ZwAtWp1AYCjP6z98VbkwE=
 			</data>
 		</dict>
 		<key>Headers/BTNBoostViewDelegateProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1Sus8gweJmcFhvBKIz7Q9IZofPI=
+			GQVr95glBIpo4qQkAmBQRLGxyAY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gf8LDjhe2OKbQ08KVDn1YuB7Jb8xOd1f0R43Ja5Bc68=
+			ez3+5FuO7mSl5nm8GoYdrredVEdiJvTgovRxar+MGg0=
 			</data>
 		</dict>
 		<key>Headers/BTNBrowserChromeDelegateProtocol.h</key>
@@ -1249,11 +1253,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jsMiPSUeCi62yXYCARNRbwMKLqg=
+			+ICEXRV2ZT6Ql9aj4OrZOn9wkAI=
 			</data>
 			<key>hash2</key>
 			<data>
-			mHqEw74C5ZDEX0bFpO7xA3J5QZpSA4XRHfQp13wUPcc=
+			30edP5QpKe1ud3VmeFe180h+Vy/N3wdywTV6Jn2JIsU=
 			</data>
 		</dict>
 		<key>Headers/BTNBrowserPageProtocol.h</key>
@@ -1568,11 +1572,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t8maaIWeEr6lmzs5uS15knkrqBY=
+			J0MsnICDsuE+R1ghvDrMacnnXsE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ByO7poSdhH/pQl+V3tAWW3QIT/8eBP5oynz0mjhGG5Y=
+			2phZjQIhmcFbLXb980OEmPRKFvTNZQX9VKaM17toQX4=
+			</data>
+		</dict>
+		<key>Headers/BTNPurchasePathError.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZLMvu0lueBwq4i2triTFk2HRePg=
+			</data>
+			<key>hash2</key>
+			<data>
+			N+xRmdP+UUQtueLP0rU2nzYIlxWjBworA2KUYMaan9I=
 			</data>
 		</dict>
 		<key>Headers/BTNPurchasePathExtensionProtocol.h</key>
@@ -1590,11 +1605,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L28tc4vXMm0/yGW2mPdTE4XeaLY=
+			jkEy3/54emWhZ7x0ZilF6jGN9OM=
 			</data>
 			<key>hash2</key>
 			<data>
-			bqE5GrU2+KL98Fime9SdptU6HF2x3/0Z138koTvoGVw=
+			Yvd0zTbJrb70GH+XeURtbbH+PdkD8vH+RWzyW+uh8OI=
 			</data>
 		</dict>
 		<key>Headers/BTNPurchasePathPrivate.h</key>
@@ -1700,22 +1715,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZFF/RZeFYGuPSxJVlDAUna+6kPg=
+			e0BPicm+uJzR5i/u1eWBkjN+YXU=
 			</data>
 			<key>hash2</key>
 			<data>
-			r+teepi5/GE3hqVUDo98hPTnF6QoCoY3tI2t/XaEBS0=
+			RLivWUroLpr+rglw2Ufag0jr+QYTcmL53+G6Dcnbpv4=
 			</data>
 		</dict>
-		<key>Headers/ButtonActionsDeprecationProtocol.h</key>
+		<key>Headers/ButtonDeprecationsProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QNPC/NRBmm8LKi9YO83vQOmXPtM=
+			/HE0mAL2iSztPHiyteDLqyLsRYA=
 			</data>
 			<key>hash2</key>
 			<data>
-			TYZzWqdUo/gDElmIN/YRan3A8oCf+eHll0VwYh1F8tQ=
+			ZupRa694u2iXdgqR5d2jviXo3KRdklR0KklkiLYji5s=
 			</data>
 		</dict>
 		<key>Headers/ButtonSDK.h</key>
@@ -1733,11 +1748,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h7+HuDoxhtNHDn+TBUs9MA6i8Ak=
+			R20uF802rUnU3hpSxf2nMgtOVGA=
 			</data>
 			<key>hash2</key>
 			<data>
-			YzUW7aywezKUuHbPnjApzvTnQT8w6Lv+TAXUKc1c80g=
+			7qmuNRdCjpUqfL9sm+xBOxlztIJuANDgnU0iPxaP6B8=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/arm.swiftdoc</key>

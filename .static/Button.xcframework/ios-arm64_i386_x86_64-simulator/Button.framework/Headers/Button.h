@@ -123,18 +123,6 @@ DEPRECATED_MSG_ATTRIBUTE("Use '[Button openURL:]' or any of the other method sig
 
 
 
-///--------------------------------
-/// @name Fetching a Boost Response
-///--------------------------------
-
-
-/**
- Boost is a private beta product. If you're interested in Boost, reach out to your Button contact.
- */
-@property (class, readonly) id <BTNBoostInterface> boost;
-
-
-
 ///-----------------------
 /// @name User Association
 ///-----------------------
@@ -214,7 +202,7 @@ DEPRECATED_MSG_ATTRIBUTE("Use '[Button openURL:]' or any of the other method sig
 /// @name DEPRECATIONS
 ///--------------------
 
-@interface Button (Deprecations) <ButtonActionsDeprecation>
+@interface Button (Deprecations) <ButtonDeprecations>
 
 @end
 

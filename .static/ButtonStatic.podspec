@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name    = "ButtonStatic"
-  s.version = "6.29.3"
+  s.version = "6.30.0"
   s.summary = "Button iOS SDK."
 
   s.description = <<-DESC

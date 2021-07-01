@@ -5,6 +5,13 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(PurchasePath)
 @interface BTNPurchasePath : NSObject
 
+/**
+ Purchase Path attributed url (may be a universal link)
+
+ @discussion In the event this value is nil, use the url from your PurchasePathRequest.
+ */
+@property (nullable, nonatomic, copy, readonly) NSURL *attributedURL;
+
 
 /**
  The attribution token associated with the Purchase Path.

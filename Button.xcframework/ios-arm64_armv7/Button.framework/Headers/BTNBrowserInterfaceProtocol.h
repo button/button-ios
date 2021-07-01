@@ -69,6 +69,16 @@ NS_SWIFT_NAME(BrowserInterface)
  */
 - (BOOL)canShowCards;
 
+/**
+ Navigates the browser to a new url.
+
+ @discussion Use this api to navigate the browser to a new url of the same domain. 
+ A url with a different domain should be opened by fetching and starting a new Purchase Path.
+
+ @param url The url to be loaded in the browser.
+ */
+- (void)navigateToURL:(NSURL *)url;
+
 @end
 
 NS_ASSUME_NONNULL_END

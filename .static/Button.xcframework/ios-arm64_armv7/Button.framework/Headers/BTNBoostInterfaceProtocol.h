@@ -8,8 +8,9 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(BoostInterface)
 @protocol BTNBoostInterface <NSObject>
 
-
 /**
+ DEPRECATED since v6.30.0
+
  Fetches a Boost Response to be rendered in a BoostView.
 
  @param request A BoostRequest to be fetched.
@@ -21,7 +22,8 @@ NS_SWIFT_NAME(BoostInterface)
  @important Boost is a private beta product. If you're interested in Boost, reach out to your Button contact.
  */
 - (void)fetchWithRequest:(BTNBoostRequest *)request
-       completionHandler:(nonnull void(^)(BTNBoostResponse * __nullable boostResponse, NSError * __nullable error))completionHandler NS_SWIFT_NAME(fetch(request:completion:));
+       completionHandler:(nonnull void(^)(BTNBoostResponse * __nullable boostResponse, NSError * __nullable error))completionHandler NS_SWIFT_NAME(fetch(request:completion:))
+DEPRECATED_MSG_ATTRIBUTE("Boost has been deprecated and will be removed in a future version.");
 
 @end
 

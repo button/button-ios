@@ -7,7 +7,7 @@
 #import "BTNPersonalizationInterfaceProtocol.h"
 #import "BTNImpressionView.h"
 #import "BTNBrowserConfig.h"
-#import "ButtonActionsDeprecationProtocol.h"
+#import "ButtonDeprecationsProtocol.h"
 
 // System
 @import SystemConfiguration;

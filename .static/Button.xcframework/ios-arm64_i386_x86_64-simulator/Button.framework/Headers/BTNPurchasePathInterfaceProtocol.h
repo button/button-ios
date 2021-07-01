@@ -2,6 +2,7 @@
 #import "BTNPurchasePathExtensionProtocol.h"
 #import "BTNPurchasePathRequest.h"
 #import "BTNPurchasePath.h"
+#import "BTNPurchasePathError.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

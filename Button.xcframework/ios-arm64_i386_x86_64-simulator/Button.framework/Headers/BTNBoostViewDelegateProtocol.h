@@ -4,10 +4,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+DEPRECATED_MSG_ATTRIBUTE("Boost has been deprecated and will be removed in a future version.")
 NS_SWIFT_NAME(BoostViewDelegate)
 @protocol BTNBoostViewDelegate <NSObject>
 
 /**
+ DEPRECATED since v6.30.0
+ 
  Invoked when a user interacts with a BoostView.
  
  @discussion Implement this delegate if you intend to show brand terms or
