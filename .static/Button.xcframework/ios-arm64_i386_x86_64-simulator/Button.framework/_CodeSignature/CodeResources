@@ -6,43 +6,43 @@
 	<dict>
 		<key>Button.bundle/BTNImpressionDebugDetailController.nib/objects-11.0+.nib</key>
 		<data>
-		uV6NqfsTfOBFk0f81Dgryr2s+6g=
+		KKRQjJ9hpDd1KKSO0MXQnbFPVsY=
 		</data>
 		<key>Button.bundle/BTNImpressionDebugDetailController.nib/runtime.nib</key>
 		<data>
-		c4KhsCHzMZVE1ozuOc7eSRoCdhI=
+		i44O/JF935nXSNIgUSxOhxa5bKI=
 		</data>
 		<key>Button.bundle/BTNInstallCardView.nib</key>
 		<data>
-		Efq+31/kKCkuRe2wTW1vCZ+Qbi8=
+		Xr/sIDvjm/PXztPrR2qZXHFG2GI=
 		</data>
 		<key>Button.bundle/BTNNavigationHeaderView.nib</key>
 		<data>
-		rr0kQFzxgVJODCiUYZvqRG+iZZs=
+		NqVg1l5G88U3lCY3Vhb1MEb/0Nc=
 		</data>
 		<key>Button.bundle/BTNSimulatorInstallView.nib</key>
 		<data>
-		KQylLsleuq/FEcphpX530M9GAqc=
+		wiE89t7+5pj0moJH3dAB8eXWRvQ=
 		</data>
 		<key>Button.bundle/BTNTextCardView.nib</key>
 		<data>
-		rceaQDHPj0n493fgcB8Y6ozg3qA=
+		bXU97P6AV1KTK8+KPtUKlRxzNks=
 		</data>
 		<key>Button.bundle/BTNToolbarView.nib/objects-11.0+.nib</key>
 		<data>
-		iKvpRawsJ4P6rIVgl/8cMBcQIp0=
+		sIZpLRQeof+co0fpzfkhSwtHSGA=
 		</data>
 		<key>Button.bundle/BTNToolbarView.nib/runtime.nib</key>
 		<data>
-		CidGKemkMDdLeW+ScptezBPLckw=
+		I51K6VaYoLdv+wi64lOpHzbozYg=
 		</data>
 		<key>Button.bundle/BTNWebViewSheetController.nib</key>
 		<data>
-		28txZe97UGbFNlsJ52GUtsblSs4=
+		EMPjSgYfmZsyBZlJ+e71lQX3/GI=
 		</data>
 		<key>Button.bundle/Info.plist</key>
 		<data>
-		alZoRvS9HDdz9Mla3p/ZYVQe5+M=
+		8KWbeMc8wJY1/Y6TeUFTXLwNznk=
 		</data>
 		<key>Button.bundle/LICENSE</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		EB39tsuX2bEGFLtbuMwQnDxhCDY=
+		vfJPwbYtdoQfZTU5LKmFE+1DV58=
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		dFKXqQZnQW2k8z7iNJd5iHFp7Hw=
+		r5aMCAO833AZWbzIq9iS9HpufyQ=
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		9jP5k0cZaEpdoEFd08WjVxqjmW8=
+		qJ0m49E8cAX3DMIdff3YpWdn0Ys=
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -454,7 +454,7 @@
 		</data>
 		<key>Headers/Button-Swift.h</key>
 		<data>
-		iDkd7Lpiboi/qD/xkS9Y4lqr6u8=
+		z5NQTcEaTwfvFzPdANTa9wyYffQ=
 		</data>
 		<key>Headers/Button.h</key>
 		<data>
@@ -474,79 +474,43 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2qxfKXFxMZtAHVON38ksHe7cRRE=
+		hJLguQSZV6C27kQ1CCpWvC7n4kU=
 		</data>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		cTiZT3RzsNq0bMgyM6CwqJiDSsU=
+		p92TNq5saBj3VmjY0aYJPIBC2E8=
 		</data>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Rf538X8vKVEkLPZhTvyfPWX+Pag=
+		BttnpIdjXUfZy1esgSnuiug3HHU=
 		</data>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oXxhvcZAJfZubyqICaB5dBZVgKw=
-		</data>
-		<key>Modules/Button.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		cTiZT3RzsNq0bMgyM6CwqJiDSsU=
-		</data>
-		<key>Modules/Button.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		Rf538X8vKVEkLPZhTvyfPWX+Pag=
-		</data>
-		<key>Modules/Button.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		oXxhvcZAJfZubyqICaB5dBZVgKw=
+		ikGR/y/45zdvVQOS3elMXWhlli8=
 		</data>
 		<key>Modules/Button.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		gRLVmJfBH2eFB38HnLNaCetXJuw=
+		F4dFz8ljc0aNDa+eCOjvLHgdpQs=
 		</data>
 		<key>Modules/Button.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mwfFYZjhYaru55gnIMvCQbkPcaY=
+		EZqpkVIGACjpktaLedoFxVGEXsE=
 		</data>
 		<key>Modules/Button.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qbANVbYG05+6IJ9zBbVv9NC/rx0=
-		</data>
-		<key>Modules/Button.swiftmodule/i386.swiftdoc</key>
-		<data>
-		gRLVmJfBH2eFB38HnLNaCetXJuw=
-		</data>
-		<key>Modules/Button.swiftmodule/i386.swiftinterface</key>
-		<data>
-		mwfFYZjhYaru55gnIMvCQbkPcaY=
-		</data>
-		<key>Modules/Button.swiftmodule/i386.swiftmodule</key>
-		<data>
-		qbANVbYG05+6IJ9zBbVv9NC/rx0=
+		dRsufU5UrUuv3RndlQF/yQu1jZ8=
 		</data>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ziIGLBiaPXBQAlD5FJWcD5vAG2c=
+		dsfxeWA8j+knEQgXRmQjuPRK5iE=
 		</data>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		JIHyS82pVE8vIgYq8Qn4FcCqORg=
+		0frg6eIIx+3GuK3Ao7oFEV3lo0I=
 		</data>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vugTqMegowQfm7mN/M8g9WuIAyM=
-		</data>
-		<key>Modules/Button.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		ziIGLBiaPXBQAlD5FJWcD5vAG2c=
-		</data>
-		<key>Modules/Button.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		JIHyS82pVE8vIgYq8Qn4FcCqORg=
-		</data>
-		<key>Modules/Button.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		vugTqMegowQfm7mN/M8g9WuIAyM=
+		AYxihqIiUNCvWZbH0OovnxhQvgc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -559,110 +523,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uV6NqfsTfOBFk0f81Dgryr2s+6g=
+			KKRQjJ9hpDd1KKSO0MXQnbFPVsY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BgnCD0doDtkZpBj8LUYvunH/NWZUTXQ5+gkxzNSIHeY=
+			gxeuvFG675MQk1NWzai+abdGuPTcWgcakswPAY4uE3Y=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNImpressionDebugDetailController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			c4KhsCHzMZVE1ozuOc7eSRoCdhI=
+			i44O/JF935nXSNIgUSxOhxa5bKI=
 			</data>
 			<key>hash2</key>
 			<data>
-			rFB1+fHEaOM0ZIR2l587tUsyUthqskxxsCn7T35l95E=
+			MjTJXxsV+Rpb21W0s2zhLKT9XwpksqKGmw5aA93U+mo=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNInstallCardView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Efq+31/kKCkuRe2wTW1vCZ+Qbi8=
+			Xr/sIDvjm/PXztPrR2qZXHFG2GI=
 			</data>
 			<key>hash2</key>
 			<data>
-			G3qchkPixSKDhHeGyyLWlO2IAPh0oh5XCGv31DRiqfI=
+			jtk63BLgTDhzT/6Pg+1Ee+Gf29miJCEOTlZVODuXRko=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNNavigationHeaderView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rr0kQFzxgVJODCiUYZvqRG+iZZs=
+			NqVg1l5G88U3lCY3Vhb1MEb/0Nc=
 			</data>
 			<key>hash2</key>
 			<data>
-			NlqiD1rPXE7Dtq6wCOkodwlpemdM5EJLCykG9zJcnxI=
+			p3cHkd2lEeXsMJV/9XJZSQ/C2OCv3OOkMORp7Bbdpyo=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNSimulatorInstallView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KQylLsleuq/FEcphpX530M9GAqc=
+			wiE89t7+5pj0moJH3dAB8eXWRvQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			AFsNtZIkoD8+H1h4gSPSpbjFY+oxDsgRbiuAx8l6YVE=
+			qXuc7/EGawNqJBKS6pTca4worZSZlvhYWFWa74ZGszQ=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNTextCardView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rceaQDHPj0n493fgcB8Y6ozg3qA=
+			bXU97P6AV1KTK8+KPtUKlRxzNks=
 			</data>
 			<key>hash2</key>
 			<data>
-			pyusIaqhA1UtpNj2BVWqLPV8nwiLtxuyU8GxX0BUx94=
+			szpqr/+Ck4cDlB52iLWoFXfZ9C86lJCfflnscMawRTM=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNToolbarView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iKvpRawsJ4P6rIVgl/8cMBcQIp0=
+			sIZpLRQeof+co0fpzfkhSwtHSGA=
 			</data>
 			<key>hash2</key>
 			<data>
-			JD+O/hEjiYW538ZlB6EITWT6rEU2teMI432bot79pSI=
+			ZMXwZ06aSK66bT3+BkJBkX7SH0cqm1qrC7iABck+JlQ=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNToolbarView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CidGKemkMDdLeW+ScptezBPLckw=
+			I51K6VaYoLdv+wi64lOpHzbozYg=
 			</data>
 			<key>hash2</key>
 			<data>
-			BGfN26DyyCUxhjRM4+rOkLDHuWPbCFz2WWVqo3DO6jM=
+			itKHiJL6TcxL38+yvgQtEQlTpvg3L/zEU5l5LZCil/o=
 			</data>
 		</dict>
 		<key>Button.bundle/BTNWebViewSheetController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			28txZe97UGbFNlsJ52GUtsblSs4=
+			EMPjSgYfmZsyBZlJ+e71lQX3/GI=
 			</data>
 			<key>hash2</key>
 			<data>
-			jYg5bB0iP+7J8nJ2wMq3qaLY7bKpa3v5741DDP3aEb0=
+			mfLynl0djh8wKR78rzgO5Y13N3uVeq3k0BJihF7l1r4=
 			</data>
 		</dict>
 		<key>Button.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			alZoRvS9HDdz9Mla3p/ZYVQe5+M=
+			8KWbeMc8wJY1/Y6TeUFTXLwNznk=
 			</data>
 			<key>hash2</key>
 			<data>
-			7JreAzLMhhTuzT7dr22fkE+Tbz0C3mPjzsBT2x91JcM=
+			4S08eXlSz4unEG0hJua5N01U5/xbLrOD+diQbaHMMc0=
 			</data>
 		</dict>
 		<key>Button.bundle/LICENSE</key>
@@ -680,11 +644,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EB39tsuX2bEGFLtbuMwQnDxhCDY=
+			vfJPwbYtdoQfZTU5LKmFE+1DV58=
 			</data>
 			<key>hash2</key>
 			<data>
-			pwr2n+qTLhB4RoVyyB3LPG7wOPm7+4kytZxDh0xgIww=
+			HDupfxa0W72aUj1XZkgVb1u/DCZmsTd5gxm4xCSPIPY=
 			</data>
 		</dict>
 		<key>Button.bundle/_CodeSignature/CodeRequirements</key>
@@ -702,22 +666,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dFKXqQZnQW2k8z7iNJd5iHFp7Hw=
+			r5aMCAO833AZWbzIq9iS9HpufyQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			0fKHNIALy02oOIFJkcAm/kIer0Q24D4FPG139Cv5UGQ=
+			uHsRIqNTX3whOgoMEGAJQ6mERKdlgz2EvRwVHlevDJo=
 			</data>
 		</dict>
 		<key>Button.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9jP5k0cZaEpdoEFd08WjVxqjmW8=
+			qJ0m49E8cAX3DMIdff3YpWdn0Ys=
 			</data>
 			<key>hash2</key>
 			<data>
-			+3MU4zcOkG5wTmlfyZXVWnCWZlLmq2R++eWL8N0mtJU=
+			qrVmFISQNeFCM76ZLMsyLJxnPPF4iTf7Z1x60o9PB9I=
 			</data>
 		</dict>
 		<key>Button.bundle/_CodeSignature/CodeSignature</key>
@@ -1791,11 +1755,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iDkd7Lpiboi/qD/xkS9Y4lqr6u8=
+			z5NQTcEaTwfvFzPdANTa9wyYffQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			FIohyoDkbsU0WwWQx0FiyFz/ufjHEarg3ECJLv2AKlM=
+			cpWvLj1ur3xEEtolpRTXoEsFZ7a4Jejc/7RsF/t1KWU=
 			</data>
 		</dict>
 		<key>Headers/Button.h</key>
@@ -1846,198 +1810,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cTiZT3RzsNq0bMgyM6CwqJiDSsU=
+			p92TNq5saBj3VmjY0aYJPIBC2E8=
 			</data>
 			<key>hash2</key>
 			<data>
-			2MbkdWOh06Pg1TO2JPAPjEnUJcaLMgi+yyscGF2JD4s=
+			BfXXb6foV+a6VQjiPNbke9OK1Ui/v5yR10NqJq2Pmgk=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Rf538X8vKVEkLPZhTvyfPWX+Pag=
+			BttnpIdjXUfZy1esgSnuiug3HHU=
 			</data>
 			<key>hash2</key>
 			<data>
-			g6dUkknVwAVYk/IrefcxuXU58jOKr7c5hEN8RxTjTwk=
+			5+ndgVG/584yY7Yd7X46xMsYB7NzpD/0nUPagmPc3sM=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oXxhvcZAJfZubyqICaB5dBZVgKw=
+			ikGR/y/45zdvVQOS3elMXWhlli8=
 			</data>
 			<key>hash2</key>
 			<data>
-			EaiKjVL5ynODlrERKue4j6M+D8FHG1UMOsnniD5B2ts=
-			</data>
-		</dict>
-		<key>Modules/Button.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cTiZT3RzsNq0bMgyM6CwqJiDSsU=
-			</data>
-			<key>hash2</key>
-			<data>
-			2MbkdWOh06Pg1TO2JPAPjEnUJcaLMgi+yyscGF2JD4s=
-			</data>
-		</dict>
-		<key>Modules/Button.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Rf538X8vKVEkLPZhTvyfPWX+Pag=
-			</data>
-			<key>hash2</key>
-			<data>
-			g6dUkknVwAVYk/IrefcxuXU58jOKr7c5hEN8RxTjTwk=
-			</data>
-		</dict>
-		<key>Modules/Button.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oXxhvcZAJfZubyqICaB5dBZVgKw=
-			</data>
-			<key>hash2</key>
-			<data>
-			EaiKjVL5ynODlrERKue4j6M+D8FHG1UMOsnniD5B2ts=
+			tUkX0AmHCTq4hmziBCevUVAJq9DDHAEp5EKgMCBRPEg=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gRLVmJfBH2eFB38HnLNaCetXJuw=
+			F4dFz8ljc0aNDa+eCOjvLHgdpQs=
 			</data>
 			<key>hash2</key>
 			<data>
-			skNV53v4pDSoaKUj+kB+lN2ypsnlLp/hD/o89/pWISQ=
+			jlCdg1JYnliqLx0y+r8xa9euKmw5QPml+pWeP5zFzhM=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mwfFYZjhYaru55gnIMvCQbkPcaY=
+			EZqpkVIGACjpktaLedoFxVGEXsE=
 			</data>
 			<key>hash2</key>
 			<data>
-			qtxY9YQJEKmCuYQKgRTdZxSyjj88YDbnvv+qaiOKlSU=
+			5xkGOhZzCl3mKd9iSnK/Q7y/Bo14lHEryT2ElrG2+Wk=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qbANVbYG05+6IJ9zBbVv9NC/rx0=
+			dRsufU5UrUuv3RndlQF/yQu1jZ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			3BNa1h+MqHIu2UTbBZSEZDMMhn2+NUd7dEV7+gbQ9AI=
-			</data>
-		</dict>
-		<key>Modules/Button.swiftmodule/i386.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gRLVmJfBH2eFB38HnLNaCetXJuw=
-			</data>
-			<key>hash2</key>
-			<data>
-			skNV53v4pDSoaKUj+kB+lN2ypsnlLp/hD/o89/pWISQ=
-			</data>
-		</dict>
-		<key>Modules/Button.swiftmodule/i386.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mwfFYZjhYaru55gnIMvCQbkPcaY=
-			</data>
-			<key>hash2</key>
-			<data>
-			qtxY9YQJEKmCuYQKgRTdZxSyjj88YDbnvv+qaiOKlSU=
-			</data>
-		</dict>
-		<key>Modules/Button.swiftmodule/i386.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qbANVbYG05+6IJ9zBbVv9NC/rx0=
-			</data>
-			<key>hash2</key>
-			<data>
-			3BNa1h+MqHIu2UTbBZSEZDMMhn2+NUd7dEV7+gbQ9AI=
+			ulLh9dma7gKxxasslqqx4EOWs1INU3EeFxM/hXKJBMM=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ziIGLBiaPXBQAlD5FJWcD5vAG2c=
+			dsfxeWA8j+knEQgXRmQjuPRK5iE=
 			</data>
 			<key>hash2</key>
 			<data>
-			9wfqehrSjnmBRxmWG1R20dkTuQeuXu76rcj0AOzXqkc=
+			8GOyhxPM6kjM0XG1yKe9Exbb4PWZGnWsCp134PJ567E=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JIHyS82pVE8vIgYq8Qn4FcCqORg=
+			0frg6eIIx+3GuK3Ao7oFEV3lo0I=
 			</data>
 			<key>hash2</key>
 			<data>
-			7idvyCBZ6LOpAP7gnuek7Pcr9q8KKHVOKnpTJm670W4=
+			VM79JpVVNPTV0zC3s/B14rRjQD57J+Lt2bik7UISeUA=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vugTqMegowQfm7mN/M8g9WuIAyM=
+			AYxihqIiUNCvWZbH0OovnxhQvgc=
 			</data>
 			<key>hash2</key>
 			<data>
-			V3jFzG+qTRY4YP4dxjWc8kg+twPIQJGmCx8Cf2YxC3k=
-			</data>
-		</dict>
-		<key>Modules/Button.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ziIGLBiaPXBQAlD5FJWcD5vAG2c=
-			</data>
-			<key>hash2</key>
-			<data>
-			9wfqehrSjnmBRxmWG1R20dkTuQeuXu76rcj0AOzXqkc=
-			</data>
-		</dict>
-		<key>Modules/Button.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JIHyS82pVE8vIgYq8Qn4FcCqORg=
-			</data>
-			<key>hash2</key>
-			<data>
-			7idvyCBZ6LOpAP7gnuek7Pcr9q8KKHVOKnpTJm670W4=
-			</data>
-		</dict>
-		<key>Modules/Button.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vugTqMegowQfm7mN/M8g9WuIAyM=
-			</data>
-			<key>hash2</key>
-			<data>
-			V3jFzG+qTRY4YP4dxjWc8kg+twPIQJGmCx8Cf2YxC3k=
+			4r69RzdWvwOs7QYwHabqpkPeyUWp49iD8m89eQxOnBA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
