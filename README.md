@@ -30,7 +30,7 @@ Alternatively, you can download the [latest Button framework](https://github.com
 
 1. Get an Application ID by signing up here: [app.usebutton.com](http://app.usebutton.com)
 
-2. Follow the <a href="https://developer.usebutton.com/guides/publishers/ios/button-publisher-integration-guide" target="_blank">Integration Guide</a>.
+2. Follow the <a href="https://developer.usebutton.com/docs/publishers-getting-started" target="_blank">Integration Guide</a>.
 
 ## Going Live
 
@@ -39,3 +39,4 @@ Before you submit to the App Store, follow the steps in the Button dashboard to 
 ## Questions?
 
 Ask us! Drop us an email at <a href="mailto:developers@usebutton.com">developers@usebutton.com</a>
+``
