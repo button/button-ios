@@ -39,4 +39,3 @@ Before you submit to the App Store, follow the steps in the Button dashboard to 
 ## Questions?
 
 Ask us! Drop us an email at <a href="mailto:developers@usebutton.com">developers@usebutton.com</a>
-``
