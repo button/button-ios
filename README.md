@@ -15,15 +15,35 @@ Join the Button Marketplace and access dozens of top merchants to earn while you
 
 ## Getting the SDK
 
-The best way to get the Button SDK is to use CocoaPods. If you don't already use CocoaPods, the <a target="out" href="http://guides.cocoapods.org/using/getting-started.html">CocoaPods Getting Started Guide</a> will have you managing dependencies in no time.
+To get started, add the Button SDK through [CocoaPods](http://guides.cocoapods.org/using/getting-started.html), [Carthage](https://github.com/Carthage/Carthage?tab=readme-ov-file#quick-start) or [Swift Package Manager](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
 
-Add Button to your target by adding the following line to your `Podfile`.
+**[CocoaPods](http://guides.cocoapods.org/using/getting-started.html)**
+
+Add Button to your target by adding the following line to your [Podfile](https://guides.cocoapods.org/using/the-podfile.html).
 
 ```
 pod "Button", "~> 6"
 ```
 
-Alternatively, you can download the [latest Button framework](https://github.com/usebutton/button-ios/releases/latest) and follow the [Framework Integration Steps](https://github.com/usebutton/button-ios/wiki/Adding-the-Button-Framework-and-Bundle-to-your-project).
+**[Carthage](https://github.com/Carthage/Carthage?tab=readme-ov-file#quick-start)**
+
+Add the following line to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile).
+
+```
+github "button/button-ios" ~> 6.33
+```
+
+**[Swift Package Manager](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app)**
+
+In Xcode, navigate to **File → Add Package Dependency → Add Package Dependencies...** and enter the following repository url in the search bar.
+
+```
+https://github.com/button/button-ios
+```
+
+**[Manual Integration](https://developer.usebutton.com/docs/manual-ios-integration)**
+
+Alternatively, you can download the [latest Button framework](https://github.com/usebutton/button-ios/releases/latest) and follow the [manual integration steps](https://developer.usebutton.com/docs/manual-ios-integration).
 
 
 ## Getting Started

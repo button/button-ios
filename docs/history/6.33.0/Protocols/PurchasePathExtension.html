@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PurchasePathExtension Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/PurchasePathExtension" class="dashAnchor"></a>
+
+    <a title="PurchasePathExtension Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          Button 6.33.0 Docs
+        </a>
+         (73% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">Button Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      PurchasePathExtension Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Button%20SDK.html">Button SDK</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Button.html">Button</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Purchase%20Path.html">Purchase Path</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PurchasePathInterface.html">PurchasePathInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PurchasePathRequest.html">PurchasePathRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PurchasePath.html">PurchasePath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BTNPurchasePathError.html">BTNPurchasePathError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Purchase%20Path.html#/c:@BTNPurchasePathErrorDomain">BTNPurchasePathErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BTNPurchasePathErrorCode.html">BTNPurchasePathErrorCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Purchase%20Path%20Extensions.html">Purchase Path Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PurchasePathExtension.html">PurchasePathExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextCard.html">TextCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Card.html">Card</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CardCallToAction.html">CardCallToAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CardList.html">CardList</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Browser%20Styling.html">Browser Styling</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BrowserInterface.html">BrowserInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BrowserHeader.html">BrowserHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BrowserFooter.html">BrowserFooter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BrowserChromeDelegate.html">BrowserChromeDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BTNText.html">BTNText</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Button%20Browser.html">Button Browser</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ButtonBrowser.html">ButtonBrowser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BrowserConfig.html">BrowserConfig</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Offers.html">Offers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/OffersInterface.html">OffersInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ImpressionView.html">ImpressionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ViewableImpression.html">ViewableImpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BTNCreativeType.html">BTNCreativeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BTNVisibleRateType.html">BTNVisibleRateType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../User.html">User</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/User.html">User</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DebugInterface.html">DebugInterface</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BTNUserDeprecations.html">BTNUserDeprecations</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>PurchasePathExtension</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">PurchasePathExtension</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BTNPurchasePathExtension(im)shouldCloseBrowser:"></a>
+                    <a name="//apple_ref/swift/Method/shouldCloseBrowser(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BTNPurchasePathExtension(im)shouldCloseBrowser:">shouldCloseBrowser(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called before the browser is closed.</p>
+
+<p>@discussion Use this method to intercept and prevent a browser dismissal.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">shouldCloseBrowser</span><span class="p">(</span><span class="n">_</span> <span class="nv">browser</span><span class="p">:</span> <span class="n">any</span> <span class="kt"><a href="../Protocols/BrowserInterface.html">BrowserInterface</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>browser</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The interface to the browser object that can be used to customize the display.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if the browser should close, NO otherwise.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BTNPurchasePathExtension(im)browserDidInitialize:"></a>
+                    <a name="//apple_ref/swift/Method/browserDidInitialize(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BTNPurchasePathExtension(im)browserDidInitialize:">browserDidInitialize(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the browser initializes and before anything is displayed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">browserDidInitialize</span><span class="p">(</span><span class="n">_</span> <span class="nv">browser</span><span class="p">:</span> <span class="n">any</span> <span class="kt"><a href="../Protocols/BrowserInterface.html">BrowserInterface</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>browser</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The interface to the browser object that can be used to customize the display.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BTNPurchasePathExtension(im)browserWillNavigate:"></a>
+                    <a name="//apple_ref/swift/Method/browserWillNavigate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BTNPurchasePathExtension(im)browserWillNavigate:">browserWillNavigate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the browser prepares for navigation to a new page.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">browserWillNavigate</span><span class="p">(</span><span class="n">_</span> <span class="nv">browser</span><span class="p">:</span> <span class="n">any</span> <span class="kt"><a href="../Protocols/BrowserInterface.html">BrowserInterface</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>browser</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The interface to the browser object that can be used to customize the display.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BTNPurchasePathExtension(im)browser:didNavigateToPage:"></a>
+                    <a name="//apple_ref/swift/Method/browser(_:didNavigateTo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BTNPurchasePathExtension(im)browser:didNavigateToPage:">browser(_:<wbr>didNavigateTo:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the browser navigates to a new page that is neither a product nor a purchase.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">browser</span><span class="p">(</span><span class="n">_</span> <span class="nv">browser</span><span class="p">:</span> <span class="n">any</span> <span class="kt"><a href="../Protocols/BrowserInterface.html">BrowserInterface</a></span><span class="p">,</span> <span class="n">didNavigateTo</span> <span class="nv">page</span><span class="p">:</span> <span class="n">any</span> <span class="kt">BrowserPage</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>browser</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The interface to the browser object that can be used to customize the display.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object representing the information about the page to which the browser did navigate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BTNPurchasePathExtension(im)browser:didNavigateToProduct:"></a>
+                    <a name="//apple_ref/swift/Method/browser(_:didNavigateToProduct:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BTNPurchasePathExtension(im)browser:didNavigateToProduct:">browser(_:<wbr>didNavigateToProduct:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the browser navigates to a product page.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">browser</span><span class="p">(</span><span class="n">_</span> <span class="nv">browser</span><span class="p">:</span> <span class="n">any</span> <span class="kt"><a href="../Protocols/BrowserInterface.html">BrowserInterface</a></span><span class="p">,</span> <span class="n">didNavigateToProduct</span> <span class="nv">page</span><span class="p">:</span> <span class="n">any</span> <span class="kt">ProductPage</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>browser</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The interface to the browser object that can be used to customize the display.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object representing the information about the product to which the browser did navigate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BTNPurchasePathExtension(im)browser:didNavigateToPurchase:"></a>
+                    <a name="//apple_ref/swift/Method/browser(_:didNavigateToPurchase:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BTNPurchasePathExtension(im)browser:didNavigateToPurchase:">browser(_:<wbr>didNavigateToPurchase:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the browser navigates to a purchase page.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">browser</span><span class="p">(</span><span class="n">_</span> <span class="nv">browser</span><span class="p">:</span> <span class="n">any</span> <span class="kt"><a href="../Protocols/BrowserInterface.html">BrowserInterface</a></span><span class="p">,</span> <span class="n">didNavigateToPurchase</span> <span class="nv">page</span><span class="p">:</span> <span class="n">any</span> <span class="kt">PurchasePage</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>browser</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The interface to the browser object that can be used to customize the display.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object representing the information about the purchase to which the browser did navigate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BTNPurchasePathExtension(im)browserDidClose"></a>
+                    <a name="//apple_ref/swift/Method/browserDidClose()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BTNPurchasePathExtension(im)browserDidClose">browserDidClose()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the browser is closed. This does not mean a purchase was completed.</p>
+
+<p>@discussion This can happen when the user dismisses the browser or chooses to install the native app.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">browserDidClose</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>Copyright © 2024 Button, Inc. All rights reserved. (<a href="https://usebutton.com">https://usebutton.com</a>) under <a class="link" href="https://github.com/button/button-ios/blob/master/LICENSE" target="_blank" rel="external noopener">Private License</a>.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Browser/BTNButtonBrowserProtocol.h",
+      "line": 6,
+      "symbol": "ButtonBrowser",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Button/Button.h",
+      "line": 136,
+      "symbol": "Button(Browser)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Debug/BTNDebugInterfaceProtocol.h",
+      "line": 4,
+      "symbol": "DebugInterface",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Debug/BTNDebugInterfaceProtocol.h",
+      "line": 7,
+      "symbol": "DebugInterface.isLoggingEnabled",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Debug/BTNDebugInterfaceProtocol.h",
+      "line": 9,
+      "symbol": "DebugInterface.isVisualDebuggingEnabled",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/BTNImpressionView.h",
+      "line": 9,
+      "symbol": "ImpressionView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/BTNImpressionView.h",
+      "line": 19,
+      "symbol": "ImpressionView.creativeTypeString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 6,
+      "symbol": "BTNCreativeType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 6,
+      "symbol": "BTNCreativeType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 7,
+      "symbol": "BTNCreativeType.other",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 8,
+      "symbol": "BTNCreativeType.hero",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 9,
+      "symbol": "BTNCreativeType.carousel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 10,
+      "symbol": "BTNCreativeType.list",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 11,
+      "symbol": "BTNCreativeType.grid",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 12,
+      "symbol": "BTNCreativeType.detail",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 19,
+      "symbol": "BTNVisibleRateType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 19,
+      "symbol": "BTNVisibleRateType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 20,
+      "symbol": "BTNVisibleRateType.unknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 21,
+      "symbol": "BTNVisibleRateType.percent",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Impressions/Definitions/BTNImpressionTrackingTypes.h",
+      "line": 22,
+      "symbol": "BTNVisibleRateType.fixed",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Offers/BTNOffersInterfaceProtocol.h",
+      "line": 7,
+      "symbol": "OffersInterface",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Offers/BTNOffersInterfaceProtocol.h",
+      "line": 21,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Offers/BTNViewableImpression.h",
+      "line": 24,
+      "symbol": "ViewableImpression",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/Offers/BTNViewableImpression.h",
+      "line": 69,
+      "symbol": "ViewableImpression.init(url:creativeType:visibleRateType:visibleRate:offerId:)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/PurchasePath/BTNPurchasePath.h",
+      "line": 6,
+      "symbol": "PurchasePath",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/PurchasePath/BTNPurchasePathError.h",
+      "line": 3,
+      "symbol": "BTNPurchasePathErrorCode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/PurchasePath/BTNPurchasePathError.h",
+      "line": 3,
+      "symbol": "BTNPurchasePathErrorCode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/PurchasePath/BTNPurchasePathError.h",
+      "line": 20,
+      "symbol": "BTNPurchasePathErrorDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/PurchasePath/BTNPurchasePathError.h",
+      "line": 22,
+      "symbol": "BTNPurchasePathError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/PurchasePath/BTNPurchasePathError.h",
+      "line": 24,
+      "symbol": "BTNPurchasePathError.init(code:)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/User/BTNUserDeprecationsProtocol.h",
+      "line": 6,
+      "symbol": "BTNUserDeprecations",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/User/BTNUserProtocol.h",
+      "line": 7,
+      "symbol": "User",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/BTNPurchasePathExtensionProtocol.h",
+      "line": 10,
+      "symbol": "PurchasePathExtension",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/BrowserInterface/BTNBrowserInterfaceProtocol.h",
+      "line": 17,
+      "symbol": "BrowserInterface",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/BrowserInterface/BTNBrowserInterfaceProtocol.h",
+      "line": 21,
+      "symbol": "BrowserInterface.header",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/BrowserInterface/BTNBrowserInterfaceProtocol.h",
+      "line": 22,
+      "symbol": "BrowserInterface.footer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/BrowserInterface/BTNBrowserInterfaceProtocol.h",
+      "line": 23,
+      "symbol": "BrowserInterface.chromeDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/BrowserInterface/BTNTextProtocol.h",
+      "line": 3,
+      "symbol": "BTNText",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/BrowserInterface/Chrome/BTNBrowserChromeDelegateProtocol.h",
+      "line": 6,
+      "symbol": "BrowserChromeDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/BrowserInterface/Chrome/Footer/BTNBrowserFooterProtocol.h",
+      "line": 6,
+      "symbol": "BrowserFooter",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/BrowserInterface/Chrome/Header/BTNBrowserHeaderProtocol.h",
+      "line": 7,
+      "symbol": "BrowserHeader",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/CardSystem/BTNCardListProtocol.h",
+      "line": 8,
+      "symbol": "CardList",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/CardSystem/CallToAction/BTNCardCallToAction.h",
+      "line": 6,
+      "symbol": "CardCallToAction",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/UserInterface/Extension/CardSystem/CallToAction/BTNCardCallToAction.h",
+      "line": 37,
+      "symbol": "CardCallToAction.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/fastlane"
+}
