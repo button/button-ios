@@ -191,21 +191,21 @@
     },
     {
       "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/PurchasePath/BTNPurchasePathError.h",
-      "line": 20,
+      "line": 22,
       "symbol": "BTNPurchasePathErrorDomain",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/PurchasePath/BTNPurchasePathError.h",
-      "line": 22,
+      "line": 24,
       "symbol": "BTNPurchasePathError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/actions-runner/_work/button-ios-private/button-ios-private/Button/PurchasePath/BTNPurchasePathError.h",
-      "line": 24,
+      "line": 26,
       "symbol": "BTNPurchasePathError.init(code:)",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"

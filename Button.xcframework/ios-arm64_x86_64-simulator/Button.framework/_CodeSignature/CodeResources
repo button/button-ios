@@ -38,11 +38,11 @@
 		</data>
 		<key>Button.bundle/BTNWebViewSheetController.nib</key>
 		<data>
-		vsp7REk+l37zZmtgjH22U3ntsto=
+		bI3zG76zGHshB5/A7Fk3MMrQcy4=
 		</data>
 		<key>Button.bundle/Info.plist</key>
 		<data>
-		PPDV8pXb4WMuR5SXJhSPXxx4ymU=
+		g/MZB2fO6lXjbjMyEnS057jqpKE=
 		</data>
 		<key>Button.bundle/LICENSE</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		S96pp2DbmFj1BV5sXN7d1LOEN1M=
+		Nsr5j9C+w+YY1akja42c1c9LcAo=
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		JjGaKMlhlq9eHOczUXibrxsGFGI=
+		K76/VTKNyCRejzBimwANWv1IJQA=
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		xoeaRjWY0G8my2iL+nZDM7wAxHs=
+		+wo4rtiquXWKhsmJz/rveW32AQc=
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -486,7 +486,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		buNSUaIlhwh64kkZjxOzVKYQQ4A=
+		5jIOQlzQdSFADFXwlt06xUHYBXg=
 		</data>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -627,22 +627,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vsp7REk+l37zZmtgjH22U3ntsto=
+			bI3zG76zGHshB5/A7Fk3MMrQcy4=
 			</data>
 			<key>hash2</key>
 			<data>
-			dgLE0zG5tgyLUlZ7HBJa91gl8sH0PAcwX3vvAInV+uc=
+			Ms6hY80Z3uuI5XFfMJabnDprRY6pS6UYOIU9n+oZjXQ=
 			</data>
 		</dict>
 		<key>Button.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PPDV8pXb4WMuR5SXJhSPXxx4ymU=
+			g/MZB2fO6lXjbjMyEnS057jqpKE=
 			</data>
 			<key>hash2</key>
 			<data>
-			S5/51MtSm+Fd/HceYMyT1blSt5IPeodyu/yWA8DxQHE=
+			jV3oDIcOmITNKqknuUWwD6as+3JKpLtT5/44Dvj8co4=
 			</data>
 		</dict>
 		<key>Button.bundle/LICENSE</key>
@@ -671,11 +671,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S96pp2DbmFj1BV5sXN7d1LOEN1M=
+			Nsr5j9C+w+YY1akja42c1c9LcAo=
 			</data>
 			<key>hash2</key>
 			<data>
-			BL4NfxsFQX+WCrid3CoiNx4CtWB+9BWJXKpPhIrmUjM=
+			hATTzcppDF+pNsM/tZSU1Uz+1UhZeCoBxnMGpH34xqk=
 			</data>
 		</dict>
 		<key>Button.bundle/_CodeSignature/CodeRequirements</key>
@@ -693,22 +693,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JjGaKMlhlq9eHOczUXibrxsGFGI=
+			K76/VTKNyCRejzBimwANWv1IJQA=
 			</data>
 			<key>hash2</key>
 			<data>
-			PKgg3ky88lkL0nF6TLLL/dqW5EhEWntNy+NsWw0TTp0=
+			KezmRFOcN+MgZ+W0RPMjbNtiSVfGF1Eep9D5A6N0EgU=
 			</data>
 		</dict>
 		<key>Button.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xoeaRjWY0G8my2iL+nZDM7wAxHs=
+			+wo4rtiquXWKhsmJz/rveW32AQc=
 			</data>
 			<key>hash2</key>
 			<data>
-			OxUPQWkqcuunH0VYM+J04pZBsYQ8qhuDYZu62Feoxks=
+			2Ugqbf/XyWz4XTlZv4XW7jqN4Z8zKYRFh8k7PGcxBn4=
 			</data>
 		</dict>
 		<key>Button.bundle/_CodeSignature/CodeSignature</key>

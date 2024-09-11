@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name    = "Button"
-  s.version = "6.33.0"
+  s.version = "6.33.1"
   s.summary = "Button iOS SDK."
 
   s.description = <<-DESC
