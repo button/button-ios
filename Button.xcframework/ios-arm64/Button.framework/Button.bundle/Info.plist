@@ -3,35 +3,35 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>23E5211a</string>
+	<string>25E253</string>
 	<key>CFBundleDisplayName</key>
 	<string>Button</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.usebutton.sdk</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.33.1</string>
+	<string>6.34.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>615</string>
+	<string>626</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>21E210</string>
+	<string>23C53</string>
 	<key>DTPlatformName</key>
 	<string>iphoneos</string>
 	<key>DTPlatformVersion</key>
-	<string>17.4</string>
+	<string>26.2</string>
 	<key>DTSDKBuild</key>
-	<string>21E210</string>
+	<string>23C53</string>
 	<key>DTSDKName</key>
-	<string>iphoneos17.4</string>
+	<string>iphoneos26.2</string>
 	<key>DTXcode</key>
-	<string>1530</string>
+	<string>2620</string>
 	<key>DTXcodeBuild</key>
-	<string>15E204a</string>
+	<string>17C52</string>
 	<key>MinimumOSVersion</key>
 	<string>9.0</string>
 	<key>UIAppFonts</key>

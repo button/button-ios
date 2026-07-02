@@ -14,7 +14,8 @@ NS_SWIFT_NAME(BoostInterface)
  */
 - (void)fetchWithRequest:(BTNBoostRequest *)request
        completionHandler:(nonnull void(^)(BTNBoostResponse * __nullable boostResponse, NSError * __nullable error))completionHandler NS_SWIFT_NAME(fetch(request:completion:))
-DEPRECATED_MSG_ATTRIBUTE("This method is a no-op. No data is collected.");
+DEPRECATED_MSG_ATTRIBUTE("This method is a no-op. No data is collected.")
+__attribute__((swift_async(none)));
 
 @end
 

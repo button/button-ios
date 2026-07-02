@@ -12,7 +12,9 @@ typedef NS_ENUM(NSInteger, BTNPurchasePathErrorCode) {
     /// Failed to open universal link in app
     BTNPurchasePathErrorCodeOpenUniversalLinkFailed,
     /// The destination app is not installed. Installs are not configured for this partnership.
-    BTNPurchasePathErrorCodeAppNotInstalled
+    BTNPurchasePathErrorCodeAppNotInstalled,
+    /// The destination app install began and was aborted before completion (likely due to backgrounding).
+    BTNPurchasePathErrorCodeInstallAborted
 };
 
 NS_ASSUME_NONNULL_BEGIN

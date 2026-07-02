@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E02D3702076A48A00C820BD /* NightOwlCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02D36E2076A48900C820BD /* NightOwlCardView.swift */; };
-		9E02D3712076A48A00C820BD /* NightOwlCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02D36F2076A48900C820BD /* NightOwlCard.swift */; };
+		9E02D3702076A48A00C820BD /* NightOwlCardView_UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02D36E2076A48900C820BD /* NightOwlCardView_UIKit.swift */; };
+		9E02D3712076A48A00C820BD /* NightOwlCard_UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02D36F2076A48900C820BD /* NightOwlCard_UIKit.swift */; };
 		9E0504E32034BC0500011E6A /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0504E22034BC0500011E6A /* MainController.swift */; };
 		9E0504E82034EB0E00011E6A /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0504E72034EB0E00011E6A /* UIColorExtensions.swift */; };
 		DAD0F765208FC54400748E39 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F764208FC54400748E39 /* UIImageExtensions.swift */; };
@@ -17,20 +17,22 @@
 		DADE9097209A465B0073144B /* NightOwlCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADE9096209A465B0073144B /* NightOwlCardView.xib */; };
 		DE31D173202BEB95004A29D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE31D172202BEB95004A29D6 /* AppDelegate.swift */; };
 		DE31D17D202BEB95004A29D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE31D17B202BEB95004A29D6 /* LaunchScreen.storyboard */; };
+		DE65FCBD2BFE65CB004DC5FA /* HostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65FCBC2BFE65CB004DC5FA /* HostingView.swift */; };
+		DE65FCBF2BFE6646004DC5FA /* NightOwlCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65FCBE2BFE6646004DC5FA /* NightOwlCard.swift */; };
 		DE9F3EC7202BECD500B56C7F /* SampleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F3EC6202BECD500B56C7F /* SampleExtension.swift */; };
+		DEBA25552C1229AA00CA5270 /* Button.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBA25542C1229AA00CA5270 /* Button.xcframework */; };
+		DEBA25562C1229AA00CA5270 /* Button.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEBA25542C1229AA00CA5270 /* Button.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DEF421F820EACBA900CADBC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF421F620EACB9800CADBC5 /* Main.storyboard */; };
-		FB21F09F255E5F500009D235 /* Button.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB21F09E255E5F500009D235 /* Button.xcframework */; };
-		FB21F0A0255E5F500009D235 /* Button.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB21F09E255E5F500009D235 /* Button.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FB21F0A1255E5F500009D235 /* Embed Frameworks */ = {
+		DE65FCB62BFE61DC004DC5FA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FB21F0A0255E5F500009D235 /* Button.xcframework in Embed Frameworks */,
+				DEBA25562C1229AA00CA5270 /* Button.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,8 +40,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9E02D36E2076A48900C820BD /* NightOwlCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightOwlCardView.swift; sourceTree = "<group>"; };
-		9E02D36F2076A48900C820BD /* NightOwlCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightOwlCard.swift; sourceTree = "<group>"; };
+		9E02D36E2076A48900C820BD /* NightOwlCardView_UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightOwlCardView_UIKit.swift; sourceTree = "<group>"; };
+		9E02D36F2076A48900C820BD /* NightOwlCard_UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightOwlCard_UIKit.swift; sourceTree = "<group>"; };
 		9E0504E22034BC0500011E6A /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		9E0504E72034EB0E00011E6A /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		DAD0F764208FC54400748E39 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
@@ -50,9 +52,12 @@
 		DE31D172202BEB95004A29D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE31D17C202BEB95004A29D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE31D17E202BEB95004A29D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE65FCBC2BFE65CB004DC5FA /* HostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingView.swift; sourceTree = "<group>"; };
+		DE65FCBE2BFE6646004DC5FA /* NightOwlCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightOwlCard.swift; sourceTree = "<group>"; };
 		DE9F3EC6202BECD500B56C7F /* SampleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleExtension.swift; sourceTree = "<group>"; };
+		DEBA25532C12299700CA5270 /* Button.xcframework */ = {isa = PBXFileReference; lastKnownFileType = file; name = Button.xcframework; path = ../../Button.xcframework; sourceTree = "<group>"; };
+		DEBA25542C1229AA00CA5270 /* Button.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Button.xcframework; path = ../../fastlane/build/ButtonSDK/Dynamic/Button.xcframework; sourceTree = "<group>"; };
 		DEF421F720EACB9800CADBC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB21F09E255E5F500009D235 /* Button.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Button.xcframework; path = ../../Button.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB21F09F255E5F500009D235 /* Button.xcframework in Frameworks */,
+				DEBA25552C1229AA00CA5270 /* Button.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,9 +75,8 @@
 		9E02D36B2076A45400C820BD /* Custom Card */ = {
 			isa = PBXGroup;
 			children = (
-				9E02D36F2076A48900C820BD /* NightOwlCard.swift */,
-				9E02D36E2076A48900C820BD /* NightOwlCardView.swift */,
-				DADE9096209A465B0073144B /* NightOwlCardView.xib */,
+				DE65FCBB2BFE6330004DC5FA /* SwiftUI */,
+				DE65FCBA2BFE6303004DC5FA /* UIKit */,
 			);
 			path = "Custom Card";
 			sourceTree = "<group>";
@@ -92,7 +96,7 @@
 				DEF421E020E6C79800CADBC5 /* Source */,
 				FBC3DF53255C431D000988E9 /* Supporting Files */,
 				DE31D170202BEB95004A29D6 /* Products */,
-				FBC3DF56255C44D6000988E9 /* Frameworks */,
+				DE65FCB72BFE6208004DC5FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +116,34 @@
 				9E02D36B2076A45400C820BD /* Custom Card */,
 			);
 			path = PurchasePathExtension;
+			sourceTree = "<group>";
+		};
+		DE65FCB72BFE6208004DC5FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEBA25542C1229AA00CA5270 /* Button.xcframework */,
+				DEBA25532C12299700CA5270 /* Button.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE65FCBA2BFE6303004DC5FA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9E02D36F2076A48900C820BD /* NightOwlCard_UIKit.swift */,
+				9E02D36E2076A48900C820BD /* NightOwlCardView_UIKit.swift */,
+				DADE9096209A465B0073144B /* NightOwlCardView.xib */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		DE65FCBB2BFE6330004DC5FA /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				DE65FCBC2BFE65CB004DC5FA /* HostingView.swift */,
+				DE65FCBE2BFE6646004DC5FA /* NightOwlCard.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		DEF421E020E6C79800CADBC5 /* Source */ = {
@@ -136,14 +168,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FBC3DF56255C44D6000988E9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FB21F09E255E5F500009D235 /* Button.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,13 +178,15 @@
 				DE31D16B202BEB95004A29D6 /* Sources */,
 				DE31D16C202BEB95004A29D6 /* Frameworks */,
 				DE31D16D202BEB95004A29D6 /* Resources */,
-				FB21F0A1255E5F500009D235 /* Embed Frameworks */,
+				DE65FCB62BFE61DC004DC5FA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Sample;
+			packageProductDependencies = (
+			);
 			productName = ButtonCheckoutExtensions;
 			productReference = DE31D16F202BEB95004A29D6 /* Sample.app */;
 			productType = "com.apple.product-type.application";
@@ -190,6 +216,8 @@
 				Base,
 			);
 			mainGroup = DE31D166202BEB95004A29D6;
+			packageReferences = (
+			);
 			productRefGroup = DE31D170202BEB95004A29D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -218,8 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E02D3702076A48A00C820BD /* NightOwlCardView.swift in Sources */,
-				9E02D3712076A48A00C820BD /* NightOwlCard.swift in Sources */,
+				9E02D3702076A48A00C820BD /* NightOwlCardView_UIKit.swift in Sources */,
+				DE65FCBF2BFE6646004DC5FA /* NightOwlCard.swift in Sources */,
+				DE65FCBD2BFE65CB004DC5FA /* HostingView.swift in Sources */,
+				9E02D3712076A48A00C820BD /* NightOwlCard_UIKit.swift in Sources */,
 				DE31D173202BEB95004A29D6 /* AppDelegate.swift in Sources */,
 				DAD0F767208FC73100748E39 /* Cards.swift in Sources */,
 				9E0504E32034BC0500011E6A /* MainController.swift in Sources */,
@@ -372,6 +402,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +422,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

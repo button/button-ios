@@ -19,7 +19,8 @@ NS_SWIFT_NAME(ButtonActionsInterface)
 
 - (void)fetchWithRequest:(BTNActionRequest *)request
            actionHandler:(void(^)(BTNAction * __nullable buttonAction, NSError * __nullable error))actionHandler NS_SWIFT_NAME(fetch(request:completion:)) 
-DEPRECATED_MSG_ATTRIBUTE("This method is a no-op. No data is collected.");
+DEPRECATED_MSG_ATTRIBUTE("This method is a no-op. No data is collected.") 
+__attribute__((swift_async(none)));
 
 @end
 
