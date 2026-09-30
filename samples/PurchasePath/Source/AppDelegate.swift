@@ -4,8 +4,6 @@ import Button
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
-
     #error "Please set your App ID from the Button Dashboard https://app.usebutton.com"
     let yourApplicationId = "<# Your Application Id #>"
 
@@ -13,6 +11,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /// To get started and get an App ID, please see https://developer.usebutton.com/docs/publishers-getting-started
         Button.configure(applicationId: yourApplicationId, completion: nil)
         return true
+    }
+
+    func application(_ application: UIApplication,
+                     configurationForConnecting connectingSceneSession: UISceneSession,
+                     options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        UISceneConfiguration(name: "Default Configuration",
+                             sessionRole: connectingSceneSession.role)
     }
 }
 

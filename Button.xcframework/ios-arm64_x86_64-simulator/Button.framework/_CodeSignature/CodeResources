@@ -38,11 +38,11 @@
 		</data>
 		<key>Button.bundle/BTNWebViewSheetController.nib</key>
 		<data>
-		3SDh9HZ0H5TbwSfjV8fyHsAy6e0=
+		X2qO6rF5lbNoexETe6KqEPad2k0=
 		</data>
 		<key>Button.bundle/Info.plist</key>
 		<data>
-		eU5V+q5OsGpTcplPHtDkBYKu10U=
+		QDHhiuod58eirP8DYDjv2EQOZ7Q=
 		</data>
 		<key>Button.bundle/LICENSE</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		IGoCC4qkAl6YXyXRsJiUAcSUBeQ=
+		8o6c71XCWn2SC2fWHQx6hDkF2as=
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		kWyQVfVMikSj41skPnrxMZqz0hA=
+		eP/RbbW9QYr5d76boZbkrirGndE=
 		</data>
 		<key>Button.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -462,7 +462,7 @@
 		</data>
 		<key>Headers/Button-Swift.h</key>
 		<data>
-		1ap55cHYL7JbxzWvhCDSOs/GEas=
+		1SLa8is3Ly/+u2igC9IDbrtp9dA=
 		</data>
 		<key>Headers/Button.h</key>
 		<data>
@@ -482,7 +482,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+ZCXaOuXcigqDe+lf0bMsnKwZYo=
+		Sx9pSuuNu0Zetmmhq/HuhzXR6YY=
 		</data>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -490,19 +490,19 @@
 		</data>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ssv9WqlZWB3NAEEtexDanAzLBAA=
+		DkPKDMp84kx74g6B8v+YucQrqqo=
 		</data>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Kgm7uNU2LDswlUJ8xkooB5iSAWc=
+		UZMR6/enBHDvfERWIDFqAMRSeTs=
 		</data>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ssv9WqlZWB3NAEEtexDanAzLBAA=
+		DkPKDMp84kx74g6B8v+YucQrqqo=
 		</data>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		g3khSElW1eQDiB36O4V6sik7RDw=
+		cDnmPpisQpjek+PZPzw76CVX5JU=
 		</data>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -510,23 +510,23 @@
 		</data>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hiUb7rxYePavUjLagFVyKAhU+CA=
+		6qY7+/sykYRaqje4Z/nrXpPEtzI=
 		</data>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jsQQJBDdN301NqS2PcXQHCrzN6I=
+		rlBuRNufOp77/Kd8rzqVq7QhstM=
 		</data>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hiUb7rxYePavUjLagFVyKAhU+CA=
+		6qY7+/sykYRaqje4Z/nrXpPEtzI=
 		</data>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2jEEkuYLzRNh2jOVQfaxtpxPoYI=
+		gS4oN1kEeB/z2ggJ2J2HvwU4jdc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		vhyA+Z5+cr8iF2NIANd6cLrhiHU=
+		TxZb9NNdRV7pU+9A/AuhZ73kTwQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -623,22 +623,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3SDh9HZ0H5TbwSfjV8fyHsAy6e0=
+			X2qO6rF5lbNoexETe6KqEPad2k0=
 			</data>
 			<key>hash2</key>
 			<data>
-			5ToDU2uk4h6RBkhb+yBZTRow4ZztwGxsyd4yy7vayxc=
+			hgHX/iAov1lHaH6wEln9IhRr5nBc8r3HTm31y49sv04=
 			</data>
 		</dict>
 		<key>Button.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eU5V+q5OsGpTcplPHtDkBYKu10U=
+			QDHhiuod58eirP8DYDjv2EQOZ7Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			YsHCw9QREg/knwLW1B+wUM1qU2os8KbOK5mPmAggW6c=
+			fkzT1UL8cx25w/bI62i6rpKh9nQa2O3n1EvGuwslqp8=
 			</data>
 		</dict>
 		<key>Button.bundle/LICENSE</key>
@@ -667,11 +667,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IGoCC4qkAl6YXyXRsJiUAcSUBeQ=
+			8o6c71XCWn2SC2fWHQx6hDkF2as=
 			</data>
 			<key>hash2</key>
 			<data>
-			m83Uyhq94QTj61Z3yyJJZOvBgHh4Xq18xYwvlkgwg+M=
+			fzXOeTga3Im/K3LBOyYyxONJ7qr7SPJcldu4CiF4Cxw=
 			</data>
 		</dict>
 		<key>Button.bundle/_CodeSignature/CodeRequirements</key>
@@ -689,11 +689,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kWyQVfVMikSj41skPnrxMZqz0hA=
+			eP/RbbW9QYr5d76boZbkrirGndE=
 			</data>
 			<key>hash2</key>
 			<data>
-			IYR7VMeKqBrvVfT2qmvcN3h1mjBm45T6eCMDy1b8n+4=
+			90AQ6/mqDWUX/mKPTNxwYCtVjS7b84/IwsovhhyaY94=
 			</data>
 		</dict>
 		<key>Button.bundle/_CodeSignature/CodeSignature</key>
@@ -1789,11 +1789,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1ap55cHYL7JbxzWvhCDSOs/GEas=
+			1SLa8is3Ly/+u2igC9IDbrtp9dA=
 			</data>
 			<key>hash2</key>
 			<data>
-			aCczFr01BZM0Rtl4GaYbNp0IfsxGZl5dtGyjhq0X7uU=
+			7mMxtMel81/7657aEpZPZRA7BlmP+//S0xdaEDhzDi8=
 			</data>
 		</dict>
 		<key>Headers/Button.h</key>
@@ -1855,44 +1855,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ssv9WqlZWB3NAEEtexDanAzLBAA=
+			DkPKDMp84kx74g6B8v+YucQrqqo=
 			</data>
 			<key>hash2</key>
 			<data>
-			pywBEIYgB+2jwnqZh9atc0bOtmlJV/COxrgrxgvGFvc=
+			GzUSJRrVFyh+U9DWpkGB0ovctSR/DkB50vQYaYkqHK4=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Kgm7uNU2LDswlUJ8xkooB5iSAWc=
+			UZMR6/enBHDvfERWIDFqAMRSeTs=
 			</data>
 			<key>hash2</key>
 			<data>
-			LOojQ4/7OFJy3yWOsabIX0hXq3e74Kki3S/hHvG4F40=
+			2zNOvvbfZv//jt2ztFy9xk54jEULnZsd9/o9ioVyQU4=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ssv9WqlZWB3NAEEtexDanAzLBAA=
+			DkPKDMp84kx74g6B8v+YucQrqqo=
 			</data>
 			<key>hash2</key>
 			<data>
-			pywBEIYgB+2jwnqZh9atc0bOtmlJV/COxrgrxgvGFvc=
+			GzUSJRrVFyh+U9DWpkGB0ovctSR/DkB50vQYaYkqHK4=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g3khSElW1eQDiB36O4V6sik7RDw=
+			cDnmPpisQpjek+PZPzw76CVX5JU=
 			</data>
 			<key>hash2</key>
 			<data>
-			n2OvfDPq9pyv9tTf/8ZdeGfO77qEZgsckmdPXhiMB/0=
+			NQ73BT+5wSvoNJx1JdY/1l17KKEhvGmbe40iD3trtt0=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -1910,55 +1910,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hiUb7rxYePavUjLagFVyKAhU+CA=
+			6qY7+/sykYRaqje4Z/nrXpPEtzI=
 			</data>
 			<key>hash2</key>
 			<data>
-			jWDq6LRPKnlSJISdNg9o6GCctmvSiTBgPuZqjc0LpGQ=
+			B8jfrOTPn29lHBIIM9uvQSARagEc5mvUafNwRJLiGmA=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jsQQJBDdN301NqS2PcXQHCrzN6I=
+			rlBuRNufOp77/Kd8rzqVq7QhstM=
 			</data>
 			<key>hash2</key>
 			<data>
-			6BJ4MAVrEPAw6hUiX1rMjRLbZPyStQXSzNT9hDVO7O8=
+			aJsa++/wAVD9yNjxCHlXxIJdIICGMM1Z68QTfccFYfA=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hiUb7rxYePavUjLagFVyKAhU+CA=
+			6qY7+/sykYRaqje4Z/nrXpPEtzI=
 			</data>
 			<key>hash2</key>
 			<data>
-			jWDq6LRPKnlSJISdNg9o6GCctmvSiTBgPuZqjc0LpGQ=
+			B8jfrOTPn29lHBIIM9uvQSARagEc5mvUafNwRJLiGmA=
 			</data>
 		</dict>
 		<key>Modules/Button.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2jEEkuYLzRNh2jOVQfaxtpxPoYI=
+			gS4oN1kEeB/z2ggJ2J2HvwU4jdc=
 			</data>
 			<key>hash2</key>
 			<data>
-			9j5DPtszJviuoeYil8uXDnHc3piY7NkrAvnTZFclzxQ=
+			wW3ZF9aHKq82VQmSceQSNtqqFl0il+tL6qhytY/HGWU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vhyA+Z5+cr8iF2NIANd6cLrhiHU=
+			TxZb9NNdRV7pU+9A/AuhZ73kTwQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			uqNjTJACt5BY+kyz7+mQJDNuo73S+josMNl0xfvpCbc=
+			k631+ptlesgcV6Hy29WOt6pw0OT6KiHhMSxeMmedl9E=
 			</data>
 		</dict>
 	</dict>

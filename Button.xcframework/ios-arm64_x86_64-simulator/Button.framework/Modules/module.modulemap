@@ -13,5 +13,4 @@ explicit module Button.Private {
 
 module Button.Swift {
   header "Button-Swift.h"
-  requires objc
 }
